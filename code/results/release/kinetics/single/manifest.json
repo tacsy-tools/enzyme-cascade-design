@@ -1,0 +1,268 @@
+{
+  "model_sha256": "45cbc06eada9a7dd81fb7b8e56abcdfab3fb32bd3752666c990318b27c3d6382",
+  "products": [
+    "Apap",
+    "Sal",
+    "Va",
+    "Tyr"
+  ],
+  "cases": [
+    {
+      "case": "baseline",
+      "factors": {}
+    },
+    {
+      "case": "DHQ_2x",
+      "factors": {
+        "DHQ": 2
+      }
+    },
+    {
+      "case": "DHQ_5x",
+      "factors": {
+        "DHQ": 5
+      }
+    },
+    {
+      "case": "SDH_2x",
+      "factors": {
+        "SDH": 2
+      }
+    },
+    {
+      "case": "SDH_5x",
+      "factors": {
+        "SDH": 5
+      }
+    },
+    {
+      "case": "SK_2x",
+      "factors": {
+        "SK": 2
+      }
+    },
+    {
+      "case": "SK_5x",
+      "factors": {
+        "SK": 5
+      }
+    },
+    {
+      "case": "EPS_2x",
+      "factors": {
+        "EPS": 2
+      }
+    },
+    {
+      "case": "EPS_5x",
+      "factors": {
+        "EPS": 5
+      }
+    },
+    {
+      "case": "CS_2x",
+      "factors": {
+        "CS": 2
+      }
+    },
+    {
+      "case": "CS_5x",
+      "factors": {
+        "CS": 5
+      }
+    },
+    {
+      "case": "PABB_2x",
+      "factors": {
+        "PABB": 2
+      }
+    },
+    {
+      "case": "PABB_5x",
+      "factors": {
+        "PABB": 5
+      }
+    },
+    {
+      "case": "ADC_2x",
+      "factors": {
+        "ADC": 2
+      }
+    },
+    {
+      "case": "ADC_5x",
+      "factors": {
+        "ADC": 5
+      }
+    },
+    {
+      "case": "ABC_2x",
+      "factors": {
+        "ABC": 2
+      }
+    },
+    {
+      "case": "ABC_5x",
+      "factors": {
+        "ABC": 5
+      }
+    },
+    {
+      "case": "ADH_2x",
+      "factors": {
+        "ADH": 2
+      }
+    },
+    {
+      "case": "ADH_5x",
+      "factors": {
+        "ADH": 5
+      }
+    },
+    {
+      "case": "GBH_2x",
+      "factors": {
+        "GBH": 2
+      }
+    },
+    {
+      "case": "GBH_5x",
+      "factors": {
+        "GBH": 5
+      }
+    },
+    {
+      "case": "DHL_2x",
+      "factors": {
+        "DHL": 2
+      }
+    },
+    {
+      "case": "DHL_5x",
+      "factors": {
+        "DHL": 5
+      }
+    },
+    {
+      "case": "LCH_2x",
+      "factors": {
+        "LCH": 2
+      }
+    },
+    {
+      "case": "LCH_5x",
+      "factors": {
+        "LCH": 5
+      }
+    },
+    {
+      "case": "BNH_2x",
+      "factors": {
+        "BNH": 2
+      }
+    },
+    {
+      "case": "BNH_5x",
+      "factors": {
+        "BNH": 5
+      }
+    },
+    {
+      "case": "KMN_2x",
+      "factors": {
+        "KMN": 2
+      }
+    },
+    {
+      "case": "KMN_5x",
+      "factors": {
+        "KMN": 5
+      }
+    },
+    {
+      "case": "ODO_2x",
+      "factors": {
+        "ODO": 2
+      }
+    },
+    {
+      "case": "ODO_5x",
+      "factors": {
+        "ODO": 5
+      }
+    },
+    {
+      "case": "OMT_2x",
+      "factors": {
+        "OMT": 2
+      }
+    },
+    {
+      "case": "OMT_5x",
+      "factors": {
+        "OMT": 5
+      }
+    },
+    {
+      "case": "THU_2x",
+      "factors": {
+        "THU": 2
+      }
+    },
+    {
+      "case": "THU_5x",
+      "factors": {
+        "THU": 5
+      }
+    },
+    {
+      "case": "GAO_2x",
+      "factors": {
+        "GAO": 2
+      }
+    },
+    {
+      "case": "GAO_5x",
+      "factors": {
+        "GAO": 5
+      }
+    },
+    {
+      "case": "DHA_2x",
+      "factors": {
+        "DHA": 2
+      }
+    },
+    {
+      "case": "DHA_5x",
+      "factors": {
+        "DHA": 5
+      }
+    }
+  ],
+  "conserved_pools": [
+    [
+      "Atp",
+      "Adp",
+      "Amp"
+    ],
+    [
+      "Nadh",
+      "Nad_plus"
+    ],
+    [
+      "Sam",
+      "Sah"
+    ]
+  ],
+  "time": {
+    "span": [
+      0.0,
+      1000.0
+    ],
+    "save_points": 201
+  },
+  "fixed": "Initial pools, unselected enzyme amounts, rate laws and all other constants",
+  "units": "UNCONFIRMED: specify concentration and time units before biological interpretation",
+  "interpretation": "Finite perturbations; not global optimality or calibrated experimental predictions"
+}

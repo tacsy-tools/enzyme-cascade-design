@@ -1,0 +1,16 @@
+title = "Analytical MM tutorial through the native Catalyst interface"
+model = "native-mm.jl"
+solver = "Tsit5"
+end_time = 2.0
+save_points = 21
+products = ["P"]
+units = "Arbitrary tutorial concentration and time units"
+interpretation = "Interface and integration check against the integrated MM equation"
+
+[[cases]]
+name = "activity_1"
+activity = 1.0
+
+[[cases]]
+name = "activity_0.25"
+activity = 0.25

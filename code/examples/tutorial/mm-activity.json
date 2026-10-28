@@ -1,0 +1,60 @@
+{
+  "name": "Illustrative externally supplied activity factor",
+  "time": {
+    "span": [
+      0.0,
+      2.0
+    ],
+    "save_points": 21
+  },
+  "species": {
+    "S": {
+      "initial": 2.0
+    },
+    "P": {
+      "initial": 0.0
+    }
+  },
+  "rate_laws": {
+    "MM17_activity": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "activity"
+      ],
+      "expression": "(kcat * E * S * activity) / (km + S)"
+    }
+  },
+  "reactions": [
+    {
+      "id": "r01",
+      "reactants": {
+        "S": 1
+      },
+      "products": {
+        "P": 1
+      },
+      "kinetics": {
+        "type": "MM17_activity",
+        "mode": "full_rate",
+        "species": {
+          "S": "S"
+        },
+        "constants": {
+          "E": 1.0,
+          "kcat": 3.0,
+          "km": 1.0,
+          "activity": 0.25
+        }
+      },
+      "enzyme": "MM"
+    }
+  ],
+  "provenance": {
+    "status": "Illustrative software extension, not a fitted terpene or pH model",
+    "units": "Same arbitrary concentration/time units as the MM tutorial",
+    "activity": "Externally supplied constant at a chosen condition; 0.25 is illustrative"
+  }
+}

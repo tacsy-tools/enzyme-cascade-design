@@ -1,0 +1,28 @@
+{
+  "model_sha256": "4c38202a69f109ae412e77bb709de6b2886773ba3a930358dc4d736b208bca38",
+  "products": [
+    "P"
+  ],
+  "cases": [
+    {
+      "case": "baseline",
+      "factors": {}
+    }
+  ],
+  "conserved_pools": [
+    [
+      "S",
+      "P"
+    ]
+  ],
+  "time": {
+    "span": [
+      0.0,
+      2.0
+    ],
+    "save_points": 21
+  },
+  "fixed": "Initial pools, unselected enzyme amounts, rate laws and all other constants",
+  "units": "Same arbitrary concentration/time units as the MM tutorial",
+  "interpretation": "Finite perturbations; not global optimality or calibrated experimental predictions"
+}

@@ -1,0 +1,3 @@
+Julia=1.11.5
+Catalyst=14.4.1
+DifferentialEquations=7.16.1

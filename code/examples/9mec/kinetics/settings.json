@@ -1,0 +1,106 @@
+{
+  "schema": "dg-kinetics-v1",
+  "network_sha256": "23e51b47e5d5f95d650c5e553f8b0b760890c6fcd7fd3ebd6049d488dd934266",
+  "time": {
+    "span": [
+      0.0,
+      1000.0
+    ],
+    "save_points": 201
+  },
+  "units": "UNCONFIRMED: specify concentration and time units before biological interpretation",
+  "rate_laws": {
+    "MM00": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1",
+        "I2",
+        "ki2"
+      ],
+      "expression": "(kcat * E) / ( (km * (1 + (I1 / ki1))) + (S * (1 + (I2 / ki2))) )",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM01": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1",
+        "I2",
+        "ki2"
+      ],
+      "expression": "(kcat * E) / ( (km * (1 + (I1 / ki1) + (I2 / ki2))) + S )",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM03": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S1",
+        "S2"
+      ],
+      "expression": "(kcat * E) / ( (km * km) + (km * S1) + (km * S2) + (S1 * S2) )",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM14": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1",
+        "I2",
+        "ki2"
+      ],
+      "expression": "(kcat * E) / ((km * (1 + (I1 / ki1))) + (S * (1 + (I2 / ki2))))",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM17": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S"
+      ],
+      "expression": "(kcat * E) / (km + S)",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM18": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1"
+      ],
+      "expression": "(kcat * E) / ((km * (1 + (I1 / ki1))) + S)",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    }
+  },
+  "species_aliases": {
+    "Htd": "HTD"
+  },
+  "imported_kinetics_sha256": "be8f9ff64891f8be07abd3809a5b02a7bbcc046174eedf0fe7a2f9bdf5f90b74",
+  "imported_provenance": {
+    "source": "examples/9mec/source/9MAC03.jl",
+    "sha256": "001e967683aaa53f62490435caf3bdbb3ba2e0dcabbaf16c2935e20993e91222",
+    "status": "Kinetic reaction list, NOT the corrected M\u00d8D expansion.",
+    "units": "Concentration/time units not specified in source; confirm with xtof.",
+    "correction": {
+      "kind": "Minimal substrate-numerator correction",
+      "method": "Remove S or S1*S2 from MM numerator; keep --> mass-action reactants",
+      "fixed": "Initial states, E, kcat, Km, inhibitors, stoichiometry, tspan",
+      "remaining_review": "Cofactor saturation/units, inhibition, pH and enzyme identities; not biochemically validated",
+      "legacy_input_sha256": "73a51a52f11d33fc50c3b1ea16741f1187015c3f94daf37062d8369900464b23"
+    }
+  }
+}

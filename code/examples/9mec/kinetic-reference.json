@@ -1,0 +1,756 @@
+{
+  "name": "9MEC: substrate numerators deduplicated; cofactor factors retained",
+  "provenance": {
+    "source": "examples/9mec/source/9MAC03.jl",
+    "sha256": "001e967683aaa53f62490435caf3bdbb3ba2e0dcabbaf16c2935e20993e91222",
+    "status": "Kinetic reaction list, NOT the corrected M\u00d8D expansion.",
+    "units": "Concentration/time units not specified in source; confirm with xtof.",
+    "correction": {
+      "kind": "Minimal substrate-numerator correction",
+      "method": "Remove S or S1*S2 from MM numerator; keep --> mass-action reactants",
+      "fixed": "Initial states, E, kcat, Km, inhibitors, stoichiometry, tspan",
+      "remaining_review": "Cofactor saturation/units, inhibition, pH and enzyme identities; not biochemically validated",
+      "legacy_input_sha256": "73a51a52f11d33fc50c3b1ea16741f1187015c3f94daf37062d8369900464b23"
+    }
+  },
+  "time": {
+    "span": [
+      0.0,
+      1000.0
+    ],
+    "save_points": 201
+  },
+  "species": {
+    "Dhq": {
+      "initial": 1.0,
+      "carbon": null
+    },
+    "Dhs": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "H2O": {
+      "initial": 10.0,
+      "carbon": null
+    },
+    "H_plus": {
+      "initial": 1.0,
+      "carbon": null
+    },
+    "Nadh": {
+      "initial": 2.0,
+      "carbon": null
+    },
+    "Nad_plus": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Skm": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Atp": {
+      "initial": 2.0,
+      "carbon": null
+    },
+    "Adp": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "S3p": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Pep": {
+      "initial": 1.5,
+      "carbon": null
+    },
+    "Epsp": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Pi": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Cha": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Gln": {
+      "initial": 1.0,
+      "carbon": null
+    },
+    "Adc": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Glu": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Pyr": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "AmBez": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "O2": {
+      "initial": 1.0,
+      "carbon": null
+    },
+    "AmPhOH": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "CO2": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "AcCoA": {
+      "initial": 1.0,
+      "carbon": null
+    },
+    "Apap": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "CoA": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Iso": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Sal": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Ppa": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Hpp": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Htd": {
+      "initial": 1.0,
+      "carbon": null
+    },
+    "Imz": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Tyr": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Pca": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Sam": {
+      "initial": 1.0,
+      "carbon": null
+    },
+    "Sah": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Va": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Amp": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "Deoxy": {
+      "initial": 0.0,
+      "carbon": null
+    },
+    "E4p": {
+      "initial": 1.0,
+      "carbon": null
+    }
+  },
+  "rate_laws": {
+    "MM00": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1",
+        "I2",
+        "ki2"
+      ],
+      "expression": "(kcat * E) / ( (km * (1 + (I1 / ki1))) + (S * (1 + (I2 / ki2))) )",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM01": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1",
+        "I2",
+        "ki2"
+      ],
+      "expression": "(kcat * E) / ( (km * (1 + (I1 / ki1) + (I2 / ki2))) + S )",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM03": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S1",
+        "S2"
+      ],
+      "expression": "(kcat * E) / ( (km * km) + (km * S1) + (km * S2) + (S1 * S2) )",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM14": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1",
+        "I2",
+        "ki2"
+      ],
+      "expression": "(kcat * E) / ((km * (1 + (I1 / ki1))) + (S * (1 + (I2 / ki2))))",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM17": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S"
+      ],
+      "expression": "(kcat * E) / (km + S)",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    },
+    "MM18": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S",
+        "I1",
+        "ki1"
+      ],
+      "expression": "(kcat * E) / ((km * (1 + (I1 / ki1))) + S)",
+      "interpretation": "Prefactor: Catalyst supplies every reactant factor once"
+    }
+  },
+  "reactions": [
+    {
+      "id": "r01",
+      "enzyme": "DHQ",
+      "reactants": {
+        "Dhq": 1
+      },
+      "products": {
+        "Dhs": 1,
+        "H2O": 1
+      },
+      "kinetics": {
+        "type": "MM00",
+        "mode": "mass_action",
+        "species": {
+          "S": "Dhq"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 3.2,
+          "km": 0.02,
+          "I1": 0.0,
+          "ki1": 1.0,
+          "I2": 0.0,
+          "ki2": 1.0
+        }
+      }
+    },
+    {
+      "id": "r02",
+      "enzyme": "SDH",
+      "reactants": {
+        "Dhs": 1,
+        "H_plus": 1,
+        "Nadh": 1
+      },
+      "products": {
+        "Nad_plus": 1,
+        "Skm": 1
+      },
+      "kinetics": {
+        "type": "MM01",
+        "mode": "mass_action",
+        "species": {
+          "S": "Dhs",
+          "I1": "Dhq",
+          "I2": "Skm"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.405,
+          "km": 0.287,
+          "ki1": 0.42,
+          "ki2": 0.14
+        }
+      }
+    },
+    {
+      "id": "r03",
+      "enzyme": "SK",
+      "reactants": {
+        "Atp": 1,
+        "Skm": 1
+      },
+      "products": {
+        "Adp": 1,
+        "S3p": 1
+      },
+      "kinetics": {
+        "type": "MM18",
+        "mode": "mass_action",
+        "species": {
+          "S": "Skm",
+          "I1": "Atp"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 30.8,
+          "km": 0.2,
+          "ki1": 0.5
+        }
+      }
+    },
+    {
+      "id": "r04",
+      "enzyme": "EPS",
+      "reactants": {
+        "Pep": 1,
+        "S3p": 1
+      },
+      "products": {
+        "Epsp": 1,
+        "Pi": 1
+      },
+      "kinetics": {
+        "type": "MM03",
+        "mode": "mass_action",
+        "species": {
+          "S1": "S3p",
+          "S2": "Pep"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 8.6,
+          "km": 0.1
+        }
+      }
+    },
+    {
+      "id": "r05",
+      "enzyme": "CS",
+      "reactants": {
+        "Epsp": 1
+      },
+      "products": {
+        "Cha": 1,
+        "Pi": 1
+      },
+      "kinetics": {
+        "type": "MM18",
+        "mode": "mass_action",
+        "species": {
+          "S": "Epsp",
+          "I1": "Nadh"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.8,
+          "km": 0.0027,
+          "ki1": 0.043
+        }
+      }
+    },
+    {
+      "id": "r06",
+      "enzyme": "PABB",
+      "reactants": {
+        "Cha": 1,
+        "Gln": 1
+      },
+      "products": {
+        "Adc": 1,
+        "Glu": 1
+      },
+      "kinetics": {
+        "type": "MM03",
+        "mode": "mass_action",
+        "species": {
+          "S1": "Cha",
+          "S2": "Gln"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.00544,
+          "km": 0.0016
+        }
+      }
+    },
+    {
+      "id": "r07",
+      "enzyme": "ADC",
+      "reactants": {
+        "Adc": 1
+      },
+      "products": {
+        "AmBez": 1,
+        "Pyr": 1
+      },
+      "kinetics": {
+        "type": "MM14",
+        "mode": "mass_action",
+        "species": {
+          "S": "Adc"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 1.5,
+          "km": 0.015,
+          "I1": 0.0,
+          "ki1": 1.0,
+          "I2": 0.0,
+          "ki2": 2.0
+        }
+      }
+    },
+    {
+      "id": "r08",
+      "enzyme": "ABC",
+      "reactants": {
+        "AmBez": 1,
+        "H_plus": 1,
+        "Nadh": 1,
+        "O2": 1
+      },
+      "products": {
+        "AmPhOH": 1,
+        "CO2": 1,
+        "H2O": 1,
+        "Nad_plus": 1
+      },
+      "kinetics": {
+        "type": "MM14",
+        "mode": "mass_action",
+        "species": {
+          "S": "AmBez"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.98,
+          "km": 0.02,
+          "I1": 0.0,
+          "ki1": 1.0,
+          "I2": 0.0,
+          "ki2": 2.0
+        }
+      }
+    },
+    {
+      "id": "r09",
+      "enzyme": "ADH",
+      "reactants": {
+        "AcCoA": 1,
+        "AmPhOH": 1
+      },
+      "products": {
+        "Apap": 1,
+        "CoA": 1
+      },
+      "kinetics": {
+        "type": "MM14",
+        "mode": "mass_action",
+        "species": {
+          "S": "AmPhOH"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 18.68,
+          "km": 2.22,
+          "I1": 0.0,
+          "ki1": 1.0,
+          "I2": 0.0,
+          "ki2": 2.0
+        }
+      }
+    },
+    {
+      "id": "r10",
+      "enzyme": "GBH",
+      "reactants": {
+        "Cha": 1
+      },
+      "products": {
+        "Iso": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "mass_action",
+        "species": {
+          "S": "Cha"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.67,
+          "km": 0.007
+        }
+      }
+    },
+    {
+      "id": "r11",
+      "enzyme": "DHL",
+      "reactants": {
+        "Iso": 1
+      },
+      "products": {
+        "Pyr": 1,
+        "Sal": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "mass_action",
+        "species": {
+          "S": "Iso"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.035,
+          "km": 0.0026
+        }
+      }
+    },
+    {
+      "id": "r12",
+      "enzyme": "LCH",
+      "reactants": {
+        "Cha": 1
+      },
+      "products": {
+        "Ppa": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "mass_action",
+        "species": {
+          "S": "Cha"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 1.995,
+          "km": 1.14
+        }
+      }
+    },
+    {
+      "id": "r13",
+      "enzyme": "BNH",
+      "reactants": {
+        "Nad_plus": 1,
+        "Ppa": 1
+      },
+      "products": {
+        "CO2": 1,
+        "H_plus": 1,
+        "Hpp": 1,
+        "Nadh": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "mass_action",
+        "species": {
+          "S": "Ppa"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.655,
+          "km": 0.25
+        }
+      }
+    },
+    {
+      "id": "r14",
+      "enzyme": "KMN",
+      "reactants": {
+        "Htd": 1,
+        "Hpp": 1
+      },
+      "products": {
+        "Imz": 1,
+        "Tyr": 1
+      },
+      "kinetics": {
+        "type": "MM03",
+        "mode": "mass_action",
+        "species": {
+          "S1": "Hpp",
+          "S2": "Htd"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 428.4,
+          "km": 0.42
+        }
+      }
+    },
+    {
+      "id": "r15",
+      "enzyme": "ODO",
+      "reactants": {
+        "Dhs": 1
+      },
+      "products": {
+        "H2O": 1,
+        "Pca": 1
+      },
+      "kinetics": {
+        "type": "MM14",
+        "mode": "mass_action",
+        "species": {
+          "S": "Dhs"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 153.7,
+          "km": 0.311,
+          "I1": 0.0,
+          "ki1": 1.0,
+          "I2": 0.0,
+          "ki2": 2.0
+        }
+      }
+    },
+    {
+      "id": "r16",
+      "enzyme": "OMT",
+      "reactants": {
+        "Pca": 1,
+        "Sam": 1
+      },
+      "products": {
+        "Sah": 1,
+        "Va": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "mass_action",
+        "species": {
+          "S": "Pca"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 0.032,
+          "km": 0.015
+        }
+      }
+    },
+    {
+      "id": "r17",
+      "enzyme": "THU",
+      "reactants": {
+        "Adp": 2
+      },
+      "products": {
+        "Amp": 1,
+        "Atp": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "mass_action",
+        "species": {
+          "S": "Adp"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 783.0,
+          "km": 0.35
+        }
+      }
+    },
+    {
+      "id": "r18",
+      "enzyme": "GAO",
+      "reactants": {
+        "Deoxy": 1
+      },
+      "products": {
+        "Dhq": 1,
+        "Pi": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "mass_action",
+        "species": {
+          "S": "Deoxy"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 16.0,
+          "km": 0.0057
+        }
+      }
+    },
+    {
+      "id": "r19",
+      "enzyme": "DHA",
+      "reactants": {
+        "E4p": 1,
+        "H2O": 1,
+        "Pep": 1
+      },
+      "products": {
+        "Deoxy": 1,
+        "Pi": 1
+      },
+      "kinetics": {
+        "type": "MM18",
+        "mode": "mass_action",
+        "species": {
+          "S": "E4p",
+          "I1": "Pep"
+        },
+        "constants": {
+          "E": 0.2,
+          "kcat": 21.83,
+          "km": 0.037,
+          "ki1": 0.015
+        }
+      }
+    }
+  ],
+  "query": {
+    "sources": {},
+    "targets": {},
+    "candidate_targets": [
+      "Apap",
+      "Va",
+      "Tyr",
+      "Sal"
+    ]
+  }
+}

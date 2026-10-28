@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this software when using its models, workflow or example inputs."
+title: "Enzyme Cascade Design"
+type: software
+authors:
+  - name: "TACsy contributors"
+version: 0.1.0-rc2
+date-released: 2026-10-28
+license: MIT
+repository-code: "https://gitea.algochem.techfak.de/merkle/D4.4-release-candidate"

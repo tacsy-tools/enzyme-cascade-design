@@ -1,0 +1,17 @@
+{
+  "ADP": {
+    "carbon": 10
+  },
+  "CoA": {
+    "carbon": 21
+  },
+  "Glu": {
+    "carbon": 5
+  },
+  "NAD": {
+    "carbon": 21
+  },
+  "NAD+": {
+    "carbon": 21
+  }
+}

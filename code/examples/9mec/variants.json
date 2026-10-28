@@ -1,0 +1,37 @@
+[
+  {
+    "case": "ODO_0.2x_SDH_5x",
+    "factors": {
+      "ODO": 0.2,
+      "SDH": 5
+    }
+  },
+  {
+    "case": "four_branchpoints",
+    "factors": {
+      "ODO": 0.001,
+      "GBH": 2.5,
+      "LCH": 100,
+      "PABB": 100
+    }
+  },
+  {
+    "case": "four_enzyme_grid_candidate",
+    "factors": {
+      "ODO": 0.02,
+      "SDH": 5,
+      "PABB": 5,
+      "GBH": 0.2
+    }
+  },
+  {
+    "case": "OMT_0.05x_followup",
+    "factors": {
+      "ODO": 0.02,
+      "SDH": 5,
+      "PABB": 5,
+      "GBH": 0.2,
+      "OMT": 0.05
+    }
+  }
+]

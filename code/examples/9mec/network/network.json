@@ -1,0 +1,891 @@
+{
+  "schema": "tacsy-design-network-v1",
+  "name": "9mec",
+  "species": {
+    "Dhq": {
+      "id": "s0",
+      "dg_vertex_id": 0,
+      "name": "Dhq",
+      "smiles": "C(C1(CC(C(C(C1)=O)O)O)O)(O)=O",
+      "mod_smiles": "C(C1(CC(C(C(C1)=O)O)O)O)(O)=O",
+      "graph_dfs": "[C]1([C]([C](=[O])[O][H])([C]([C](=[O])[C]([C](1)([O][H])[H])([O][H])[H])([H])[H])[O][H])([H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    },
+    "Dhs": {
+      "id": "s1",
+      "dg_vertex_id": 1,
+      "name": "Dhs",
+      "smiles": "C(C1CC(C(C(C=1)=O)O)O)(O)=O",
+      "mod_smiles": "C(C1CC(C(C(C=1)=O)O)O)(O)=O",
+      "graph_dfs": "[C]1([C](=[C]([C](=[O])[C]([C](1)([O][H])[H])([O][H])[H])[H])[C](=[O])[O][H])([H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    },
+    "Nadh": {
+      "id": "s2",
+      "dg_vertex_id": 2,
+      "name": "Nadh",
+      "smiles": "[H][3*]",
+      "mod_smiles": "[H][NAD]",
+      "graph_dfs": "[NAD][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "NAD"
+      ],
+      "carbon": 21
+    },
+    "H_plus": {
+      "id": "s3",
+      "dg_vertex_id": 3,
+      "name": "H_plus",
+      "smiles": "[H+]",
+      "mod_smiles": "[H+]",
+      "graph_dfs": "[H+]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "Skm": {
+      "id": "s4",
+      "dg_vertex_id": 4,
+      "name": "Skm",
+      "smiles": "C1C(C(C(CC=1C(O)=O)O)O)O",
+      "mod_smiles": "C1C(C(C(CC=1C(O)=O)O)O)O",
+      "graph_dfs": "[C]1([C](=[C]([C]([C]([C](1)([O][H])[H])([O][H])[H])([O][H])[H])[H])[C](=[O])[O][H])([H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    },
+    "Nad_plus": {
+      "id": "s5",
+      "dg_vertex_id": 5,
+      "name": "Nad_plus",
+      "smiles": "[4*]",
+      "mod_smiles": "[NAD+]",
+      "graph_dfs": "[NAD+]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "NAD+"
+      ],
+      "carbon": 21
+    },
+    "Atp": {
+      "id": "s6",
+      "dg_vertex_id": 6,
+      "name": "Atp",
+      "smiles": "[1*]OP(OP(OP(O)(O)=O)(O)=O)(O)=O",
+      "mod_smiles": "[Ad]OP(OP(OP(O)(O)=O)(O)=O)(O)=O",
+      "graph_dfs": "[Ad][O][P](=[O])([O][H])[O][P](=[O])([O][H])[O][P](=[O])([O][H])[O][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "Ad"
+      ],
+      "carbon": 10
+    },
+    "S3p": {
+      "id": "s7",
+      "dg_vertex_id": 7,
+      "name": "S3p",
+      "smiles": "C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O",
+      "mod_smiles": "C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O",
+      "graph_dfs": "[C]1([C](=[C]([C]([C]([C](1)([O][H])[H])([O][H])[H])([O][P](=[O])([O][H])[O][H])[H])[H])[C](=[O])[O][H])([H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    },
+    "Adp": {
+      "id": "s8",
+      "dg_vertex_id": 8,
+      "name": "Adp",
+      "smiles": "[1*]OP(OP(O)(O)=O)(O)=O",
+      "mod_smiles": "[Ad]OP(OP(O)(O)=O)(O)=O",
+      "graph_dfs": "[Ad][O][P](=[O])([O][H])[O][P](=[O])([O][H])[O][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "Ad"
+      ],
+      "carbon": 10
+    },
+    "Amp": {
+      "id": "s9",
+      "dg_vertex_id": 9,
+      "name": "Amp",
+      "smiles": "[1*]OP(O)(O)=O",
+      "mod_smiles": "[Ad]OP(O)(O)=O",
+      "graph_dfs": "[Ad][O][P](=[O])([O][H])[O][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "Ad"
+      ],
+      "carbon": 10
+    },
+    "Pep": {
+      "id": "s10",
+      "dg_vertex_id": 10,
+      "name": "Pep",
+      "smiles": "C=C(C(O)=O)OP(O)(O)=O",
+      "mod_smiles": "C=C(C(O)=O)OP(O)(O)=O",
+      "graph_dfs": "[C](=[C]([C](=[O])[O][H])[O][P]([O][H])(=[O])[O][H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "E4p": {
+      "id": "s11",
+      "dg_vertex_id": 11,
+      "name": "E4p",
+      "smiles": "C(C(C(COP(O)(O)=O)O)O)=O",
+      "mod_smiles": "C(C(C(COP(O)(O)=O)O)O)=O",
+      "graph_dfs": "[C]([C]([C]([C](=[O])[H])([O][H])[H])([O][H])[H])([O][P]([O][H])(=[O])[O][H])([H])[H]",
+      "explicit_carbon_atoms": 4,
+      "abstract_labels": [],
+      "carbon": 4
+    },
+    "Epsp": {
+      "id": "s12",
+      "dg_vertex_id": 12,
+      "name": "Epsp",
+      "smiles": "C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O",
+      "mod_smiles": "C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O",
+      "graph_dfs": "[C](=[C]([C](=[O])[O][H])[O][C]1([C]([C](=[C]([C]([C](1)([O][H])[H])([O][P](=[O])([O][H])[O][H])[H])[H])[C](=[O])[O][H])([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 10,
+      "abstract_labels": [],
+      "carbon": 10
+    },
+    "Deoxy": {
+      "id": "s13",
+      "dg_vertex_id": 13,
+      "name": "Deoxy",
+      "smiles": "C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O",
+      "mod_smiles": "C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O",
+      "graph_dfs": "[C]([C]([C]([C]([C]([O][P]([O][H])(=[O])[O][H])([H])[H])([O][H])[H])([O][H])[H])([O][H])[H])([C](=[O])[C](=[O])[O][H])([H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    },
+    "Pi": {
+      "id": "s14",
+      "dg_vertex_id": 14,
+      "name": "Pi",
+      "smiles": "O=P(O)(O)O",
+      "mod_smiles": "O=P(O)(O)O",
+      "graph_dfs": "[O]([P]([O][H])(=[O])[O][H])[H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "Cha": {
+      "id": "s15",
+      "dg_vertex_id": 15,
+      "name": "Cha",
+      "smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O",
+      "mod_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O",
+      "graph_dfs": "[C](=[C]([C](=[O])[O][H])[O][C]1([C](=[C]([C](=[C]([C](1)([O][H])[H])[H])[H])[C](=[O])[O][H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 10,
+      "abstract_labels": [],
+      "carbon": 10
+    },
+    "CO2": {
+      "id": "s16",
+      "dg_vertex_id": 16,
+      "name": "CO2",
+      "smiles": "C(=O)=O",
+      "mod_smiles": "C(=O)=O",
+      "graph_dfs": "[O]=[C]=[O]",
+      "explicit_carbon_atoms": 1,
+      "abstract_labels": [],
+      "carbon": 1
+    },
+    "H2O": {
+      "id": "s17",
+      "dg_vertex_id": 17,
+      "name": "H2O",
+      "smiles": "O",
+      "mod_smiles": "O",
+      "graph_dfs": "[O]([H])[H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "O2": {
+      "id": "s18",
+      "dg_vertex_id": 18,
+      "name": "O2",
+      "smiles": "O=O",
+      "mod_smiles": "O=O",
+      "graph_dfs": "[O]=[O]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "Sam": {
+      "id": "s19",
+      "dg_vertex_id": 19,
+      "name": "Sam",
+      "smiles": "C[5*]",
+      "mod_smiles": "C[SA]",
+      "graph_dfs": "[SA][C]([H])([H])[H]",
+      "explicit_carbon_atoms": 1,
+      "abstract_labels": [
+        "SA"
+      ],
+      "carbon": 15
+    },
+    "Sah": {
+      "id": "s20",
+      "dg_vertex_id": 20,
+      "name": "Sah",
+      "smiles": "[H][5*]",
+      "mod_smiles": "[H][SA]",
+      "graph_dfs": "[SA][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "SA"
+      ],
+      "carbon": 14
+    },
+    "Va": {
+      "id": "s21",
+      "dg_vertex_id": 21,
+      "name": "Va",
+      "smiles": "C1(:C:C(:C:C:C:1O)C(O)=O)OC",
+      "mod_smiles": "C1(:C:C(:C:C:C:1O)C(O)=O)OC",
+      "graph_dfs": "[C]([O][C]1:[C](:[C](:[C](:[C](:[C](:1)[O][H])[H])[H])[C](=[O])[O][H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 8,
+      "abstract_labels": [],
+      "carbon": 8
+    },
+    "CoA": {
+      "id": "s22",
+      "dg_vertex_id": 22,
+      "name": "CoA",
+      "smiles": "[2*]S",
+      "mod_smiles": "[CoA]S",
+      "graph_dfs": "[CoA][S][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 21
+    },
+    "AcCoA": {
+      "id": "s23",
+      "dg_vertex_id": 23,
+      "name": "AcCoA",
+      "smiles": "C(C)(S[2*])=O",
+      "mod_smiles": "C(C)(S[CoA])=O",
+      "graph_dfs": "[CoA][S][C](=[O])[C]([H])([H])[H]",
+      "explicit_carbon_atoms": 2,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 23
+    },
+    "Iso": {
+      "id": "s24",
+      "dg_vertex_id": 24,
+      "name": "Iso",
+      "smiles": "C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O",
+      "mod_smiles": "C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O",
+      "graph_dfs": "[C](=[C]([C](=[O])[O][H])[O][C]1([C](=[C]([C](=[C]([C](1)([O][H])[H])[C](=[O])[O][H])[H])[H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 10,
+      "abstract_labels": [],
+      "carbon": 10
+    },
+    "Pyr": {
+      "id": "s25",
+      "dg_vertex_id": 25,
+      "name": "Pyr",
+      "smiles": "C(C(C)=O)(O)=O",
+      "mod_smiles": "C(C(C)=O)(O)=O",
+      "graph_dfs": "[C]([C](=[O])[C](=[O])[O][H])([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "Ppa": {
+      "id": "s26",
+      "dg_vertex_id": 26,
+      "name": "Ppa",
+      "smiles": "C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O",
+      "mod_smiles": "C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O",
+      "graph_dfs": "[C]1(=[C]([C]([C](=[C]([C](1)([O][H])[H])[H])[H])([C]([C](=[O])[C](=[O])[O][H])([H])[H])[C](=[O])[O][H])[H])[H]",
+      "explicit_carbon_atoms": 10,
+      "abstract_labels": [],
+      "carbon": 10
+    },
+    "Sal": {
+      "id": "s27",
+      "dg_vertex_id": 27,
+      "name": "Sal",
+      "smiles": "C1:C:C:C(:C(:C:1)O)C(O)=O",
+      "mod_smiles": "C1:C:C:C(:C(:C:1)O)C(O)=O",
+      "graph_dfs": "[O]=[C]([O][H])[C]1:[C](:[C](:[C](:[C](:[C](:1)[O][H])[H])[H])[H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    },
+    "Gln": {
+      "id": "s28",
+      "dg_vertex_id": 28,
+      "name": "Gln",
+      "smiles": "C(CCC(C(O)=O)N)(N)=O",
+      "mod_smiles": "C(CCC(C(O)=O)N)(N)=O",
+      "graph_dfs": "[C]([C]([C](=[O])[N]([H])[H])([H])[H])([C]([C](=[O])[O][H])([N]([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "Glu": {
+      "id": "s29",
+      "dg_vertex_id": 29,
+      "name": "Glu",
+      "smiles": "C(CCC(C(O)=O)N)(O)=O",
+      "mod_smiles": "C(CCC(C(O)=O)N)(O)=O",
+      "graph_dfs": "[C]([C]([C](=[O])[O][H])([H])[H])([C]([C](=[O])[O][H])([N]([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "Adc": {
+      "id": "s30",
+      "dg_vertex_id": 30,
+      "name": "Adc",
+      "smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N",
+      "mod_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N",
+      "graph_dfs": "[C](=[C]([C](=[O])[O][H])[O][C]1([C](=[C]([C](=[C]([C](1)([N]([H])[H])[H])[H])[H])[C](=[O])[O][H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 10,
+      "abstract_labels": [],
+      "carbon": 10
+    },
+    "AmBez": {
+      "id": "s31",
+      "dg_vertex_id": 31,
+      "name": "AmBez",
+      "smiles": "C1:C:C(:C:C:C:1N)C(O)=O",
+      "mod_smiles": "C1:C:C(:C:C:C:1N)C(O)=O",
+      "graph_dfs": "[O]=[C]([O][H])[C]1:[C](:[C](:[C]([N]([H])[H]):[C](:[C](:1)[H])[H])[H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    },
+    "AmPhOH": {
+      "id": "s32",
+      "dg_vertex_id": 32,
+      "name": "AmPhOH",
+      "smiles": "C1:C:C(:C:C:C:1O)N",
+      "mod_smiles": "C1:C:C(:C:C:C:1O)N",
+      "graph_dfs": "[O]([C]1:[C](:[C](:[C]([N]([H])[H]):[C](:[C](:1)[H])[H])[H])[H])[H]",
+      "explicit_carbon_atoms": 6,
+      "abstract_labels": [],
+      "carbon": 6
+    },
+    "Apap": {
+      "id": "s33",
+      "dg_vertex_id": 33,
+      "name": "Apap",
+      "smiles": "C(C)(NC1:C:C:C(:C:C:1)O)=O",
+      "mod_smiles": "C(C)(NC1:C:C:C(:C:C:1)O)=O",
+      "graph_dfs": "[C]([C](=[O])[N]([C]1:[C](:[C](:[C]([O][H]):[C](:[C](:1)[H])[H])[H])[H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 8,
+      "abstract_labels": [],
+      "carbon": 8
+    },
+    "Hpp": {
+      "id": "s34",
+      "dg_vertex_id": 34,
+      "name": "Hpp",
+      "smiles": "C1:C:C(:C:C:C:1O)CC(C(O)=O)=O",
+      "mod_smiles": "C1:C:C(:C:C:C:1O)CC(C(O)=O)=O",
+      "graph_dfs": "[C]1(:[C](:[C](:[C](:[C](:[C](:1)[C]([C](=[O])[C](=[O])[O][H])([H])[H])[H])[H])[O][H])[H])[H]",
+      "explicit_carbon_atoms": 9,
+      "abstract_labels": [],
+      "carbon": 9
+    },
+    "HTD": {
+      "id": "s35",
+      "dg_vertex_id": 35,
+      "name": "HTD",
+      "smiles": "C1NC(CC(COP(O)(O)=O)N)=CN=1",
+      "mod_smiles": "C1NC(CC(COP(O)(O)=O)N)=CN=1",
+      "graph_dfs": "[C]1([N]=[C]([N]([C](=1)[C]([C]([C]([O][P](=[O])([O][H])[O][H])([H])[H])([N]([H])[H])[H])([H])[H])[H])[H])[H]",
+      "explicit_carbon_atoms": 6,
+      "abstract_labels": [],
+      "carbon": 6
+    },
+    "Imz": {
+      "id": "s36",
+      "dg_vertex_id": 36,
+      "name": "Imz",
+      "smiles": "C1NC(CC(COP(O)(O)=O)=O)=CN=1",
+      "mod_smiles": "C1NC(CC(COP(O)(O)=O)=O)=CN=1",
+      "graph_dfs": "[C]1([N]=[C]([N]([C](=1)[C]([C](=[O])[C]([O][P](=[O])([O][H])[O][H])([H])[H])([H])[H])[H])[H])[H]",
+      "explicit_carbon_atoms": 6,
+      "abstract_labels": [],
+      "carbon": 6
+    },
+    "Tyr": {
+      "id": "s37",
+      "dg_vertex_id": 37,
+      "name": "Tyr",
+      "smiles": "C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O",
+      "mod_smiles": "C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O",
+      "graph_dfs": "[C]1(:[C](:[C](:[C](:[C](:[C](:1)[C]([C]([C](=[O])[O][H])([N]([H])[H])[H])([H])[H])[H])[H])[O][H])[H])[H]",
+      "explicit_carbon_atoms": 9,
+      "abstract_labels": [],
+      "carbon": 9
+    },
+    "Pca": {
+      "id": "s38",
+      "dg_vertex_id": 38,
+      "name": "Pca",
+      "smiles": "C1:C:C(:C:C(:C:1O)O)C(O)=O",
+      "mod_smiles": "C1:C:C(:C:C(:C:1O)O)C(O)=O",
+      "graph_dfs": "[C]1(:[C](:[C](:[C](:[C](:[C](:1)[C](=[O])[O][H])[H])[O][H])[O][H])[H])[H]",
+      "explicit_carbon_atoms": 7,
+      "abstract_labels": [],
+      "carbon": 7
+    }
+  },
+  "reactions": [
+    {
+      "id": "r39",
+      "dg_edge_id": 39,
+      "reactants": {
+        "Dhq": 1
+      },
+      "products": {
+        "Dhs": 1,
+        "H2O": 1
+      },
+      "rules": [
+        "3-dehydroquinate = 3-dehydroshikimate + H2O, EC 4.2.1.10"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "C(C1(CC(C(C(C1)=O)O)O)O)(O)=O>>C(C1CC(C(C(C=1)=O)O)O)(O)=O.O",
+      "mod_reaction_smiles": "C(C1(CC(C(C(C1)=O)O)O)O)(O)=O>>C(C1CC(C(C(C=1)=O)O)O)(O)=O.O"
+    },
+    {
+      "id": "r40",
+      "dg_edge_id": 40,
+      "reactants": {
+        "Dhs": 1,
+        "Nadh": 1,
+        "H_plus": 1
+      },
+      "products": {
+        "Skm": 1,
+        "Nad_plus": 1
+      },
+      "rules": [
+        "3-dehydroshikimate + NADPH + H+ = shikimate + NADP+, EC 1.1.1.25"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "C(C1CC(C(C(C=1)=O)O)O)(O)=O.[H][3*].[H+]>>C1C(C(C(CC=1C(O)=O)O)O)O.[4*]",
+      "mod_reaction_smiles": "C(C1CC(C(C(C=1)=O)O)O)(O)=O.[H][NAD].[H+]>>C1C(C(C(CC=1C(O)=O)O)O)O.[NAD+]"
+    },
+    {
+      "id": "r41",
+      "dg_edge_id": 41,
+      "reactants": {
+        "Skm": 1,
+        "Atp": 1
+      },
+      "products": {
+        "S3p": 1,
+        "Adp": 1
+      },
+      "rules": [
+        " shikimate + ATP = shikimate 3-phosphate + ADP, EC 2.7.1.71"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "C1C(C(C(CC=1C(O)=O)O)O)O.[1*]OP(OP(OP(O)(O)=O)(O)=O)(O)=O>>C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.[1*]OP(OP(O)(O)=O)(O)=O",
+      "mod_reaction_smiles": "C1C(C(C(CC=1C(O)=O)O)O)O.[Ad]OP(OP(OP(O)(O)=O)(O)=O)(O)=O>>C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.[Ad]OP(OP(O)(O)=O)(O)=O"
+    },
+    {
+      "id": "r42",
+      "dg_edge_id": 42,
+      "reactants": {
+        "S3p": 1,
+        "Pep": 1
+      },
+      "products": {
+        "Epsp": 1,
+        "Pi": 1
+      },
+      "rules": [
+        "phosphoenolpyruvate + 3-phosphoshikimate = phosphate + 5-3-phosphoshikimate, EC 2.5.1.19"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.C=C(C(O)=O)OP(O)(O)=O>>C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O.O=P(O)(O)O",
+      "mod_reaction_smiles": "C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.C=C(C(O)=O)OP(O)(O)=O>>C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O.O=P(O)(O)O"
+    },
+    {
+      "id": "r43",
+      "dg_edge_id": 43,
+      "reactants": {
+        "Epsp": 1
+      },
+      "products": {
+        "Pi": 1,
+        "Cha": 1
+      },
+      "rules": [
+        "5-enolpyruvylshikimate 3-phosphate = chorismate + phosphate, EC 4.2.3.5"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O>>O=P(O)(O)O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O",
+      "mod_reaction_smiles": "C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O>>O=P(O)(O)O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O"
+    },
+    {
+      "id": "r44",
+      "dg_edge_id": 44,
+      "reactants": {
+        "Cha": 1,
+        "Gln": 1
+      },
+      "products": {
+        "Glu": 1,
+        "Adc": 1
+      },
+      "rules": [
+        "chorismate + L-glutamine = 4-amino-4-deoxychorismate + L-glutamate, EC 4.1.3.38"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O.C(CCC(C(O)=O)N)(N)=O>>C(CCC(C(O)=O)N)(O)=O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N",
+      "mod_reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O.C(CCC(C(O)=O)N)(N)=O>>C(CCC(C(O)=O)N)(O)=O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N"
+    },
+    {
+      "id": "r45",
+      "dg_edge_id": 45,
+      "reactants": {
+        "Adc": 1
+      },
+      "products": {
+        "Pyr": 1,
+        "AmBez": 1
+      },
+      "rules": [
+        "4-amino-4-deoxychorismate = 4-aminobenzoate + Pyruvate, EC 4.1.3.38"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N>>C(C(C)=O)(O)=O.C1:C:C(:C:C:C:1N)C(O)=O",
+      "mod_reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N>>C(C(C)=O)(O)=O.C1:C:C(:C:C:C:1N)C(O)=O"
+    },
+    {
+      "id": "r46",
+      "dg_edge_id": 46,
+      "reactants": {
+        "Nadh": 1,
+        "H_plus": 1,
+        "O2": 1,
+        "AmBez": 1
+      },
+      "products": {
+        "Nad_plus": 1,
+        "CO2": 1,
+        "H2O": 1,
+        "AmPhOH": 1
+      },
+      "rules": [
+        "4-aminobenzoate + NAD(P)H + H+ + O2 = 4-aminophenol + NAD(P)+ + H2O + CO2, EC 1.14.13.27"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][3*].[H+].O=O.C1:C:C(:C:C:C:1N)C(O)=O>>[4*].C(=O)=O.O.C1:C:C(:C:C:C:1O)N",
+      "mod_reaction_smiles": "[H][NAD].[H+].O=O.C1:C:C(:C:C:C:1N)C(O)=O>>[NAD+].C(=O)=O.O.C1:C:C(:C:C:C:1O)N"
+    },
+    {
+      "id": "r47",
+      "dg_edge_id": 47,
+      "reactants": {
+        "AcCoA": 1,
+        "AmPhOH": 1
+      },
+      "products": {
+        "CoA": 1,
+        "Apap": 1
+      },
+      "rules": [
+        "acetyl-CoA + 4-amimophenol = CoA + paracetamol, EC 2.3.1.5"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "C(C)(S[2*])=O.C1:C:C(:C:C:C:1O)N>>[2*]S.C(C)(NC1:C:C:C(:C:C:1)O)=O",
+      "mod_reaction_smiles": "C(C)(S[CoA])=O.C1:C:C(:C:C:C:1O)N>>[CoA]S.C(C)(NC1:C:C:C(:C:C:1)O)=O"
+    },
+    {
+      "id": "r48",
+      "dg_edge_id": 48,
+      "reactants": {
+        "Cha": 1
+      },
+      "products": {
+        "Iso": 1
+      },
+      "rules": [
+        "Chorismate = Isochorismate, EC 5.4.4.2"
+      ],
+      "rule_ids": [
+        9
+      ],
+      "reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O>>C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O",
+      "mod_reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O>>C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O"
+    },
+    {
+      "id": "r49",
+      "dg_edge_id": 49,
+      "reactants": {
+        "Iso": 1
+      },
+      "products": {
+        "Pyr": 1,
+        "Sal": 1
+      },
+      "rules": [
+        "isochorismate = salicylate + pyruvate, EC 4.2.99.21"
+      ],
+      "rule_ids": [
+        10
+      ],
+      "reaction_smiles": "C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O>>C(C(C)=O)(O)=O.C1:C:C:C(:C(:C:1)O)C(O)=O",
+      "mod_reaction_smiles": "C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O>>C(C(C)=O)(O)=O.C1:C:C:C(:C(:C:1)O)C(O)=O"
+    },
+    {
+      "id": "r50",
+      "dg_edge_id": 50,
+      "reactants": {
+        "Cha": 1
+      },
+      "products": {
+        "Ppa": 1
+      },
+      "rules": [
+        "Chorismate = Prephenic acid, EC.5.4.99.5"
+      ],
+      "rule_ids": [
+        11
+      ],
+      "reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O>>C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O",
+      "mod_reaction_smiles": "C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O>>C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O"
+    },
+    {
+      "id": "r51",
+      "dg_edge_id": 51,
+      "reactants": {
+        "Nad_plus": 1,
+        "Ppa": 1
+      },
+      "products": {
+        "Nadh": 1,
+        "H_plus": 1,
+        "CO2": 1,
+        "Hpp": 1
+      },
+      "rules": [
+        "prephenate + NAD+ = 4-hydroxyphenylpyruvate + CO2 + NADH, EC 1.3.1.12"
+      ],
+      "rule_ids": [
+        12
+      ],
+      "reaction_smiles": "[4*].C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O>>[H][3*].[H+].C(=O)=O.C1:C:C(:C:C:C:1O)CC(C(O)=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O>>[H][NAD].[H+].C(=O)=O.C1:C:C(:C:C:C:1O)CC(C(O)=O)=O"
+    },
+    {
+      "id": "r52",
+      "dg_edge_id": 52,
+      "reactants": {
+        "Hpp": 1,
+        "HTD": 1
+      },
+      "products": {
+        "Imz": 1,
+        "Tyr": 1
+      },
+      "rules": [
+        "L-histidinol phosphate + 4-hydroxyphenylpyruvate = 3-(imidazol-4-yl)-2-oxopropyl phosphate + L-tyrosine, EC 2.6.1.9"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C1:C:C(:C:C:C:1O)CC(C(O)=O)=O.C1NC(CC(COP(O)(O)=O)N)=CN=1>>C1NC(CC(COP(O)(O)=O)=O)=CN=1.C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O",
+      "mod_reaction_smiles": "C1:C:C(:C:C:C:1O)CC(C(O)=O)=O.C1NC(CC(COP(O)(O)=O)N)=CN=1>>C1NC(CC(COP(O)(O)=O)=O)=CN=1.C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O"
+    },
+    {
+      "id": "r53",
+      "dg_edge_id": 53,
+      "reactants": {
+        "Dhs": 1
+      },
+      "products": {
+        "H2O": 1,
+        "Pca": 1
+      },
+      "rules": [
+        "3-dehydroshikimate = Protocatechuate + H2O, EC 4.2.1.118"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "C(C1CC(C(C(C=1)=O)O)O)(O)=O>>O.C1:C:C(:C:C(:C:1O)O)C(O)=O",
+      "mod_reaction_smiles": "C(C1CC(C(C(C=1)=O)O)O)(O)=O>>O.C1:C:C(:C:C(:C:1O)O)C(O)=O"
+    },
+    {
+      "id": "r54",
+      "dg_edge_id": 54,
+      "reactants": {
+        "Sam": 1,
+        "Pca": 1
+      },
+      "products": {
+        "Sah": 1,
+        "Va": 1
+      },
+      "rules": [
+        "Protocatechuate + SAM = Vanillate +SAH, EC 2.1.1.6"
+      ],
+      "rule_ids": [
+        15
+      ],
+      "reaction_smiles": "C[5*].C1:C:C(:C:C(:C:1O)O)C(O)=O>>[H][5*].C1(:C:C(:C:C:C:1O)C(O)=O)OC",
+      "mod_reaction_smiles": "C[SA].C1:C:C(:C:C(:C:1O)O)C(O)=O>>[H][SA].C1(:C:C(:C:C:C:1O)C(O)=O)OC"
+    },
+    {
+      "id": "r55",
+      "dg_edge_id": 55,
+      "reactants": {
+        "Adp": 2
+      },
+      "products": {
+        "Atp": 1,
+        "Amp": 1
+      },
+      "rules": [
+        "AdK-catalysed ATP Regeneration"
+      ],
+      "rule_ids": [
+        16
+      ],
+      "reaction_smiles": "[1*]OP(OP(O)(O)=O)(O)=O.[1*]OP(OP(O)(O)=O)(O)=O>>[1*]OP(OP(OP(O)(O)=O)(O)=O)(O)=O.[1*]OP(O)(O)=O",
+      "mod_reaction_smiles": "[Ad]OP(OP(O)(O)=O)(O)=O.[Ad]OP(OP(O)(O)=O)(O)=O>>[Ad]OP(OP(OP(O)(O)=O)(O)=O)(O)=O.[Ad]OP(O)(O)=O"
+    },
+    {
+      "id": "r56",
+      "dg_edge_id": 56,
+      "reactants": {
+        "Deoxy": 1
+      },
+      "products": {
+        "Dhq": 1,
+        "Pi": 1
+      },
+      "rules": [
+        "3-deoxy-D-arabino-hept-2-ulosonate 7-phosphate = 3-dehydroquinate + phosphate, EC 4.2.3.4"
+      ],
+      "rule_ids": [
+        17
+      ],
+      "reaction_smiles": "C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O>>C(C1(CC(C(C(C1)=O)O)O)O)(O)=O.O=P(O)(O)O",
+      "mod_reaction_smiles": "C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O>>C(C1(CC(C(C(C1)=O)O)O)O)(O)=O.O=P(O)(O)O"
+    },
+    {
+      "id": "r57",
+      "dg_edge_id": 57,
+      "reactants": {
+        "Pep": 1,
+        "E4p": 1,
+        "H2O": 1
+      },
+      "products": {
+        "Deoxy": 1,
+        "Pi": 1
+      },
+      "rules": [
+        "phosphoenolpyruvate + D-erythrose 4-phosphate + H2O = 3-deoxy-D-arabino-hept-2-ulosonate 7-phosphate + phosphate, EC 2.5.1.54"
+      ],
+      "rule_ids": [
+        18
+      ],
+      "reaction_smiles": "C=C(C(O)=O)OP(O)(O)=O.C(C(C(COP(O)(O)=O)O)O)=O.O>>C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O.O=P(O)(O)O",
+      "mod_reaction_smiles": "C=C(C(O)=O)OP(O)(O)=O.C(C(C(COP(O)(O)=O)O)O)=O.O>>C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O.O=P(O)(O)O"
+    }
+  ],
+  "provenance": {
+    "mod_version": "1.0.1.100",
+    "expansion_rounds": null,
+    "carbon_groups": {
+      "Ad": {
+        "carbon": 10,
+        "meaning": "adenosyl group in ATP/ADP/AMP",
+        "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16335"
+      },
+      "NAD": {
+        "carbon": 21,
+        "meaning": "NAD(H) backbone",
+        "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16908"
+      },
+      "NAD+": {
+        "carbon": 21,
+        "meaning": "oxidized NAD backbone",
+        "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16908"
+      },
+      "CoA": {
+        "carbon": 21,
+        "meaning": "CoA carrier; explicit acetyl carbon is counted separately",
+        "reference": "https://www.ebi.ac.uk/chebi/CHEBI:15346"
+      },
+      "SA": {
+        "carbon": 14,
+        "meaning": "S-adenosylhomocysteine backbone; the SAM methyl carbon is explicit",
+        "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16680"
+      }
+    },
+    "source_files": {
+      "9MAC03.jl": "fc8a5c26db21c50346c916593ed5d0e4fb2f0b967baf9d24c5497b7676f9adc9",
+      "Mod/Rules/ATP_regen.gml": "38c1cc996adbcafe973e0c03b61b792c33b7b9aa98ed0c826812b267128b73de",
+      "Mod/Rules/rules_12.gml": "6c9503ef4b1c6ea7975a6983adab88bbc8a71d8f3a4f38011c0d3b4b306cd34f",
+      "Mod/Rules/rules_46.gml": "5818532809b550aae5f6b2f85ac8b3a203cbb48e6813ffbe85f54a1b8687b596",
+      "Mod/Rules/rules_50.gml": "324683da9928c3f1c11f9811f4422ce71c57abb4fb1caeea35176e5d19c97193",
+      "Mod/Rules/rules_51.gml": "5668f17ebf5890a387e6fee5380e0ce8bb59159589a4450999f7099c64d7d994",
+      "Mod/Rules/rules_52.gml": "cfc81ef4332184fb15a4636e1b171219500c2e3226b0492f5c7284e2061dd5b5",
+      "Mod/Rules/rules_54.gml": "5e30ba2f21c9e205c6b253c6f772fb16870c964714f129d822339cb946fbdf32",
+      "Mod/Rules/rules_55.gml": "553b40f7bd0b3b3b229358faf3e52f4e1f1b5afb9d8eb349aee17838a01269e4",
+      "Mod/Rules/rules_56.gml": "4230cb8adf558b291f09a1b57aa6318a27b4a845229dc0c2c7ca25f3437a1d1d",
+      "Mod/Rules/rules_6.gml": "e7592b73c075c0b42a5d275ff1ef3527d42faa68ee52236db9e31a617ea70744",
+      "Mod/Rules/rules_60.gml": "1f9fba9e8a6f8dc7af371d7d9bd03f0e4d4c7aee76551fcd064febde3cf9ae6e",
+      "Mod/Rules/rules_61.gml": "773ee15eebcaaadec346be18cf90d82dcc7f795335e971cd43becfe65c680312",
+      "Mod/Rules/rules_62.gml": "c872927896f9b1904bc16daafd0a047698a5ee27e3a8fdfa035022d4d9dbfbae",
+      "Mod/Rules/rules_63.gml": "ab1cc6b3c2c5a68bde181a6e95c3b9deb4e7d1e6bce4d660219aabee1ae90915",
+      "Mod/Rules/rules_64.gml": "759d16a23d6b9356eee384d76a74e948153657207c4b13af06beb97612631162",
+      "Mod/Rules/rules_67.gml": "5b9ec05a518b0c76a9313855f267c098bf4263872b411c54a548040741e71490",
+      "Mod/Rules/rules_68.gml": "1d600e161695b853a380e3fe54a86f1d383e903aefdf204227b5d2de1665d2f3",
+      "Mod/Rules/rules_70.gml": "9854e23d57758e92a87fea948ba5f47fb4311f794d666c6edc543a9ef0db22a0",
+      "Mod/Rules/rules_71.gml": "f1b46e9a455457ef963be828b0a5b1e376f5d92910868142ca197759bf1f3453",
+      "Mod/common.py": "0abccdcd98e1658d2409c00339aefd6b5cdf7eadbe33fde83bb9f4bcfe2ea6cf",
+      "Mod/dg.py": "59a9753d97fd673674626e7335d8e4973f1463c7a04987df496ca5fba999f29f",
+      "Mod/mols.py": "5e1dedb1064bd79db3da0f3db6d0988451362a1ac3883c698220eb2c835f4bf9",
+      "Mod/rules.py": "5e9b5e6d272102dd6225533c7da9e8c8734dcf0b317cb41270ac08d9d66bcc95",
+      "kineticlaws.jl": "dd8c3803d81f4b4950d838fe6cdcc34c85676fbbd67d7d5171c7932fb24661a8"
+    },
+    "native_dg_sha256": "ffb6c3765656cb998c982a00451b5cc5f485973cd059a1b50919769ea7021e18"
+  }
+}

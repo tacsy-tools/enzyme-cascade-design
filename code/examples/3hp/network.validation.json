@@ -1,0 +1,425 @@
+{
+  "species": 83,
+  "reactions": 248,
+  "sbml_level": 3,
+  "sbml_version": 2,
+  "errors": 0,
+  "diagnostics": [
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's0' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's1' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's2' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's3' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's4' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's5' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's6' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's7' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's8' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's9' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's10' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's11' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's12' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's13' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's14' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's15' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's16' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's17' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's19' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's26' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's28' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's30' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's32' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's34' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's38' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's40' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's42' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's44' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's48' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's51' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's55' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's59' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's61' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's69' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's81' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's89' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's91' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's93' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's95' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's97' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's99' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's108' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's111' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's113' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's126' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's130' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's132' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's134' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's137' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's139' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's141' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's148' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's150' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's153' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's155' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's157' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's171' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's177' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's186' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's188' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's190' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's192' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's194' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's196' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's202' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's204' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's220' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's222' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's235' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's237' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's259' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's274' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's276' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's278' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's280' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's288' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's292' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's299' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's301' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's311' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's313' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's316' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    },
+    {
+      "severity": "Warning",
+      "id": 80601,
+      "message": "As a principle of best modeling practice, the <species> should set an initial value (amount or concentration) rather than be left undefined. Doing so improves the portability of models between different simulation and analysis systems, and helps make it easier to detect potential errors in models.\n The <species> with the id 's318' does not have an 'initialConcentration' or 'initialAmount' attribute, nor is its initial value set by an <initialAssignment> or <assignmentRule>."
+    }
+  ],
+  "libsbml_version": "5.21.1"
+}

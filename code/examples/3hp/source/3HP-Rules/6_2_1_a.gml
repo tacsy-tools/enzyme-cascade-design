@@ -1,0 +1,46 @@
+rule [
+	ruleID "6.2.1.a R03932"
+	labelType "term"
+	left [
+		edge [ source 1 target 2 label "-" ]
+		edge [ source 5 target 14 label "-" ]
+		edge [ source 6 target 8 label "-" ]
+	]
+	context [
+		node [ id 0 label "_A" ]
+		node [ id 1 label "C" ]
+		node [ id 2 label "O" ]
+		node [ id 3 label "O" ]
+		node [ id 4 label "H" ]
+		node [ id 5 label "S" ]
+		node [ id 6 label "ADP" ]
+		node [ id 7 label "P" ]
+		node [ id 8 label "O" ]
+		node [ id 9 label "O" ]
+		node [ id 10 label "O" ]
+		node [ id 11 label "O" ]
+		node [ id 12 label "H" ]
+		node [ id 13 label "H" ]
+		node [ id 14 label "H" ]
+		node [ id 15 label "CoA" ]
+		edge [ source 0 target 1 label "-" ]
+		edge [ source 1 target 3 label "=" ]
+		edge [ source 2 target 4 label "-" ]
+		edge [ source 5 target 15 label "-" ]
+		edge [ source 7 target 8 label "-" ]
+		edge [ source 7 target 9 label "-" ]
+		edge [ source 7 target 10 label "-" ]
+		edge [ source 7 target 11 label "=" ]
+		edge [ source 9 target 12 label "-" ]
+		edge [ source 10 target 13 label "-" ]
+	]
+	right [
+		edge [ source 1 target 5 label "-" ]
+		edge [ source 2 target 6 label "-" ]
+		edge [ source 8 target 14 label "-" ]
+	]
+        constrainLabelAny [
+                label "_A"
+                labels [ label "C" label "H" label "N" label "O" label "S" ]
+        ]
+]

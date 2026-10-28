@@ -1,0 +1,28 @@
+{
+  "model_sha256": "56c4a1e61e04f712d4ec0649d4e0ff624f5bbe3e84ba4cf044ae9249b3da6df9",
+  "products": [
+    "P"
+  ],
+  "cases": [
+    {
+      "case": "baseline",
+      "factors": {}
+    }
+  ],
+  "conserved_pools": [
+    [
+      "S",
+      "P"
+    ]
+  ],
+  "time": {
+    "span": [
+      0.0,
+      2.0
+    ],
+    "save_points": 21
+  },
+  "fixed": "Initial pools, unselected enzyme amounts, rate laws and all other constants",
+  "units": "Unconfirmed",
+  "interpretation": "Finite perturbations; not global optimality or calibrated experimental predictions"
+}

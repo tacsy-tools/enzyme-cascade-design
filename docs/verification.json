@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "date": "2026-10-28",
+  "unit_tests": 8,
+  "nine_mec_cases_recomputed": 50,
+  "maximum_absolute_product_difference": 0.0,
+  "maximum_relative_product_difference": 0.0,
+  "native_MM_maximum_equation_residual": 9.39350819351148e-11,
+  "rebuilds": {
+    "3hp": {
+      "species": 83,
+      "reactions": 248
+    },
+    "9mec": {
+      "species": 39,
+      "reactions": 19
+    }
+  },
+  "source_model_checks": [
+    "PASS: 49 independent derivative probes; max error=5.684341886080802e-14",
+    "PASS: original/generated trajectory; max error=3.197442310920451e-14"
+  ],
+  "python_311_syntax_checked": true,
+  "pathway_records_viewed": 14,
+  "fresh_clone_design_cases": 2,
+  "fresh_clone_product_difference": 0.0
+}

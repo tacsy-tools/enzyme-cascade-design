@@ -1,0 +1,6 @@
+case,status,maximum_relative_endpoint_difference,minimum_sampled_concentration,reltol,abstol
+baseline,Success,4.7810308334330364e-8,-2.5e-323,1.0e-11,1.0e-16
+ODO_0.2x_SDH_5x,Success,5.867399835662124e-8,-1.0e-323,1.0e-11,1.0e-16
+four_branchpoints,Success,8.368105445987754e-9,-1.0e-323,1.0e-11,1.0e-16
+four_enzyme_grid_candidate,Success,1.575764447199559e-8,-5.0e-323,1.0e-11,1.0e-16
+OMT_0.05x_followup,Success,3.154743049295551e-8,-1.83e-322,1.0e-11,1.0e-16

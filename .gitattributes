@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.jl text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.csv text eol=lf
+*.md text eol=lf
+*.dg binary
+# Reference model/rule inputs retain their original bytes for provenance checks.
+code/examples/*/source/** -whitespace

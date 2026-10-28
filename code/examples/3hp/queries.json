@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pyr1-3hp1",
+    "sources": {
+      "PYR": 1
+    },
+    "targets": {
+      "3HP": 1
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr1-3hp2",
+    "sources": {
+      "PYR": 1
+    },
+    "targets": {
+      "3HP": 2
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr1-3hp3",
+    "sources": {
+      "PYR": 1
+    },
+    "targets": {
+      "3HP": 3
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr2-3hp1",
+    "sources": {
+      "PYR": 2
+    },
+    "targets": {
+      "3HP": 1
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr2-3hp2",
+    "sources": {
+      "PYR": 2
+    },
+    "targets": {
+      "3HP": 2
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr2-3hp3",
+    "sources": {
+      "PYR": 2
+    },
+    "targets": {
+      "3HP": 3
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr3-3hp1",
+    "sources": {
+      "PYR": 3
+    },
+    "targets": {
+      "3HP": 1
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr3-3hp2",
+    "sources": {
+      "PYR": 3
+    },
+    "targets": {
+      "3HP": 2
+    },
+    "allowed_inputs": null
+  },
+  {
+    "name": "pyr3-3hp3",
+    "sources": {
+      "PYR": 3
+    },
+    "targets": {
+      "3HP": 3
+    },
+    "allowed_inputs": null
+  }
+]

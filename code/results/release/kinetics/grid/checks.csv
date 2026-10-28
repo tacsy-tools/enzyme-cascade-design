@@ -1,0 +1,7 @@
+case,status,maximum_relative_endpoint_difference,minimum_sampled_concentration,reltol,abstol
+baseline,Success,4.7810308334330364e-8,-2.5e-323,1.0e-11,1.0e-16
+ODO_1x__SDH_5x,Success,4.724292185752115e-8,-2.0e-323,1.0e-11,1.0e-16
+ODO_0.5x__SDH_1x,Success,5.3618852812973644e-8,-1.0e-323,1.0e-11,1.0e-16
+ODO_0.5x__SDH_5x,Success,5.4623731320252275e-8,-1.0e-323,1.0e-11,1.0e-16
+ODO_0.2x__SDH_1x,Success,5.9481455940905795e-8,-1.5e-323,1.0e-11,1.0e-16
+ODO_0.2x__SDH_5x,Success,5.867399835662124e-8,-1.0e-323,1.0e-11,1.0e-16

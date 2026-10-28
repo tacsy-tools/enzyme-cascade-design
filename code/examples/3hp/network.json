@@ -1,0 +1,6176 @@
+{
+  "schema": "tacsy-design-network-v1",
+  "name": "3hp",
+  "species": {
+    "Glu": {
+      "id": "s0",
+      "dg_vertex_id": 0,
+      "name": "Glu",
+      "smiles": "[3*]([H])N",
+      "mod_smiles": "[Glu]([H])N",
+      "graph_dfs": "[Glu]([N]([H])[H])[H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "Glu"
+      ],
+      "carbon": 5
+    },
+    "2OG": {
+      "id": "s1",
+      "dg_vertex_id": 1,
+      "name": "2OG",
+      "smiles": "[3*]=O",
+      "mod_smiles": "[Glu]=O",
+      "graph_dfs": "[Glu]=[O]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "Glu"
+      ],
+      "carbon": 5
+    },
+    "NAD+": {
+      "id": "s2",
+      "dg_vertex_id": 2,
+      "name": "NAD+",
+      "smiles": "[5*]",
+      "mod_smiles": "[NAD+]",
+      "graph_dfs": "[NAD+]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "NAD+"
+      ],
+      "carbon": 21
+    },
+    "NADH": {
+      "id": "s3",
+      "dg_vertex_id": 3,
+      "name": "NADH",
+      "smiles": "[H][4*]",
+      "mod_smiles": "[H][NAD]",
+      "graph_dfs": "[NAD][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "NAD"
+      ],
+      "carbon": 21
+    },
+    "CoA": {
+      "id": "s4",
+      "dg_vertex_id": 4,
+      "name": "CoA",
+      "smiles": "[2*]S",
+      "mod_smiles": "[CoA]S",
+      "graph_dfs": "[CoA][S][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 21
+    },
+    "CO2": {
+      "id": "s5",
+      "dg_vertex_id": 5,
+      "name": "CO2",
+      "smiles": "C(=O)=O",
+      "mod_smiles": "C(=O)=O",
+      "graph_dfs": "[O]=[C]=[O]",
+      "explicit_carbon_atoms": 1,
+      "abstract_labels": [],
+      "carbon": 1
+    },
+    "H2O": {
+      "id": "s6",
+      "dg_vertex_id": 6,
+      "name": "H2O",
+      "smiles": "O",
+      "mod_smiles": "O",
+      "graph_dfs": "[O]([H])[H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "NH3": {
+      "id": "s7",
+      "dg_vertex_id": 7,
+      "name": "NH3",
+      "smiles": "N",
+      "mod_smiles": "N",
+      "graph_dfs": "[N]([H])([H])[H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "ATP": {
+      "id": "s8",
+      "dg_vertex_id": 8,
+      "name": "ATP",
+      "smiles": "[1*]OP(O)(O)=O",
+      "mod_smiles": "[ADP]OP(O)(O)=O",
+      "graph_dfs": "[ADP][O][P](=[O])([O][H])[O][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "ADP"
+      ],
+      "carbon": 10
+    },
+    "ADP": {
+      "id": "s9",
+      "dg_vertex_id": 9,
+      "name": "ADP",
+      "smiles": "[1*]O",
+      "mod_smiles": "[ADP]O",
+      "graph_dfs": "[ADP][O][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [
+        "ADP"
+      ],
+      "carbon": 10
+    },
+    "Pi": {
+      "id": "s10",
+      "dg_vertex_id": 10,
+      "name": "Pi",
+      "smiles": "O=P(O)(O)O",
+      "mod_smiles": "O=P(O)(O)O",
+      "graph_dfs": "[O]=[P]([O][H])([O][H])[O][H]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "H+": {
+      "id": "s11",
+      "dg_vertex_id": 11,
+      "name": "H+",
+      "smiles": "[H+]",
+      "mod_smiles": "[H+]",
+      "graph_dfs": "[H+]",
+      "explicit_carbon_atoms": 0,
+      "abstract_labels": [],
+      "carbon": 0
+    },
+    "PYR": {
+      "id": "s12",
+      "dg_vertex_id": 12,
+      "name": "PYR",
+      "smiles": "C(C(C)=O)(O)=O",
+      "mod_smiles": "C(C(C)=O)(O)=O",
+      "graph_dfs": "[C]([C](=[O])[C](=[O])[O][H])([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "3HP": {
+      "id": "s13",
+      "dg_vertex_id": 13,
+      "name": "3HP",
+      "smiles": "C(CCO)(O)=O",
+      "mod_smiles": "C(CCO)(O)=O",
+      "graph_dfs": "[O]([C]([C]([C](=[O])[O][H])([H])[H])([H])[H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "ALA": {
+      "id": "s14",
+      "dg_vertex_id": 14,
+      "name": "ALA",
+      "smiles": "C(C(C)N)(O)=O",
+      "mod_smiles": "C(C(C)N)(O)=O",
+      "graph_dfs": "[C]([C]([N]([H])[H])([C](=[O])[O][H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "PROP": {
+      "id": "s15",
+      "dg_vertex_id": 15,
+      "name": "PROP",
+      "smiles": "C=CC(O)=O",
+      "mod_smiles": "C=CC(O)=O",
+      "graph_dfs": "[C](=[C]([C](=[O])[O][H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "ACRCoA": {
+      "id": "s16",
+      "dg_vertex_id": 16,
+      "name": "ACRCoA",
+      "smiles": "C=CC(S[2*])=O",
+      "mod_smiles": "C=CC(S[CoA])=O",
+      "graph_dfs": "[C](=[C]([C](=[O])[S][CoA])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,0}": {
+      "id": "s17",
+      "dg_vertex_id": 17,
+      "name": "p_{0,0}",
+      "smiles": "C(CC(O)=O)=O",
+      "mod_smiles": "C(CC(O)=O)=O",
+      "graph_dfs": "[O]=[C]([C]([C](=[O])[O][H])([H])[H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,1}": {
+      "id": "s19",
+      "dg_vertex_id": 19,
+      "name": "p_{0,1}",
+      "smiles": "C(C(C)O)(O)=O",
+      "mod_smiles": "C(C(C)O)(O)=O",
+      "graph_dfs": "[C]([H])([H])([H])[C]([O][H])([H])[C](=[O])[O][H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,2}": {
+      "id": "s26",
+      "dg_vertex_id": 26,
+      "name": "p_{0,2}",
+      "smiles": "C=CC=O",
+      "mod_smiles": "C=CC=O",
+      "graph_dfs": "[C](=[C]([H])[C](=[O])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,3}": {
+      "id": "s28",
+      "dg_vertex_id": 28,
+      "name": "p_{0,3}",
+      "smiles": "C(C)=O",
+      "mod_smiles": "C(C)=O",
+      "graph_dfs": "[C]([H])([H])([H])[C](=[O])[H]",
+      "explicit_carbon_atoms": 2,
+      "abstract_labels": [],
+      "carbon": 2
+    },
+    "p_{0,4}": {
+      "id": "s30",
+      "dg_vertex_id": 30,
+      "name": "p_{0,4}",
+      "smiles": "CCN",
+      "mod_smiles": "CCN",
+      "graph_dfs": "[C]([H])([H])([H])[C]([N]([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 2,
+      "abstract_labels": [],
+      "carbon": 2
+    },
+    "p_{0,5}": {
+      "id": "s32",
+      "dg_vertex_id": 32,
+      "name": "p_{0,5}",
+      "smiles": "C=C",
+      "mod_smiles": "C=C",
+      "graph_dfs": "[C](=[C]([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 2,
+      "abstract_labels": [],
+      "carbon": 2
+    },
+    "p_{0,6}": {
+      "id": "s34",
+      "dg_vertex_id": 34,
+      "name": "p_{0,6}",
+      "smiles": "C(C)(S[2*])=O",
+      "mod_smiles": "C(C)(S[CoA])=O",
+      "graph_dfs": "[C]([H])([H])([H])[C](=[O])[S][CoA]",
+      "explicit_carbon_atoms": 2,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 23
+    },
+    "p_{0,7}": {
+      "id": "s38",
+      "dg_vertex_id": 38,
+      "name": "p_{0,7}",
+      "smiles": "C(CCO)(S[2*])=O",
+      "mod_smiles": "C(CCO)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C]([S][CoA])=[O])([H])[H])([H])([H])[O][H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,8}": {
+      "id": "s40",
+      "dg_vertex_id": 40,
+      "name": "p_{0,8}",
+      "smiles": "C(C(C)O)(S[2*])=O",
+      "mod_smiles": "C(C(C)O)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C]([S][CoA])=[O])([O][H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,9}": {
+      "id": "s42",
+      "dg_vertex_id": 42,
+      "name": "p_{0,9}",
+      "smiles": "C(CCN)(O)=O",
+      "mod_smiles": "C(CCN)(O)=O",
+      "graph_dfs": "[C]([C]([C](=[O])[O][H])([H])[H])([N]([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,10}": {
+      "id": "s44",
+      "dg_vertex_id": 44,
+      "name": "p_{0,10}",
+      "smiles": "C(CCN)(S[2*])=O",
+      "mod_smiles": "C(CCN)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C](=[O])[S][CoA])([H])[H])([N]([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,11}": {
+      "id": "s48",
+      "dg_vertex_id": 48,
+      "name": "p_{0,11}",
+      "smiles": "C(C(C)=O)(S[2*])=O",
+      "mod_smiles": "C(C(C)=O)(S[CoA])=O",
+      "graph_dfs": "[C]([C](=[O])[C](=[O])[S][CoA])([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,12}": {
+      "id": "s51",
+      "dg_vertex_id": 51,
+      "name": "p_{0,12}",
+      "smiles": "C(C(C)N)(S[2*])=O",
+      "mod_smiles": "C(C(C)N)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([N]([H])[H])([H])[C](=[O])[S][CoA])([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,13}": {
+      "id": "s55",
+      "dg_vertex_id": 55,
+      "name": "p_{0,13}",
+      "smiles": "C(CC(S[2*])=O)=O",
+      "mod_smiles": "C(CC(S[CoA])=O)=O",
+      "graph_dfs": "[C](=[O])([C]([C]([S][CoA])=[O])([H])[H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,14}": {
+      "id": "s59",
+      "dg_vertex_id": 59,
+      "name": "p_{0,14}",
+      "smiles": "C=CCO",
+      "mod_smiles": "C=CCO",
+      "graph_dfs": "[H][O][C]([H])([C](=[C]([H])[H])[H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,15}": {
+      "id": "s61",
+      "dg_vertex_id": 61,
+      "name": "p_{0,15}",
+      "smiles": "CCO",
+      "mod_smiles": "CCO",
+      "graph_dfs": "[H][O][C]([H])([C]([H])([H])[H])[H]",
+      "explicit_carbon_atoms": 2,
+      "abstract_labels": [],
+      "carbon": 2
+    },
+    "p_{0,16}": {
+      "id": "s69",
+      "dg_vertex_id": 69,
+      "name": "p_{0,16}",
+      "smiles": "C=CCN",
+      "mod_smiles": "C=CCN",
+      "graph_dfs": "[N]([C]([C](=[C]([H])[H])[H])([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,17}": {
+      "id": "s81",
+      "dg_vertex_id": 81,
+      "name": "p_{0,17}",
+      "smiles": "C(C)(O)=O",
+      "mod_smiles": "C(C)(O)=O",
+      "graph_dfs": "[O]([C]([C]([H])([H])[H])=[O])[H]",
+      "explicit_carbon_atoms": 2,
+      "abstract_labels": [],
+      "carbon": 2
+    },
+    "p_{0,18}": {
+      "id": "s89",
+      "dg_vertex_id": 89,
+      "name": "p_{0,18}",
+      "smiles": "C(CCO)=O",
+      "mod_smiles": "C(CCO)=O",
+      "graph_dfs": "[H][C]([C]([H])([H])[C]([H])([H])[O][H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,19}": {
+      "id": "s91",
+      "dg_vertex_id": 91,
+      "name": "p_{0,19}",
+      "smiles": "C(C(C)O)=O",
+      "mod_smiles": "C(C(C)O)=O",
+      "graph_dfs": "[H][C]([C]([O][H])([H])[C]([H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,20}": {
+      "id": "s93",
+      "dg_vertex_id": 93,
+      "name": "p_{0,20}",
+      "smiles": "C(CCN)=O",
+      "mod_smiles": "C(CCN)=O",
+      "graph_dfs": "[H][C]([C]([C]([N]([H])[H])([H])[H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,21}": {
+      "id": "s95",
+      "dg_vertex_id": 95,
+      "name": "p_{0,21}",
+      "smiles": "C(C(C)=O)=O",
+      "mod_smiles": "C(C(C)=O)=O",
+      "graph_dfs": "[H][C]([C](=[O])[C]([H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,22}": {
+      "id": "s97",
+      "dg_vertex_id": 97,
+      "name": "p_{0,22}",
+      "smiles": "C(C(C)N)=O",
+      "mod_smiles": "C(C(C)N)=O",
+      "graph_dfs": "[H][C]([C]([N]([H])[H])([C]([H])([H])[H])[H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,23}": {
+      "id": "s99",
+      "dg_vertex_id": 99,
+      "name": "p_{0,23}",
+      "smiles": "C(CC(O)=O)(S[2*])=O",
+      "mod_smiles": "C(CC(O)=O)(S[CoA])=O",
+      "graph_dfs": "[CoA][S][C]([C]([C](=[O])[O][H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 24
+    },
+    "p_{0,24}": {
+      "id": "s108",
+      "dg_vertex_id": 108,
+      "name": "p_{0,24}",
+      "smiles": "C(CCNCC)=O",
+      "mod_smiles": "C(CCNCC)=O",
+      "graph_dfs": "[C]([H])([H])([H])[C]([H])([H])[N]([C]([C]([C](=[O])[H])([H])[H])([H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,25}": {
+      "id": "s111",
+      "dg_vertex_id": 111,
+      "name": "p_{0,25}",
+      "smiles": "C(CCNCC)(O)=O",
+      "mod_smiles": "C(CCNCC)(O)=O",
+      "graph_dfs": "[C]([C]([C](=[O])[O][H])([H])[H])([N]([C]([C]([H])([H])[H])([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,26}": {
+      "id": "s113",
+      "dg_vertex_id": 113,
+      "name": "p_{0,26}",
+      "smiles": "C(CCNCC)(S[2*])=O",
+      "mod_smiles": "C(CCNCC)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C](=[O])[S][CoA])([H])[H])([N]([C]([C]([H])([H])[H])([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 26
+    },
+    "p_{0,27}": {
+      "id": "s126",
+      "dg_vertex_id": 126,
+      "name": "p_{0,27}",
+      "smiles": "C(CC=O)=O",
+      "mod_smiles": "C(CC=O)=O",
+      "graph_dfs": "[H][C]([C]([H])([H])[C](=[O])[H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,28}": {
+      "id": "s130",
+      "dg_vertex_id": 130,
+      "name": "p_{0,28}",
+      "smiles": "C(CCO)O",
+      "mod_smiles": "C(CCO)O",
+      "graph_dfs": "[H][O][C]([H])([H])[C]([H])([H])[C]([H])([H])[O][H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,29}": {
+      "id": "s132",
+      "dg_vertex_id": 132,
+      "name": "p_{0,29}",
+      "smiles": "CC(CO)O",
+      "mod_smiles": "CC(CO)O",
+      "graph_dfs": "[H][O][C]([H])([H])[C]([O][H])([H])[C]([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,30}": {
+      "id": "s134",
+      "dg_vertex_id": 134,
+      "name": "p_{0,30}",
+      "smiles": "C(CCN)O",
+      "mod_smiles": "C(CCN)O",
+      "graph_dfs": "[H][O][C]([H])([H])[C]([C]([N]([H])[H])([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,31}": {
+      "id": "s137",
+      "dg_vertex_id": 137,
+      "name": "p_{0,31}",
+      "smiles": "C(C)(CO)=O",
+      "mod_smiles": "C(C)(CO)=O",
+      "graph_dfs": "[H][O][C]([H])([H])[C](=[O])[C]([H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,32}": {
+      "id": "s139",
+      "dg_vertex_id": 139,
+      "name": "p_{0,32}",
+      "smiles": "CC(CO)N",
+      "mod_smiles": "CC(CO)N",
+      "graph_dfs": "[H][O][C]([H])([H])[C]([N]([H])[H])([C]([H])([H])[H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,33}": {
+      "id": "s141",
+      "dg_vertex_id": 141,
+      "name": "p_{0,33}",
+      "smiles": "CCNCCCO",
+      "mod_smiles": "CCNCCCO",
+      "graph_dfs": "[H][O][C]([H])([C]([C]([N]([C]([C]([H])([H])[H])([H])[H])[H])([H])[H])([H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,34}": {
+      "id": "s148",
+      "dg_vertex_id": 148,
+      "name": "p_{0,34}",
+      "smiles": "CC(CN)O",
+      "mod_smiles": "CC(CN)O",
+      "graph_dfs": "[N]([C]([H])([C]([O][H])([H])[C]([H])([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,35}": {
+      "id": "s150",
+      "dg_vertex_id": 150,
+      "name": "p_{0,35}",
+      "smiles": "C(CCN)N",
+      "mod_smiles": "C(CCN)N",
+      "graph_dfs": "[N]([C]([H])([C]([C]([N]([H])[H])([H])[H])([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,36}": {
+      "id": "s153",
+      "dg_vertex_id": 153,
+      "name": "p_{0,36}",
+      "smiles": "C(C)(CN)=O",
+      "mod_smiles": "C(C)(CN)=O",
+      "graph_dfs": "[N]([C]([H])([C](=[O])[C]([H])([H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,37}": {
+      "id": "s155",
+      "dg_vertex_id": 155,
+      "name": "p_{0,37}",
+      "smiles": "CC(CN)N",
+      "mod_smiles": "CC(CN)N",
+      "graph_dfs": "[N]([C]([H])([C]([N]([H])[H])([C]([H])([H])[H])[H])[H])([H])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,38}": {
+      "id": "s157",
+      "dg_vertex_id": 157,
+      "name": "p_{0,38}",
+      "smiles": "C(C)NCCCN",
+      "mod_smiles": "C(C)NCCCN",
+      "graph_dfs": "[N]([C]([C]([C]([N]([C]([C]([H])([H])[H])([H])[H])[H])([H])[H])([H])[H])([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,39}": {
+      "id": "s171",
+      "dg_vertex_id": 171,
+      "name": "p_{0,39}",
+      "smiles": "C(CC(O)=O)(O)=O",
+      "mod_smiles": "C(CC(O)=O)(O)=O",
+      "graph_dfs": "[O]([C]([C]([C](=[O])[O][H])([H])[H])=[O])[H]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [],
+      "carbon": 3
+    },
+    "p_{0,40}": {
+      "id": "s177",
+      "dg_vertex_id": 177,
+      "name": "p_{0,40}",
+      "smiles": "C(CC(S[2*])=O)(S[2*])=O",
+      "mod_smiles": "C(CC(S[CoA])=O)(S[CoA])=O",
+      "graph_dfs": "[CoA][S][C]([C]([C]([S][CoA])=[O])([H])[H])=[O]",
+      "explicit_carbon_atoms": 3,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 45
+    },
+    "p_{0,41}": {
+      "id": "s186",
+      "dg_vertex_id": 186,
+      "name": "p_{0,41}",
+      "smiles": "C(CCOCC)(O)=O",
+      "mod_smiles": "C(CCOCC)(O)=O",
+      "graph_dfs": "[C]([C]([C]([O][H])=[O])([H])[H])([H])([H])[O][C]([H])([C]([H])([H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,42}": {
+      "id": "s188",
+      "dg_vertex_id": 188,
+      "name": "p_{0,42}",
+      "smiles": "C(CCOCC)(S[2*])=O",
+      "mod_smiles": "C(CCOCC)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C]([S][CoA])=[O])([H])[H])([H])([H])[O][C]([H])([C]([H])([H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 26
+    },
+    "p_{0,43}": {
+      "id": "s190",
+      "dg_vertex_id": 190,
+      "name": "p_{0,43}",
+      "smiles": "C(CCOCC)=O",
+      "mod_smiles": "C(CCOCC)=O",
+      "graph_dfs": "[C]([C]([C]([H])=[O])([H])[H])([H])([H])[O][C]([H])([C]([H])([H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,44}": {
+      "id": "s192",
+      "dg_vertex_id": 192,
+      "name": "p_{0,44}",
+      "smiles": "C(C)(OCCC(O)=O)=O",
+      "mod_smiles": "C(C)(OCCC(O)=O)=O",
+      "graph_dfs": "[C]([C]([C]([O][H])=[O])([H])[H])([H])([H])[O][C]([C]([H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,45}": {
+      "id": "s194",
+      "dg_vertex_id": 194,
+      "name": "p_{0,45}",
+      "smiles": "C(CCOC(C)=O)(S[2*])=O",
+      "mod_smiles": "C(CCOC(C)=O)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C]([S][CoA])=[O])([H])[H])([H])([H])[O][C]([C]([H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 26
+    },
+    "p_{0,46}": {
+      "id": "s196",
+      "dg_vertex_id": 196,
+      "name": "p_{0,46}",
+      "smiles": "C(CCOC(C)=O)=O",
+      "mod_smiles": "C(CCOC(C)=O)=O",
+      "graph_dfs": "[C]([C]([C]([H])=[O])([H])[H])([H])([H])[O][C]([C]([H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,47}": {
+      "id": "s202",
+      "dg_vertex_id": 202,
+      "name": "p_{0,47}",
+      "smiles": "C(C(C)NCC)(O)=O",
+      "mod_smiles": "C(C(C)NCC)(O)=O",
+      "graph_dfs": "[C]([C]([C]([O][H])=[O])([H])[N]([C]([C]([H])([H])[H])([H])[H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,48}": {
+      "id": "s204",
+      "dg_vertex_id": 204,
+      "name": "p_{0,48}",
+      "smiles": "C(C(C)NCC)(S[2*])=O",
+      "mod_smiles": "C(C(C)NCC)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C]([S][CoA])=[O])([H])[N]([C]([C]([H])([H])[H])([H])[H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 26
+    },
+    "p_{0,49}": {
+      "id": "s220",
+      "dg_vertex_id": 220,
+      "name": "p_{0,49}",
+      "smiles": "C(C)OCCCO",
+      "mod_smiles": "C(C)OCCCO",
+      "graph_dfs": "[H][C]([O][H])([C]([H])([H])[C]([H])([H])[O][C]([H])([C]([H])([H])[H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,50}": {
+      "id": "s222",
+      "dg_vertex_id": 222,
+      "name": "p_{0,50}",
+      "smiles": "C(C)(OCCCO)=O",
+      "mod_smiles": "C(C)(OCCCO)=O",
+      "graph_dfs": "[H][C]([O][H])([C]([H])([H])[C]([H])([H])[O][C]([C]([H])([H])[H])=[O])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,51}": {
+      "id": "s235",
+      "dg_vertex_id": 235,
+      "name": "p_{0,51}",
+      "smiles": "CCOCCCN",
+      "mod_smiles": "CCOCCCN",
+      "graph_dfs": "[N]([C]([C]([H])([H])[C]([H])([H])[O][C]([H])([C]([H])([H])[H])[H])([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,52}": {
+      "id": "s237",
+      "dg_vertex_id": 237,
+      "name": "p_{0,52}",
+      "smiles": "C(C)(OCCCN)=O",
+      "mod_smiles": "C(C)(OCCCN)=O",
+      "graph_dfs": "[N]([C]([C]([H])([H])[C]([H])([H])[O][C]([C]([H])([H])[H])=[O])([H])[H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,53}": {
+      "id": "s259",
+      "dg_vertex_id": 259,
+      "name": "p_{0,53}",
+      "smiles": "C(C(C)NCC)=O",
+      "mod_smiles": "C(C(C)NCC)=O",
+      "graph_dfs": "[H][C]([C]([C]([H])([H])[H])([H])[N]([C]([C]([H])([H])[H])([H])[H])[H])=[O]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,54}": {
+      "id": "s274",
+      "dg_vertex_id": 274,
+      "name": "p_{0,54}",
+      "smiles": "C(C(C)OCC)(O)=O",
+      "mod_smiles": "C(C(C)OCC)(O)=O",
+      "graph_dfs": "[C]([C]([C]([O][H])=[O])([H])[O][C]([H])([C]([H])([H])[H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,55}": {
+      "id": "s276",
+      "dg_vertex_id": 276,
+      "name": "p_{0,55}",
+      "smiles": "C(C(C)OCC)(S[2*])=O",
+      "mod_smiles": "C(C(C)OCC)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C]([S][CoA])=[O])([H])[O][C]([H])([C]([H])([H])[H])[H])([H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 26
+    },
+    "p_{0,56}": {
+      "id": "s278",
+      "dg_vertex_id": 278,
+      "name": "p_{0,56}",
+      "smiles": "C(C(C)OC(C)=O)(O)=O",
+      "mod_smiles": "C(C(C)OC(C)=O)(O)=O",
+      "graph_dfs": "[C]([C]([C]([O][H])=[O])([H])[O][C]([C]([H])([H])[H])=[O])([H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,57}": {
+      "id": "s280",
+      "dg_vertex_id": 280,
+      "name": "p_{0,57}",
+      "smiles": "C(C(C)OC(C)=O)(S[2*])=O",
+      "mod_smiles": "C(C(C)OC(C)=O)(S[CoA])=O",
+      "graph_dfs": "[C]([C]([C]([S][CoA])=[O])([H])[O][C]([C]([H])([H])[H])=[O])([H])([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [
+        "CoA"
+      ],
+      "carbon": 26
+    },
+    "p_{0,58}": {
+      "id": "s288",
+      "dg_vertex_id": 288,
+      "name": "p_{0,58}",
+      "smiles": "CCNC(C)CO",
+      "mod_smiles": "CCNC(C)CO",
+      "graph_dfs": "[H][O][C]([H])([H])[C]([C]([H])([H])[H])([H])[N]([C]([C]([H])([H])[H])([H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,59}": {
+      "id": "s292",
+      "dg_vertex_id": 292,
+      "name": "p_{0,59}",
+      "smiles": "C(C)NC(C)CN",
+      "mod_smiles": "C(C)NC(C)CN",
+      "graph_dfs": "[H][C]([H])([C]([C]([H])([H])[H])([H])[N]([C]([C]([H])([H])[H])([H])[H])[H])[N]([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,60}": {
+      "id": "s299",
+      "dg_vertex_id": 299,
+      "name": "p_{0,60}",
+      "smiles": "C(C(C)OCC)=O",
+      "mod_smiles": "C(C(C)OCC)=O",
+      "graph_dfs": "[H][C]([C]([C]([H])([H])[H])([H])[O][C]([H])([C]([H])([H])[H])[H])=[O]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,61}": {
+      "id": "s301",
+      "dg_vertex_id": 301,
+      "name": "p_{0,61}",
+      "smiles": "C(C(C)OC(C)=O)=O",
+      "mod_smiles": "C(C(C)OC(C)=O)=O",
+      "graph_dfs": "[H][C]([C]([C]([H])([H])[H])([H])[O][C]([C]([H])([H])[H])=[O])=[O]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,62}": {
+      "id": "s311",
+      "dg_vertex_id": 311,
+      "name": "p_{0,62}",
+      "smiles": "C(C)OC(C)CO",
+      "mod_smiles": "C(C)OC(C)CO",
+      "graph_dfs": "[H][O][C]([H])([H])[C]([C]([H])([H])[H])([H])[O][C]([H])([C]([H])([H])[H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,63}": {
+      "id": "s313",
+      "dg_vertex_id": 313,
+      "name": "p_{0,63}",
+      "smiles": "C(C)(OC(C)CO)=O",
+      "mod_smiles": "C(C)(OC(C)CO)=O",
+      "graph_dfs": "[H][O][C]([H])([H])[C]([C]([H])([H])[H])([H])[O][C]([C]([H])([H])[H])=[O]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,64}": {
+      "id": "s316",
+      "dg_vertex_id": 316,
+      "name": "p_{0,64}",
+      "smiles": "CCOC(C)CN",
+      "mod_smiles": "CCOC(C)CN",
+      "graph_dfs": "[H][C]([H])([C]([C]([H])([H])[H])([H])[O][C]([H])([C]([H])([H])[H])[H])[N]([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    },
+    "p_{0,65}": {
+      "id": "s318",
+      "dg_vertex_id": 318,
+      "name": "p_{0,65}",
+      "smiles": "C(C)(OC(C)CN)=O",
+      "mod_smiles": "C(C)(OC(C)CN)=O",
+      "graph_dfs": "[H][C]([H])([C]([C]([H])([H])[H])([H])[O][C]([C]([H])([H])[H])=[O])[N]([H])[H]",
+      "explicit_carbon_atoms": 5,
+      "abstract_labels": [],
+      "carbon": 5
+    }
+  },
+  "reactions": [
+    {
+      "id": "r18",
+      "dg_edge_id": 18,
+      "reactants": {
+        "NAD+": 1,
+        "3HP": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,0}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(CCO)(O)=O>>[H][4*].[H+].C(CC(O)=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(CCO)(O)=O>>[H][NAD].[H+].C(CC(O)=O)=O"
+    },
+    {
+      "id": "r20",
+      "dg_edge_id": 20,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "PYR": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,1}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)=O)(O)=O>>[5*].C(C(C)O)(O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)=O)(O)=O>>[NAD+].C(C(C)O)(O)=O"
+    },
+    {
+      "id": "r21",
+      "dg_edge_id": 21,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "ALA": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "PYR": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C(C)N)(O)=O>>[H][4*].N.[H+].C(C(C)=O)(O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C(C)N)(O)=O>>[H][NAD].N.[H+].C(C(C)=O)(O)=O"
+    },
+    {
+      "id": "r22",
+      "dg_edge_id": 22,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "PYR": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "ALA": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)=O)(O)=O>>[5*].O.C(C(C)N)(O)=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)=O)(O)=O>>[NAD+].O.C(C(C)N)(O)=O"
+    },
+    {
+      "id": "r23",
+      "dg_edge_id": 23,
+      "reactants": {
+        "Glu": 1,
+        "PYR": 1
+      },
+      "products": {
+        "2OG": 1,
+        "ALA": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)=O)(O)=O>>[3*]=O.C(C(C)N)(O)=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)=O)(O)=O>>[Glu]=O.C(C(C)N)(O)=O"
+    },
+    {
+      "id": "r24",
+      "dg_edge_id": 24,
+      "reactants": {
+        "2OG": 1,
+        "ALA": 1
+      },
+      "products": {
+        "Glu": 1,
+        "PYR": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C(C)N)(O)=O>>[3*]([H])N.C(C(C)=O)(O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C(C)N)(O)=O>>[Glu]([H])N.C(C(C)=O)(O)=O"
+    },
+    {
+      "id": "r25",
+      "dg_edge_id": 25,
+      "reactants": {
+        "H2O": 1,
+        "ACRCoA": 1
+      },
+      "products": {
+        "CoA": 1,
+        "PROP": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C=CC(S[2*])=O>>[2*]S.C=CC(O)=O",
+      "mod_reaction_smiles": "O.C=CC(S[CoA])=O>>[CoA]S.C=CC(O)=O"
+    },
+    {
+      "id": "r27",
+      "dg_edge_id": 27,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "ACRCoA": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,2}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C=CC(S[2*])=O>>[5*].[2*]S.C=CC=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C=CC(S[CoA])=O>>[NAD+].[CoA]S.C=CC=O"
+    },
+    {
+      "id": "r29",
+      "dg_edge_id": 29,
+      "reactants": {
+        "PYR": 1
+      },
+      "products": {
+        "CO2": 1,
+        "p_{0,3}": 1
+      },
+      "rules": [
+        "4.1.1.a R01648"
+      ],
+      "rule_ids": [
+        9
+      ],
+      "reaction_smiles": "C(C(C)=O)(O)=O>>C(=O)=O.C(C)=O",
+      "mod_reaction_smiles": "C(C(C)=O)(O)=O>>C(=O)=O.C(C)=O"
+    },
+    {
+      "id": "r31",
+      "dg_edge_id": 31,
+      "reactants": {
+        "ALA": 1
+      },
+      "products": {
+        "CO2": 1,
+        "p_{0,4}": 1
+      },
+      "rules": [
+        "4.1.1.c R06830"
+      ],
+      "rule_ids": [
+        10
+      ],
+      "reaction_smiles": "C(C(C)N)(O)=O>>C(=O)=O.CCN",
+      "mod_reaction_smiles": "C(C(C)N)(O)=O>>C(=O)=O.CCN"
+    },
+    {
+      "id": "r33",
+      "dg_edge_id": 33,
+      "reactants": {
+        "3HP": 1
+      },
+      "products": {
+        "CO2": 1,
+        "H2O": 1,
+        "p_{0,5}": 1
+      },
+      "rules": [
+        "4.1.1.e R04380"
+      ],
+      "rule_ids": [
+        11
+      ],
+      "reaction_smiles": "C(CCO)(O)=O>>C(=O)=O.O.C=C",
+      "mod_reaction_smiles": "C(CCO)(O)=O>>C(=O)=O.O.C=C"
+    },
+    {
+      "id": "r35",
+      "dg_edge_id": 35,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "PYR": 1
+      },
+      "products": {
+        "NADH": 1,
+        "CO2": 1,
+        "H+": 1,
+        "p_{0,6}": 1
+      },
+      "rules": [
+        "4.1.1.i R05722"
+      ],
+      "rule_ids": [
+        12
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C(C)=O)(O)=O>>[H][4*].C(=O)=O.[H+].C(C)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C(C)=O)(O)=O>>[H][NAD].C(=O)=O.[H+].C(C)(S[CoA])=O"
+    },
+    {
+      "id": "r36",
+      "dg_edge_id": 36,
+      "reactants": {
+        "3HP": 1
+      },
+      "products": {
+        "H2O": 1,
+        "PROP": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCO)(O)=O>>O.C=CC(O)=O",
+      "mod_reaction_smiles": "C(CCO)(O)=O>>O.C=CC(O)=O"
+    },
+    {
+      "id": "r37",
+      "dg_edge_id": 37,
+      "reactants": {
+        "H2O": 1,
+        "PROP": 1
+      },
+      "products": {
+        "3HP": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "O.C=CC(O)=O>>C(CCO)(O)=O",
+      "mod_reaction_smiles": "O.C=CC(O)=O>>C(CCO)(O)=O"
+    },
+    {
+      "id": "r39",
+      "dg_edge_id": 39,
+      "reactants": {
+        "H2O": 1,
+        "ACRCoA": 1
+      },
+      "products": {
+        "p_{0,7}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "O.C=CC(S[2*])=O>>C(CCO)(S[2*])=O",
+      "mod_reaction_smiles": "O.C=CC(S[CoA])=O>>C(CCO)(S[CoA])=O"
+    },
+    {
+      "id": "r41",
+      "dg_edge_id": 41,
+      "reactants": {
+        "H2O": 1,
+        "ACRCoA": 1
+      },
+      "products": {
+        "p_{0,8}": 1
+      },
+      "rules": [
+        "4.2.1.b_rev R05722"
+      ],
+      "rule_ids": [
+        16
+      ],
+      "reaction_smiles": "O.C=CC(S[2*])=O>>C(C(C)O)(S[2*])=O",
+      "mod_reaction_smiles": "O.C=CC(S[CoA])=O>>C(C(C)O)(S[CoA])=O"
+    },
+    {
+      "id": "r43",
+      "dg_edge_id": 43,
+      "reactants": {
+        "NH3": 1,
+        "PROP": 1
+      },
+      "products": {
+        "p_{0,9}": 1
+      },
+      "rules": [
+        "4.3.1.a_rev R04071"
+      ],
+      "rule_ids": [
+        18
+      ],
+      "reaction_smiles": "N.C=CC(O)=O>>C(CCN)(O)=O",
+      "mod_reaction_smiles": "N.C=CC(O)=O>>C(CCN)(O)=O"
+    },
+    {
+      "id": "r45",
+      "dg_edge_id": 45,
+      "reactants": {
+        "NH3": 1,
+        "ACRCoA": 1
+      },
+      "products": {
+        "p_{0,10}": 1
+      },
+      "rules": [
+        "4.3.1.a_rev R04071"
+      ],
+      "rule_ids": [
+        18
+      ],
+      "reaction_smiles": "N.C=CC(S[2*])=O>>C(CCN)(S[2*])=O",
+      "mod_reaction_smiles": "N.C=CC(S[CoA])=O>>C(CCN)(S[CoA])=O"
+    },
+    {
+      "id": "r46",
+      "dg_edge_id": 46,
+      "reactants": {
+        "ALA": 1
+      },
+      "products": {
+        "p_{0,9}": 1
+      },
+      "rules": [
+        "5.4.3.a R01091",
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        19,
+        20
+      ],
+      "reaction_smiles": "C(C(C)N)(O)=O>>C(CCN)(O)=O",
+      "mod_reaction_smiles": "C(C(C)N)(O)=O>>C(CCN)(O)=O"
+    },
+    {
+      "id": "r47",
+      "dg_edge_id": 47,
+      "reactants": {
+        "3HP": 1
+      },
+      "products": {
+        "p_{0,1}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCO)(O)=O>>C(C(C)O)(O)=O",
+      "mod_reaction_smiles": "C(CCO)(O)=O>>C(C(C)O)(O)=O"
+    },
+    {
+      "id": "r49",
+      "dg_edge_id": 49,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "PYR": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,11}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C(C)=O)(O)=O>>[1*]O.O=P(O)(O)O.C(C(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C(C)=O)(O)=O>>[ADP]O.O=P(O)(O)O.C(C(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r50",
+      "dg_edge_id": 50,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "3HP": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,7}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(CCO)(O)=O>>[1*]O.O=P(O)(O)O.C(CCO)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(CCO)(O)=O>>[ADP]O.O=P(O)(O)O.C(CCO)(S[CoA])=O"
+    },
+    {
+      "id": "r52",
+      "dg_edge_id": 52,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "ALA": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,12}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C(C)N)(O)=O>>[1*]O.O=P(O)(O)O.C(C(C)N)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C(C)N)(O)=O>>[ADP]O.O=P(O)(O)O.C(C(C)N)(S[CoA])=O"
+    },
+    {
+      "id": "r53",
+      "dg_edge_id": 53,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "PROP": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "ACRCoA": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C=CC(O)=O>>[1*]O.O=P(O)(O)O.C=CC(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C=CC(O)=O>>[ADP]O.O=P(O)(O)O.C=CC(S[CoA])=O"
+    },
+    {
+      "id": "r54",
+      "dg_edge_id": 54,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,1}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "PYR": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C(C)O)(O)=O>>[H][4*].[H+].C(C(C)=O)(O)=O",
+      "mod_reaction_smiles": "[NAD+].C(C(C)O)(O)=O>>[H][NAD].[H+].C(C(C)=O)(O)=O"
+    },
+    {
+      "id": "r56",
+      "dg_edge_id": 56,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,7}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,13}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(CCO)(S[2*])=O>>[H][4*].[H+].C(CC(S[2*])=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(CCO)(S[CoA])=O>>[H][NAD].[H+].C(CC(S[CoA])=O)=O"
+    },
+    {
+      "id": "r57",
+      "dg_edge_id": 57,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,8}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,11}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C(C)O)(S[2*])=O>>[H][4*].[H+].C(C(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].C(C(C)O)(S[CoA])=O>>[H][NAD].[H+].C(C(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r58",
+      "dg_edge_id": 58,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,0}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "3HP": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CC(O)=O)=O>>[5*].C(CCO)(O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CC(O)=O)=O>>[NAD+].C(CCO)(O)=O"
+    },
+    {
+      "id": "r60",
+      "dg_edge_id": 60,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,2}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,14}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C=CC=O>>[5*].C=CCO",
+      "mod_reaction_smiles": "[H][NAD].[H+].C=CC=O>>[NAD+].C=CCO"
+    },
+    {
+      "id": "r62",
+      "dg_edge_id": 62,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,3}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,15}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C)=O>>[5*].CCO",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C)=O>>[NAD+].CCO"
+    },
+    {
+      "id": "r63",
+      "dg_edge_id": 63,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,11}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,8}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)=O)(S[2*])=O>>[5*].C(C(C)O)(S[2*])=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)=O)(S[CoA])=O>>[NAD+].C(C(C)O)(S[CoA])=O"
+    },
+    {
+      "id": "r64",
+      "dg_edge_id": 64,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,4}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,3}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.CCN>>[H][4*].N.[H+].C(C)=O",
+      "mod_reaction_smiles": "[NAD+].O.CCN>>[H][NAD].N.[H+].C(C)=O"
+    },
+    {
+      "id": "r65",
+      "dg_edge_id": 65,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,9}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,0}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(CCN)(O)=O>>[H][4*].N.[H+].C(CC(O)=O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(CCN)(O)=O>>[H][NAD].N.[H+].C(CC(O)=O)=O"
+    },
+    {
+      "id": "r66",
+      "dg_edge_id": 66,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,10}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,13}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(CCN)(S[2*])=O>>[H][4*].N.[H+].C(CC(S[2*])=O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(CCN)(S[CoA])=O>>[H][NAD].N.[H+].C(CC(S[CoA])=O)=O"
+    },
+    {
+      "id": "r67",
+      "dg_edge_id": 67,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,12}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,11}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C(C)N)(S[2*])=O>>[H][4*].N.[H+].C(C(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C(C)N)(S[CoA])=O>>[H][NAD].N.[H+].C(C(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r68",
+      "dg_edge_id": 68,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,0}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,9}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CC(O)=O)=O>>[5*].O.C(CCN)(O)=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CC(O)=O)=O>>[NAD+].O.C(CCN)(O)=O"
+    },
+    {
+      "id": "r70",
+      "dg_edge_id": 70,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,2}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,16}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C=CC=O>>[5*].O.C=CCN",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C=CC=O>>[NAD+].O.C=CCN"
+    },
+    {
+      "id": "r71",
+      "dg_edge_id": 71,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,3}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,4}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C)=O>>[5*].O.CCN",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C)=O>>[NAD+].O.CCN"
+    },
+    {
+      "id": "r72",
+      "dg_edge_id": 72,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,11}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,12}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)=O)(S[2*])=O>>[5*].O.C(C(C)N)(S[2*])=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)=O)(S[CoA])=O>>[NAD+].O.C(C(C)N)(S[CoA])=O"
+    },
+    {
+      "id": "r73",
+      "dg_edge_id": 73,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,0}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,9}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CC(O)=O)=O>>[3*]=O.C(CCN)(O)=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CC(O)=O)=O>>[Glu]=O.C(CCN)(O)=O"
+    },
+    {
+      "id": "r74",
+      "dg_edge_id": 74,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,2}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,16}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C=CC=O>>[3*]=O.C=CCN",
+      "mod_reaction_smiles": "[Glu]([H])N.C=CC=O>>[Glu]=O.C=CCN"
+    },
+    {
+      "id": "r75",
+      "dg_edge_id": 75,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,3}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,4}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C)=O>>[3*]=O.CCN",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C)=O>>[Glu]=O.CCN"
+    },
+    {
+      "id": "r76",
+      "dg_edge_id": 76,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,11}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,12}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)=O)(S[2*])=O>>[3*]=O.C(C(C)N)(S[2*])=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)=O)(S[CoA])=O>>[Glu]=O.C(C(C)N)(S[CoA])=O"
+    },
+    {
+      "id": "r77",
+      "dg_edge_id": 77,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,4}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,3}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.CCN>>[3*]([H])N.C(C)=O",
+      "mod_reaction_smiles": "[Glu]=O.CCN>>[Glu]([H])N.C(C)=O"
+    },
+    {
+      "id": "r78",
+      "dg_edge_id": 78,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,9}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,0}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(CCN)(O)=O>>[3*]([H])N.C(CC(O)=O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(CCN)(O)=O>>[Glu]([H])N.C(CC(O)=O)=O"
+    },
+    {
+      "id": "r79",
+      "dg_edge_id": 79,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,10}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,13}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(CCN)(S[2*])=O>>[3*]([H])N.C(CC(S[2*])=O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(CCN)(S[CoA])=O>>[Glu]([H])N.C(CC(S[CoA])=O)=O"
+    },
+    {
+      "id": "r80",
+      "dg_edge_id": 80,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,12}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,11}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C(C)N)(S[2*])=O>>[3*]([H])N.C(C(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C(C)N)(S[CoA])=O>>[Glu]([H])N.C(C(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r82",
+      "dg_edge_id": 82,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,6}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,17}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(C)(S[2*])=O>>[2*]S.C(C)(O)=O",
+      "mod_reaction_smiles": "O.C(C)(S[CoA])=O>>[CoA]S.C(C)(O)=O"
+    },
+    {
+      "id": "r83",
+      "dg_edge_id": 83,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,7}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "3HP": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CCO)(S[2*])=O>>[2*]S.C(CCO)(O)=O",
+      "mod_reaction_smiles": "O.C(CCO)(S[CoA])=O>>[CoA]S.C(CCO)(O)=O"
+    },
+    {
+      "id": "r84",
+      "dg_edge_id": 84,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,8}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,1}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(C(C)O)(S[2*])=O>>[2*]S.C(C(C)O)(O)=O",
+      "mod_reaction_smiles": "O.C(C(C)O)(S[CoA])=O>>[CoA]S.C(C(C)O)(O)=O"
+    },
+    {
+      "id": "r85",
+      "dg_edge_id": 85,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,10}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,9}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CCN)(S[2*])=O>>[2*]S.C(CCN)(O)=O",
+      "mod_reaction_smiles": "O.C(CCN)(S[CoA])=O>>[CoA]S.C(CCN)(O)=O"
+    },
+    {
+      "id": "r86",
+      "dg_edge_id": 86,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,11}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "PYR": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(C(C)=O)(S[2*])=O>>[2*]S.C(C(C)=O)(O)=O",
+      "mod_reaction_smiles": "O.C(C(C)=O)(S[CoA])=O>>[CoA]S.C(C(C)=O)(O)=O"
+    },
+    {
+      "id": "r87",
+      "dg_edge_id": 87,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,12}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "ALA": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(C(C)N)(S[2*])=O>>[2*]S.C(C(C)N)(O)=O",
+      "mod_reaction_smiles": "O.C(C(C)N)(S[CoA])=O>>[CoA]S.C(C(C)N)(O)=O"
+    },
+    {
+      "id": "r88",
+      "dg_edge_id": 88,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,6}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,3}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C)(S[2*])=O>>[5*].[2*]S.C(C)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C)(S[CoA])=O>>[NAD+].[CoA]S.C(C)=O"
+    },
+    {
+      "id": "r90",
+      "dg_edge_id": 90,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,7}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,18}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCO)(S[2*])=O>>[5*].[2*]S.C(CCO)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCO)(S[CoA])=O>>[NAD+].[CoA]S.C(CCO)=O"
+    },
+    {
+      "id": "r92",
+      "dg_edge_id": 92,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,8}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,19}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)O)(S[2*])=O>>[5*].[2*]S.C(C(C)O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)O)(S[CoA])=O>>[NAD+].[CoA]S.C(C(C)O)=O"
+    },
+    {
+      "id": "r94",
+      "dg_edge_id": 94,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,10}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,20}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCN)(S[2*])=O>>[5*].[2*]S.C(CCN)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCN)(S[CoA])=O>>[NAD+].[CoA]S.C(CCN)=O"
+    },
+    {
+      "id": "r96",
+      "dg_edge_id": 96,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,11}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,21}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)=O)(S[2*])=O>>[5*].[2*]S.C(C(C)=O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)=O)(S[CoA])=O>>[NAD+].[CoA]S.C(C(C)=O)=O"
+    },
+    {
+      "id": "r98",
+      "dg_edge_id": 98,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,12}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,22}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)N)(S[2*])=O>>[5*].[2*]S.C(C(C)N)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)N)(S[CoA])=O>>[NAD+].[CoA]S.C(C(C)N)=O"
+    },
+    {
+      "id": "r100",
+      "dg_edge_id": 100,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,0}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,23}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CC(O)=O)=O>>[H][4*].[H+].C(CC(O)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CC(O)=O)=O>>[H][NAD].[H+].C(CC(O)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r101",
+      "dg_edge_id": 101,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,2}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "ACRCoA": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C=CC=O>>[H][4*].[H+].C=CC(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C=CC=O>>[H][NAD].[H+].C=CC(S[CoA])=O"
+    },
+    {
+      "id": "r102",
+      "dg_edge_id": 102,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,3}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,6}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C)=O>>[H][4*].[H+].C(C)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C)=O>>[H][NAD].[H+].C(C)(S[CoA])=O"
+    },
+    {
+      "id": "r103",
+      "dg_edge_id": 103,
+      "reactants": {
+        "p_{0,7}": 1
+      },
+      "products": {
+        "H2O": 1,
+        "ACRCoA": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCO)(S[2*])=O>>O.C=CC(S[2*])=O",
+      "mod_reaction_smiles": "C(CCO)(S[CoA])=O>>O.C=CC(S[CoA])=O"
+    },
+    {
+      "id": "r104",
+      "dg_edge_id": 104,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,2}": 1
+      },
+      "products": {
+        "p_{0,18}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "O.C=CC=O>>C(CCO)=O",
+      "mod_reaction_smiles": "O.C=CC=O>>C(CCO)=O"
+    },
+    {
+      "id": "r105",
+      "dg_edge_id": 105,
+      "reactants": {
+        "p_{0,8}": 1
+      },
+      "products": {
+        "H2O": 1,
+        "ACRCoA": 1
+      },
+      "rules": [
+        "4.2.1.b R02490"
+      ],
+      "rule_ids": [
+        15
+      ],
+      "reaction_smiles": "C(C(C)O)(S[2*])=O>>O.C=CC(S[2*])=O",
+      "mod_reaction_smiles": "C(C(C)O)(S[CoA])=O>>O.C=CC(S[CoA])=O"
+    },
+    {
+      "id": "r106",
+      "dg_edge_id": 106,
+      "reactants": {
+        "p_{0,9}": 1
+      },
+      "products": {
+        "NH3": 1,
+        "PROP": 1
+      },
+      "rules": [
+        "4.3.1.a R03696"
+      ],
+      "rule_ids": [
+        17
+      ],
+      "reaction_smiles": "C(CCN)(O)=O>>N.C=CC(O)=O",
+      "mod_reaction_smiles": "C(CCN)(O)=O>>N.C=CC(O)=O"
+    },
+    {
+      "id": "r107",
+      "dg_edge_id": 107,
+      "reactants": {
+        "p_{0,10}": 1
+      },
+      "products": {
+        "NH3": 1,
+        "ACRCoA": 1
+      },
+      "rules": [
+        "4.3.1.a R03696"
+      ],
+      "rule_ids": [
+        17
+      ],
+      "reaction_smiles": "C(CCN)(S[2*])=O>>N.C=CC(S[2*])=O",
+      "mod_reaction_smiles": "C(CCN)(S[CoA])=O>>N.C=CC(S[CoA])=O"
+    },
+    {
+      "id": "r109",
+      "dg_edge_id": 109,
+      "reactants": {
+        "p_{0,2}": 1,
+        "p_{0,4}": 1
+      },
+      "products": {
+        "p_{0,24}": 1
+      },
+      "rules": [
+        "4.3.1.a_rev R04071"
+      ],
+      "rule_ids": [
+        18
+      ],
+      "reaction_smiles": "C=CC=O.CCN>>C(CCNCC)=O",
+      "mod_reaction_smiles": "C=CC=O.CCN>>C(CCNCC)=O"
+    },
+    {
+      "id": "r110",
+      "dg_edge_id": 110,
+      "reactants": {
+        "NH3": 1,
+        "p_{0,2}": 1
+      },
+      "products": {
+        "p_{0,20}": 1
+      },
+      "rules": [
+        "4.3.1.a_rev R04071"
+      ],
+      "rule_ids": [
+        18
+      ],
+      "reaction_smiles": "N.C=CC=O>>C(CCN)=O",
+      "mod_reaction_smiles": "N.C=CC=O>>C(CCN)=O"
+    },
+    {
+      "id": "r112",
+      "dg_edge_id": 112,
+      "reactants": {
+        "PROP": 1,
+        "p_{0,4}": 1
+      },
+      "products": {
+        "p_{0,25}": 1
+      },
+      "rules": [
+        "4.3.1.a_rev R04071"
+      ],
+      "rule_ids": [
+        18
+      ],
+      "reaction_smiles": "C=CC(O)=O.CCN>>C(CCNCC)(O)=O",
+      "mod_reaction_smiles": "C=CC(O)=O.CCN>>C(CCNCC)(O)=O"
+    },
+    {
+      "id": "r114",
+      "dg_edge_id": 114,
+      "reactants": {
+        "ACRCoA": 1,
+        "p_{0,4}": 1
+      },
+      "products": {
+        "p_{0,26}": 1
+      },
+      "rules": [
+        "4.3.1.a_rev R04071"
+      ],
+      "rule_ids": [
+        18
+      ],
+      "reaction_smiles": "C=CC(S[2*])=O.CCN>>C(CCNCC)(S[2*])=O",
+      "mod_reaction_smiles": "C=CC(S[CoA])=O.CCN>>C(CCNCC)(S[CoA])=O"
+    },
+    {
+      "id": "r115",
+      "dg_edge_id": 115,
+      "reactants": {
+        "p_{0,1}": 1
+      },
+      "products": {
+        "3HP": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)O)(O)=O>>C(CCO)(O)=O",
+      "mod_reaction_smiles": "C(C(C)O)(O)=O>>C(CCO)(O)=O"
+    },
+    {
+      "id": "r116",
+      "dg_edge_id": 116,
+      "reactants": {
+        "p_{0,8}": 1
+      },
+      "products": {
+        "p_{0,7}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)O)(S[2*])=O>>C(CCO)(S[2*])=O",
+      "mod_reaction_smiles": "C(C(C)O)(S[CoA])=O>>C(CCO)(S[CoA])=O"
+    },
+    {
+      "id": "r117",
+      "dg_edge_id": 117,
+      "reactants": {
+        "p_{0,12}": 1
+      },
+      "products": {
+        "p_{0,10}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)N)(S[2*])=O>>C(CCN)(S[2*])=O",
+      "mod_reaction_smiles": "C(C(C)N)(S[CoA])=O>>C(CCN)(S[CoA])=O"
+    },
+    {
+      "id": "r118",
+      "dg_edge_id": 118,
+      "reactants": {
+        "p_{0,7}": 1
+      },
+      "products": {
+        "p_{0,8}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCO)(S[2*])=O>>C(C(C)O)(S[2*])=O",
+      "mod_reaction_smiles": "C(CCO)(S[CoA])=O>>C(C(C)O)(S[CoA])=O"
+    },
+    {
+      "id": "r119",
+      "dg_edge_id": 119,
+      "reactants": {
+        "p_{0,9}": 1
+      },
+      "products": {
+        "ALA": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCN)(O)=O>>C(C(C)N)(O)=O",
+      "mod_reaction_smiles": "C(CCN)(O)=O>>C(C(C)N)(O)=O"
+    },
+    {
+      "id": "r120",
+      "dg_edge_id": 120,
+      "reactants": {
+        "p_{0,10}": 1
+      },
+      "products": {
+        "p_{0,12}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCN)(S[2*])=O>>C(C(C)N)(S[2*])=O",
+      "mod_reaction_smiles": "C(CCN)(S[CoA])=O>>C(C(C)N)(S[CoA])=O"
+    },
+    {
+      "id": "r121",
+      "dg_edge_id": 121,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,0}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,13}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(CC(O)=O)=O>>[1*]O.O=P(O)(O)O.C(CC(S[2*])=O)=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(CC(O)=O)=O>>[ADP]O.O=P(O)(O)O.C(CC(S[CoA])=O)=O"
+    },
+    {
+      "id": "r122",
+      "dg_edge_id": 122,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,1}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,8}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C(C)O)(O)=O>>[1*]O.O=P(O)(O)O.C(C(C)O)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C(C)O)(O)=O>>[ADP]O.O=P(O)(O)O.C(C(C)O)(S[CoA])=O"
+    },
+    {
+      "id": "r123",
+      "dg_edge_id": 123,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,9}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,10}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(CCN)(O)=O>>[1*]O.O=P(O)(O)O.C(CCN)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(CCN)(O)=O>>[ADP]O.O=P(O)(O)O.C(CCN)(S[CoA])=O"
+    },
+    {
+      "id": "r124",
+      "dg_edge_id": 124,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,14}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,2}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C=CCO>>[H][4*].[H+].C=CC=O",
+      "mod_reaction_smiles": "[NAD+].C=CCO>>[H][NAD].[H+].C=CC=O"
+    },
+    {
+      "id": "r125",
+      "dg_edge_id": 125,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,15}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,3}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].CCO>>[H][4*].[H+].C(C)=O",
+      "mod_reaction_smiles": "[NAD+].CCO>>[H][NAD].[H+].C(C)=O"
+    },
+    {
+      "id": "r127",
+      "dg_edge_id": 127,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,18}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,27}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(CCO)=O>>[H][4*].[H+].C(CC=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(CCO)=O>>[H][NAD].[H+].C(CC=O)=O"
+    },
+    {
+      "id": "r128",
+      "dg_edge_id": 128,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,19}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C(C)O)=O>>[H][4*].[H+].C(C(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(C(C)O)=O>>[H][NAD].[H+].C(C(C)=O)=O"
+    },
+    {
+      "id": "r129",
+      "dg_edge_id": 129,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,13}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,7}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CC(S[2*])=O)=O>>[5*].C(CCO)(S[2*])=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CC(S[CoA])=O)=O>>[NAD+].C(CCO)(S[CoA])=O"
+    },
+    {
+      "id": "r131",
+      "dg_edge_id": 131,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,18}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,28}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCO)=O>>[5*].C(CCO)O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCO)=O>>[NAD+].C(CCO)O"
+    },
+    {
+      "id": "r133",
+      "dg_edge_id": 133,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,19}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,29}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)O)=O>>[5*].CC(CO)O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)O)=O>>[NAD+].CC(CO)O"
+    },
+    {
+      "id": "r135",
+      "dg_edge_id": 135,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,20}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,30}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCN)=O>>[5*].C(CCN)O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCN)=O>>[NAD+].C(CCN)O"
+    },
+    {
+      "id": "r136",
+      "dg_edge_id": 136,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,19}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)=O)=O>>[5*].C(C(C)O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)=O)=O>>[NAD+].C(C(C)O)=O"
+    },
+    {
+      "id": "r138",
+      "dg_edge_id": 138,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,31}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)=O)=O>>[5*].C(C)(CO)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)=O)=O>>[NAD+].C(C)(CO)=O"
+    },
+    {
+      "id": "r140",
+      "dg_edge_id": 140,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,22}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,32}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)N)=O>>[5*].CC(CO)N",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)N)=O>>[NAD+].CC(CO)N"
+    },
+    {
+      "id": "r142",
+      "dg_edge_id": 142,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,24}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,33}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCNCC)=O>>[5*].CCNCCCO",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCNCC)=O>>[NAD+].CCNCCCO"
+    },
+    {
+      "id": "r143",
+      "dg_edge_id": 143,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,16}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,2}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C=CCN>>[H][4*].N.[H+].C=CC=O",
+      "mod_reaction_smiles": "[NAD+].O.C=CCN>>[H][NAD].N.[H+].C=CC=O"
+    },
+    {
+      "id": "r144",
+      "dg_edge_id": 144,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,20}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,27}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(CCN)=O>>[H][4*].N.[H+].C(CC=O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(CCN)=O>>[H][NAD].N.[H+].C(CC=O)=O"
+    },
+    {
+      "id": "r145",
+      "dg_edge_id": 145,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,22}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C(C)N)=O>>[H][4*].N.[H+].C(C(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C(C)N)=O>>[H][NAD].N.[H+].C(C(C)=O)=O"
+    },
+    {
+      "id": "r146",
+      "dg_edge_id": 146,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,13}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,10}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CC(S[2*])=O)=O>>[5*].O.C(CCN)(S[2*])=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CC(S[CoA])=O)=O>>[NAD+].O.C(CCN)(S[CoA])=O"
+    },
+    {
+      "id": "r147",
+      "dg_edge_id": 147,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,18}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,30}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CCO)=O>>[5*].O.C(CCN)O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CCO)=O>>[NAD+].O.C(CCN)O"
+    },
+    {
+      "id": "r149",
+      "dg_edge_id": 149,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,19}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,34}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)O)=O>>[5*].O.CC(CN)O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)O)=O>>[NAD+].O.CC(CN)O"
+    },
+    {
+      "id": "r151",
+      "dg_edge_id": 151,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,20}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,35}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CCN)=O>>[5*].O.C(CCN)N",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CCN)=O>>[NAD+].O.C(CCN)N"
+    },
+    {
+      "id": "r152",
+      "dg_edge_id": 152,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,22}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)=O)=O>>[5*].O.C(C(C)N)=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)=O)=O>>[NAD+].O.C(C(C)N)=O"
+    },
+    {
+      "id": "r154",
+      "dg_edge_id": 154,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,36}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)=O)=O>>[5*].O.C(C)(CN)=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)=O)=O>>[NAD+].O.C(C)(CN)=O"
+    },
+    {
+      "id": "r156",
+      "dg_edge_id": 156,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,22}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,37}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)N)=O>>[5*].O.CC(CN)N",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)N)=O>>[NAD+].O.CC(CN)N"
+    },
+    {
+      "id": "r158",
+      "dg_edge_id": 158,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,24}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,38}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CCNCC)=O>>[5*].O.C(C)NCCCN",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CCNCC)=O>>[NAD+].O.C(C)NCCCN"
+    },
+    {
+      "id": "r159",
+      "dg_edge_id": 159,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,13}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,10}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CC(S[2*])=O)=O>>[3*]=O.C(CCN)(S[2*])=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CC(S[CoA])=O)=O>>[Glu]=O.C(CCN)(S[CoA])=O"
+    },
+    {
+      "id": "r160",
+      "dg_edge_id": 160,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,18}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,30}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CCO)=O>>[3*]=O.C(CCN)O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CCO)=O>>[Glu]=O.C(CCN)O"
+    },
+    {
+      "id": "r161",
+      "dg_edge_id": 161,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,19}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,34}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)O)=O>>[3*]=O.CC(CN)O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)O)=O>>[Glu]=O.CC(CN)O"
+    },
+    {
+      "id": "r162",
+      "dg_edge_id": 162,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,20}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,35}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CCN)=O>>[3*]=O.C(CCN)N",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CCN)=O>>[Glu]=O.C(CCN)N"
+    },
+    {
+      "id": "r163",
+      "dg_edge_id": 163,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,21}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,22}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)=O)=O>>[3*]=O.C(C(C)N)=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)=O)=O>>[Glu]=O.C(C(C)N)=O"
+    },
+    {
+      "id": "r164",
+      "dg_edge_id": 164,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,21}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,36}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)=O)=O>>[3*]=O.C(C)(CN)=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)=O)=O>>[Glu]=O.C(C)(CN)=O"
+    },
+    {
+      "id": "r165",
+      "dg_edge_id": 165,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,22}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,37}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)N)=O>>[3*]=O.CC(CN)N",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)N)=O>>[Glu]=O.CC(CN)N"
+    },
+    {
+      "id": "r166",
+      "dg_edge_id": 166,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,24}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,38}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CCNCC)=O>>[3*]=O.C(C)NCCCN",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CCNCC)=O>>[Glu]=O.C(C)NCCCN"
+    },
+    {
+      "id": "r167",
+      "dg_edge_id": 167,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,16}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,2}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C=CCN>>[3*]([H])N.C=CC=O",
+      "mod_reaction_smiles": "[Glu]=O.C=CCN>>[Glu]([H])N.C=CC=O"
+    },
+    {
+      "id": "r168",
+      "dg_edge_id": 168,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,20}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,27}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(CCN)=O>>[3*]([H])N.C(CC=O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(CCN)=O>>[Glu]([H])N.C(CC=O)=O"
+    },
+    {
+      "id": "r169",
+      "dg_edge_id": 169,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,22}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,21}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C(C)N)=O>>[3*]([H])N.C(C(C)=O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C(C)N)=O>>[Glu]([H])N.C(C(C)=O)=O"
+    },
+    {
+      "id": "r170",
+      "dg_edge_id": 170,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,13}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,0}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CC(S[2*])=O)=O>>[2*]S.C(CC(O)=O)=O",
+      "mod_reaction_smiles": "O.C(CC(S[CoA])=O)=O>>[CoA]S.C(CC(O)=O)=O"
+    },
+    {
+      "id": "r172",
+      "dg_edge_id": 172,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,23}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,39}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CC(O)=O)(S[2*])=O>>[2*]S.C(CC(O)=O)(O)=O",
+      "mod_reaction_smiles": "O.C(CC(O)=O)(S[CoA])=O>>[CoA]S.C(CC(O)=O)(O)=O"
+    },
+    {
+      "id": "r173",
+      "dg_edge_id": 173,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,26}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,25}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CCNCC)(S[2*])=O>>[2*]S.C(CCNCC)(O)=O",
+      "mod_reaction_smiles": "O.C(CCNCC)(S[CoA])=O>>[CoA]S.C(CCNCC)(O)=O"
+    },
+    {
+      "id": "r174",
+      "dg_edge_id": 174,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,13}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,27}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CC(S[2*])=O)=O>>[5*].[2*]S.C(CC=O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CC(S[CoA])=O)=O>>[NAD+].[CoA]S.C(CC=O)=O"
+    },
+    {
+      "id": "r175",
+      "dg_edge_id": 175,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,23}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,0}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CC(O)=O)(S[2*])=O>>[5*].[2*]S.C(CC(O)=O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CC(O)=O)(S[CoA])=O>>[NAD+].[CoA]S.C(CC(O)=O)=O"
+    },
+    {
+      "id": "r176",
+      "dg_edge_id": 176,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,26}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,24}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCNCC)(S[2*])=O>>[5*].[2*]S.C(CCNCC)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCNCC)(S[CoA])=O>>[NAD+].[CoA]S.C(CCNCC)=O"
+    },
+    {
+      "id": "r178",
+      "dg_edge_id": 178,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,13}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,40}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CC(S[2*])=O)=O>>[H][4*].[H+].C(CC(S[2*])=O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CC(S[CoA])=O)=O>>[H][NAD].[H+].C(CC(S[CoA])=O)(S[CoA])=O"
+    },
+    {
+      "id": "r179",
+      "dg_edge_id": 179,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,18}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,7}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CCO)=O>>[H][4*].[H+].C(CCO)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CCO)=O>>[H][NAD].[H+].C(CCO)(S[CoA])=O"
+    },
+    {
+      "id": "r180",
+      "dg_edge_id": 180,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,19}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,8}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C(C)O)=O>>[H][4*].[H+].C(C(C)O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C(C)O)=O>>[H][NAD].[H+].C(C(C)O)(S[CoA])=O"
+    },
+    {
+      "id": "r181",
+      "dg_edge_id": 181,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,20}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,10}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CCN)=O>>[H][4*].[H+].C(CCN)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CCN)=O>>[H][NAD].[H+].C(CCN)(S[CoA])=O"
+    },
+    {
+      "id": "r182",
+      "dg_edge_id": 182,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,21}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,11}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C(C)=O)=O>>[H][4*].[H+].C(C(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C(C)=O)=O>>[H][NAD].[H+].C(C(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r183",
+      "dg_edge_id": 183,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,22}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,12}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C(C)N)=O>>[H][4*].[H+].C(C(C)N)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C(C)N)=O>>[H][NAD].[H+].C(C(C)N)(S[CoA])=O"
+    },
+    {
+      "id": "r184",
+      "dg_edge_id": 184,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,24}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,26}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CCNCC)=O>>[H][4*].[H+].C(CCNCC)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CCNCC)=O>>[H][NAD].[H+].C(CCNCC)(S[CoA])=O"
+    },
+    {
+      "id": "r185",
+      "dg_edge_id": 185,
+      "reactants": {
+        "p_{0,18}": 1
+      },
+      "products": {
+        "H2O": 1,
+        "p_{0,2}": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCO)=O>>O.C=CC=O",
+      "mod_reaction_smiles": "C(CCO)=O>>O.C=CC=O"
+    },
+    {
+      "id": "r187",
+      "dg_edge_id": 187,
+      "reactants": {
+        "PROP": 1,
+        "p_{0,15}": 1
+      },
+      "products": {
+        "p_{0,41}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "C=CC(O)=O.CCO>>C(CCOCC)(O)=O",
+      "mod_reaction_smiles": "C=CC(O)=O.CCO>>C(CCOCC)(O)=O"
+    },
+    {
+      "id": "r189",
+      "dg_edge_id": 189,
+      "reactants": {
+        "ACRCoA": 1,
+        "p_{0,15}": 1
+      },
+      "products": {
+        "p_{0,42}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "C=CC(S[2*])=O.CCO>>C(CCOCC)(S[2*])=O",
+      "mod_reaction_smiles": "C=CC(S[CoA])=O.CCO>>C(CCOCC)(S[CoA])=O"
+    },
+    {
+      "id": "r191",
+      "dg_edge_id": 191,
+      "reactants": {
+        "p_{0,2}": 1,
+        "p_{0,15}": 1
+      },
+      "products": {
+        "p_{0,43}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "C=CC=O.CCO>>C(CCOCC)=O",
+      "mod_reaction_smiles": "C=CC=O.CCO>>C(CCOCC)=O"
+    },
+    {
+      "id": "r193",
+      "dg_edge_id": 193,
+      "reactants": {
+        "PROP": 1,
+        "p_{0,17}": 1
+      },
+      "products": {
+        "p_{0,44}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "C=CC(O)=O.C(C)(O)=O>>C(C)(OCCC(O)=O)=O",
+      "mod_reaction_smiles": "C=CC(O)=O.C(C)(O)=O>>C(C)(OCCC(O)=O)=O"
+    },
+    {
+      "id": "r195",
+      "dg_edge_id": 195,
+      "reactants": {
+        "ACRCoA": 1,
+        "p_{0,17}": 1
+      },
+      "products": {
+        "p_{0,45}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "C=CC(S[2*])=O.C(C)(O)=O>>C(CCOC(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "C=CC(S[CoA])=O.C(C)(O)=O>>C(CCOC(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r197",
+      "dg_edge_id": 197,
+      "reactants": {
+        "p_{0,2}": 1,
+        "p_{0,17}": 1
+      },
+      "products": {
+        "p_{0,46}": 1
+      },
+      "rules": [
+        "4.2.1.a_rev R05648"
+      ],
+      "rule_ids": [
+        14
+      ],
+      "reaction_smiles": "C=CC=O.C(C)(O)=O>>C(CCOC(C)=O)=O",
+      "mod_reaction_smiles": "C=CC=O.C(C)(O)=O>>C(CCOC(C)=O)=O"
+    },
+    {
+      "id": "r198",
+      "dg_edge_id": 198,
+      "reactants": {
+        "p_{0,20}": 1
+      },
+      "products": {
+        "NH3": 1,
+        "p_{0,2}": 1
+      },
+      "rules": [
+        "4.3.1.a R03696"
+      ],
+      "rule_ids": [
+        17
+      ],
+      "reaction_smiles": "C(CCN)=O>>N.C=CC=O",
+      "mod_reaction_smiles": "C(CCN)=O>>N.C=CC=O"
+    },
+    {
+      "id": "r199",
+      "dg_edge_id": 199,
+      "reactants": {
+        "p_{0,24}": 1
+      },
+      "products": {
+        "p_{0,2}": 1,
+        "p_{0,4}": 1
+      },
+      "rules": [
+        "4.3.1.a R03696"
+      ],
+      "rule_ids": [
+        17
+      ],
+      "reaction_smiles": "C(CCNCC)=O>>C=CC=O.CCN",
+      "mod_reaction_smiles": "C(CCNCC)=O>>C=CC=O.CCN"
+    },
+    {
+      "id": "r200",
+      "dg_edge_id": 200,
+      "reactants": {
+        "p_{0,25}": 1
+      },
+      "products": {
+        "PROP": 1,
+        "p_{0,4}": 1
+      },
+      "rules": [
+        "4.3.1.a R03696"
+      ],
+      "rule_ids": [
+        17
+      ],
+      "reaction_smiles": "C(CCNCC)(O)=O>>C=CC(O)=O.CCN",
+      "mod_reaction_smiles": "C(CCNCC)(O)=O>>C=CC(O)=O.CCN"
+    },
+    {
+      "id": "r201",
+      "dg_edge_id": 201,
+      "reactants": {
+        "p_{0,26}": 1
+      },
+      "products": {
+        "ACRCoA": 1,
+        "p_{0,4}": 1
+      },
+      "rules": [
+        "4.3.1.a R03696"
+      ],
+      "rule_ids": [
+        17
+      ],
+      "reaction_smiles": "C(CCNCC)(S[2*])=O>>C=CC(S[2*])=O.CCN",
+      "mod_reaction_smiles": "C(CCNCC)(S[CoA])=O>>C=CC(S[CoA])=O.CCN"
+    },
+    {
+      "id": "r203",
+      "dg_edge_id": 203,
+      "reactants": {
+        "p_{0,25}": 1
+      },
+      "products": {
+        "p_{0,47}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCNCC)(O)=O>>C(C(C)NCC)(O)=O",
+      "mod_reaction_smiles": "C(CCNCC)(O)=O>>C(C(C)NCC)(O)=O"
+    },
+    {
+      "id": "r205",
+      "dg_edge_id": 205,
+      "reactants": {
+        "p_{0,26}": 1
+      },
+      "products": {
+        "p_{0,48}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCNCC)(S[2*])=O>>C(C(C)NCC)(S[2*])=O",
+      "mod_reaction_smiles": "C(CCNCC)(S[CoA])=O>>C(C(C)NCC)(S[CoA])=O"
+    },
+    {
+      "id": "r206",
+      "dg_edge_id": 206,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,17}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,6}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C)(O)=O>>[1*]O.O=P(O)(O)O.C(C)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C)(O)=O>>[ADP]O.O=P(O)(O)O.C(C)(S[CoA])=O"
+    },
+    {
+      "id": "r207",
+      "dg_edge_id": 207,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,23}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,40}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(CC(O)=O)(S[2*])=O>>[1*]O.O=P(O)(O)O.C(CC(S[2*])=O)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(CC(O)=O)(S[CoA])=O>>[ADP]O.O=P(O)(O)O.C(CC(S[CoA])=O)(S[CoA])=O"
+    },
+    {
+      "id": "r208",
+      "dg_edge_id": 208,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,25}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,26}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(CCNCC)(O)=O>>[1*]O.O=P(O)(O)O.C(CCNCC)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(CCNCC)(O)=O>>[ADP]O.O=P(O)(O)O.C(CCNCC)(S[CoA])=O"
+    },
+    {
+      "id": "r209",
+      "dg_edge_id": 209,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,28}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,18}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(CCO)O>>[H][4*].[H+].C(CCO)=O",
+      "mod_reaction_smiles": "[NAD+].C(CCO)O>>[H][NAD].[H+].C(CCO)=O"
+    },
+    {
+      "id": "r210",
+      "dg_edge_id": 210,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,29}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,19}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].CC(CO)O>>[H][4*].[H+].C(C(C)O)=O",
+      "mod_reaction_smiles": "[NAD+].CC(CO)O>>[H][NAD].[H+].C(C(C)O)=O"
+    },
+    {
+      "id": "r211",
+      "dg_edge_id": 211,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,29}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,31}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].CC(CO)O>>[H][4*].[H+].C(C)(CO)=O",
+      "mod_reaction_smiles": "[NAD+].CC(CO)O>>[H][NAD].[H+].C(C)(CO)=O"
+    },
+    {
+      "id": "r212",
+      "dg_edge_id": 212,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,30}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,20}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(CCN)O>>[H][4*].[H+].C(CCN)=O",
+      "mod_reaction_smiles": "[NAD+].C(CCN)O>>[H][NAD].[H+].C(CCN)=O"
+    },
+    {
+      "id": "r213",
+      "dg_edge_id": 213,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,31}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C)(CO)=O>>[H][4*].[H+].C(C(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(C)(CO)=O>>[H][NAD].[H+].C(C(C)=O)=O"
+    },
+    {
+      "id": "r214",
+      "dg_edge_id": 214,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,32}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,22}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].CC(CO)N>>[H][4*].[H+].C(C(C)N)=O",
+      "mod_reaction_smiles": "[NAD+].CC(CO)N>>[H][NAD].[H+].C(C(C)N)=O"
+    },
+    {
+      "id": "r215",
+      "dg_edge_id": 215,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,33}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,24}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].CCNCCCO>>[H][4*].[H+].C(CCNCC)=O",
+      "mod_reaction_smiles": "[NAD+].CCNCCCO>>[H][NAD].[H+].C(CCNCC)=O"
+    },
+    {
+      "id": "r216",
+      "dg_edge_id": 216,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,34}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,36}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].CC(CN)O>>[H][4*].[H+].C(C)(CN)=O",
+      "mod_reaction_smiles": "[NAD+].CC(CN)O>>[H][NAD].[H+].C(C)(CN)=O"
+    },
+    {
+      "id": "r217",
+      "dg_edge_id": 217,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,27}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,18}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CC=O)=O>>[5*].C(CCO)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CC=O)=O>>[NAD+].C(CCO)=O"
+    },
+    {
+      "id": "r218",
+      "dg_edge_id": 218,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,31}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,29}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C)(CO)=O>>[5*].CC(CO)O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C)(CO)=O>>[NAD+].CC(CO)O"
+    },
+    {
+      "id": "r219",
+      "dg_edge_id": 219,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,36}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,34}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C)(CN)=O>>[5*].CC(CN)O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C)(CN)=O>>[NAD+].CC(CN)O"
+    },
+    {
+      "id": "r221",
+      "dg_edge_id": 221,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,43}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,49}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCOCC)=O>>[5*].C(C)OCCCO",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCOCC)=O>>[NAD+].C(C)OCCCO"
+    },
+    {
+      "id": "r223",
+      "dg_edge_id": 223,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,46}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,50}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCOC(C)=O)=O>>[5*].C(C)(OCCCO)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCOC(C)=O)=O>>[NAD+].C(C)(OCCCO)=O"
+    },
+    {
+      "id": "r224",
+      "dg_edge_id": 224,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,30}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,18}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(CCN)O>>[H][4*].N.[H+].C(CCO)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(CCN)O>>[H][NAD].N.[H+].C(CCO)=O"
+    },
+    {
+      "id": "r225",
+      "dg_edge_id": 225,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,32}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,31}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.CC(CO)N>>[H][4*].N.[H+].C(C)(CO)=O",
+      "mod_reaction_smiles": "[NAD+].O.CC(CO)N>>[H][NAD].N.[H+].C(C)(CO)=O"
+    },
+    {
+      "id": "r226",
+      "dg_edge_id": 226,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,34}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,19}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.CC(CN)O>>[H][4*].N.[H+].C(C(C)O)=O",
+      "mod_reaction_smiles": "[NAD+].O.CC(CN)O>>[H][NAD].N.[H+].C(C(C)O)=O"
+    },
+    {
+      "id": "r227",
+      "dg_edge_id": 227,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,35}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,20}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(CCN)N>>[H][4*].N.[H+].C(CCN)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(CCN)N>>[H][NAD].N.[H+].C(CCN)=O"
+    },
+    {
+      "id": "r228",
+      "dg_edge_id": 228,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,36}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,21}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C)(CN)=O>>[H][4*].N.[H+].C(C(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C)(CN)=O>>[H][NAD].N.[H+].C(C(C)=O)=O"
+    },
+    {
+      "id": "r229",
+      "dg_edge_id": 229,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,37}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,22}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.CC(CN)N>>[H][4*].N.[H+].C(C(C)N)=O",
+      "mod_reaction_smiles": "[NAD+].O.CC(CN)N>>[H][NAD].N.[H+].C(C(C)N)=O"
+    },
+    {
+      "id": "r230",
+      "dg_edge_id": 230,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,37}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,36}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.CC(CN)N>>[H][4*].N.[H+].C(C)(CN)=O",
+      "mod_reaction_smiles": "[NAD+].O.CC(CN)N>>[H][NAD].N.[H+].C(C)(CN)=O"
+    },
+    {
+      "id": "r231",
+      "dg_edge_id": 231,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,38}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,24}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C)NCCCN>>[H][4*].N.[H+].C(CCNCC)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C)NCCCN>>[H][NAD].N.[H+].C(CCNCC)=O"
+    },
+    {
+      "id": "r232",
+      "dg_edge_id": 232,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,27}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,20}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CC=O)=O>>[5*].O.C(CCN)=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CC=O)=O>>[NAD+].O.C(CCN)=O"
+    },
+    {
+      "id": "r233",
+      "dg_edge_id": 233,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,31}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,32}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C)(CO)=O>>[5*].O.CC(CO)N",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C)(CO)=O>>[NAD+].O.CC(CO)N"
+    },
+    {
+      "id": "r234",
+      "dg_edge_id": 234,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,36}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,37}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C)(CN)=O>>[5*].O.CC(CN)N",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C)(CN)=O>>[NAD+].O.CC(CN)N"
+    },
+    {
+      "id": "r236",
+      "dg_edge_id": 236,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,43}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,51}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CCOCC)=O>>[5*].O.CCOCCCN",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CCOCC)=O>>[NAD+].O.CCOCCCN"
+    },
+    {
+      "id": "r238",
+      "dg_edge_id": 238,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,46}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,52}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(CCOC(C)=O)=O>>[5*].O.C(C)(OCCCN)=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(CCOC(C)=O)=O>>[NAD+].O.C(C)(OCCCN)=O"
+    },
+    {
+      "id": "r239",
+      "dg_edge_id": 239,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,27}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,20}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CC=O)=O>>[3*]=O.C(CCN)=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CC=O)=O>>[Glu]=O.C(CCN)=O"
+    },
+    {
+      "id": "r240",
+      "dg_edge_id": 240,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,31}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,32}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C)(CO)=O>>[3*]=O.CC(CO)N",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C)(CO)=O>>[Glu]=O.CC(CO)N"
+    },
+    {
+      "id": "r241",
+      "dg_edge_id": 241,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,36}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,37}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C)(CN)=O>>[3*]=O.CC(CN)N",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C)(CN)=O>>[Glu]=O.CC(CN)N"
+    },
+    {
+      "id": "r242",
+      "dg_edge_id": 242,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,43}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,51}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CCOCC)=O>>[3*]=O.CCOCCCN",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CCOCC)=O>>[Glu]=O.CCOCCCN"
+    },
+    {
+      "id": "r243",
+      "dg_edge_id": 243,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,46}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,52}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(CCOC(C)=O)=O>>[3*]=O.C(C)(OCCCN)=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(CCOC(C)=O)=O>>[Glu]=O.C(C)(OCCCN)=O"
+    },
+    {
+      "id": "r244",
+      "dg_edge_id": 244,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,30}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,18}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(CCN)O>>[3*]([H])N.C(CCO)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(CCN)O>>[Glu]([H])N.C(CCO)=O"
+    },
+    {
+      "id": "r245",
+      "dg_edge_id": 245,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,32}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,31}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.CC(CO)N>>[3*]([H])N.C(C)(CO)=O",
+      "mod_reaction_smiles": "[Glu]=O.CC(CO)N>>[Glu]([H])N.C(C)(CO)=O"
+    },
+    {
+      "id": "r246",
+      "dg_edge_id": 246,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,34}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,19}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.CC(CN)O>>[3*]([H])N.C(C(C)O)=O",
+      "mod_reaction_smiles": "[Glu]=O.CC(CN)O>>[Glu]([H])N.C(C(C)O)=O"
+    },
+    {
+      "id": "r247",
+      "dg_edge_id": 247,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,35}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,20}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(CCN)N>>[3*]([H])N.C(CCN)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(CCN)N>>[Glu]([H])N.C(CCN)=O"
+    },
+    {
+      "id": "r248",
+      "dg_edge_id": 248,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,36}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,21}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C)(CN)=O>>[3*]([H])N.C(C(C)=O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C)(CN)=O>>[Glu]([H])N.C(C(C)=O)=O"
+    },
+    {
+      "id": "r249",
+      "dg_edge_id": 249,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,37}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,22}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.CC(CN)N>>[3*]([H])N.C(C(C)N)=O",
+      "mod_reaction_smiles": "[Glu]=O.CC(CN)N>>[Glu]([H])N.C(C(C)N)=O"
+    },
+    {
+      "id": "r250",
+      "dg_edge_id": 250,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,37}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,36}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.CC(CN)N>>[3*]([H])N.C(C)(CN)=O",
+      "mod_reaction_smiles": "[Glu]=O.CC(CN)N>>[Glu]([H])N.C(C)(CN)=O"
+    },
+    {
+      "id": "r251",
+      "dg_edge_id": 251,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,38}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,24}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C)NCCCN>>[3*]([H])N.C(CCNCC)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C)NCCCN>>[Glu]([H])N.C(CCNCC)=O"
+    },
+    {
+      "id": "r252",
+      "dg_edge_id": 252,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,40}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,23}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CC(S[2*])=O)(S[2*])=O>>[2*]S.C(CC(O)=O)(S[2*])=O",
+      "mod_reaction_smiles": "O.C(CC(S[CoA])=O)(S[CoA])=O>>[CoA]S.C(CC(O)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r253",
+      "dg_edge_id": 253,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,42}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,41}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CCOCC)(S[2*])=O>>[2*]S.C(CCOCC)(O)=O",
+      "mod_reaction_smiles": "O.C(CCOCC)(S[CoA])=O>>[CoA]S.C(CCOCC)(O)=O"
+    },
+    {
+      "id": "r254",
+      "dg_edge_id": 254,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,45}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,44}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(CCOC(C)=O)(S[2*])=O>>[2*]S.C(C)(OCCC(O)=O)=O",
+      "mod_reaction_smiles": "O.C(CCOC(C)=O)(S[CoA])=O>>[CoA]S.C(C)(OCCC(O)=O)=O"
+    },
+    {
+      "id": "r255",
+      "dg_edge_id": 255,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,48}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,47}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(C(C)NCC)(S[2*])=O>>[2*]S.C(C(C)NCC)(O)=O",
+      "mod_reaction_smiles": "O.C(C(C)NCC)(S[CoA])=O>>[CoA]S.C(C(C)NCC)(O)=O"
+    },
+    {
+      "id": "r256",
+      "dg_edge_id": 256,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,40}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,13}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CC(S[2*])=O)(S[2*])=O>>[5*].[2*]S.C(CC(S[2*])=O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CC(S[CoA])=O)(S[CoA])=O>>[NAD+].[CoA]S.C(CC(S[CoA])=O)=O"
+    },
+    {
+      "id": "r257",
+      "dg_edge_id": 257,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,42}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,43}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCOCC)(S[2*])=O>>[5*].[2*]S.C(CCOCC)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCOCC)(S[CoA])=O>>[NAD+].[CoA]S.C(CCOCC)=O"
+    },
+    {
+      "id": "r258",
+      "dg_edge_id": 258,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,45}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,46}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(CCOC(C)=O)(S[2*])=O>>[5*].[2*]S.C(CCOC(C)=O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(CCOC(C)=O)(S[CoA])=O>>[NAD+].[CoA]S.C(CCOC(C)=O)=O"
+    },
+    {
+      "id": "r260",
+      "dg_edge_id": 260,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,48}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,53}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)NCC)(S[2*])=O>>[5*].[2*]S.C(C(C)NCC)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)NCC)(S[CoA])=O>>[NAD+].[CoA]S.C(C(C)NCC)=O"
+    },
+    {
+      "id": "r261",
+      "dg_edge_id": 261,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,27}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,13}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CC=O)=O>>[H][4*].[H+].C(CC(S[2*])=O)=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CC=O)=O>>[H][NAD].[H+].C(CC(S[CoA])=O)=O"
+    },
+    {
+      "id": "r262",
+      "dg_edge_id": 262,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,43}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,42}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CCOCC)=O>>[H][4*].[H+].C(CCOCC)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CCOCC)=O>>[H][NAD].[H+].C(CCOCC)(S[CoA])=O"
+    },
+    {
+      "id": "r263",
+      "dg_edge_id": 263,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,46}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,45}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(CCOC(C)=O)=O>>[H][4*].[H+].C(CCOC(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(CCOC(C)=O)=O>>[H][NAD].[H+].C(CCOC(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r264",
+      "dg_edge_id": 264,
+      "reactants": {
+        "p_{0,41}": 1
+      },
+      "products": {
+        "CO2": 1,
+        "p_{0,5}": 1,
+        "p_{0,15}": 1
+      },
+      "rules": [
+        "4.1.1.e R04380"
+      ],
+      "rule_ids": [
+        11
+      ],
+      "reaction_smiles": "C(CCOCC)(O)=O>>C(=O)=O.C=C.CCO",
+      "mod_reaction_smiles": "C(CCOCC)(O)=O>>C(=O)=O.C=C.CCO"
+    },
+    {
+      "id": "r265",
+      "dg_edge_id": 265,
+      "reactants": {
+        "p_{0,44}": 1
+      },
+      "products": {
+        "CO2": 1,
+        "p_{0,5}": 1,
+        "p_{0,17}": 1
+      },
+      "rules": [
+        "4.1.1.e R04380"
+      ],
+      "rule_ids": [
+        11
+      ],
+      "reaction_smiles": "C(C)(OCCC(O)=O)=O>>C(=O)=O.C=C.C(C)(O)=O",
+      "mod_reaction_smiles": "C(C)(OCCC(O)=O)=O>>C(=O)=O.C=C.C(C)(O)=O"
+    },
+    {
+      "id": "r266",
+      "dg_edge_id": 266,
+      "reactants": {
+        "p_{0,41}": 1
+      },
+      "products": {
+        "PROP": 1,
+        "p_{0,15}": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCOCC)(O)=O>>C=CC(O)=O.CCO",
+      "mod_reaction_smiles": "C(CCOCC)(O)=O>>C=CC(O)=O.CCO"
+    },
+    {
+      "id": "r267",
+      "dg_edge_id": 267,
+      "reactants": {
+        "p_{0,42}": 1
+      },
+      "products": {
+        "ACRCoA": 1,
+        "p_{0,15}": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCOCC)(S[2*])=O>>C=CC(S[2*])=O.CCO",
+      "mod_reaction_smiles": "C(CCOCC)(S[CoA])=O>>C=CC(S[CoA])=O.CCO"
+    },
+    {
+      "id": "r268",
+      "dg_edge_id": 268,
+      "reactants": {
+        "p_{0,43}": 1
+      },
+      "products": {
+        "p_{0,2}": 1,
+        "p_{0,15}": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCOCC)=O>>C=CC=O.CCO",
+      "mod_reaction_smiles": "C(CCOCC)=O>>C=CC=O.CCO"
+    },
+    {
+      "id": "r269",
+      "dg_edge_id": 269,
+      "reactants": {
+        "p_{0,44}": 1
+      },
+      "products": {
+        "PROP": 1,
+        "p_{0,17}": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(C)(OCCC(O)=O)=O>>C=CC(O)=O.C(C)(O)=O",
+      "mod_reaction_smiles": "C(C)(OCCC(O)=O)=O>>C=CC(O)=O.C(C)(O)=O"
+    },
+    {
+      "id": "r270",
+      "dg_edge_id": 270,
+      "reactants": {
+        "p_{0,45}": 1
+      },
+      "products": {
+        "ACRCoA": 1,
+        "p_{0,17}": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCOC(C)=O)(S[2*])=O>>C=CC(S[2*])=O.C(C)(O)=O",
+      "mod_reaction_smiles": "C(CCOC(C)=O)(S[CoA])=O>>C=CC(S[CoA])=O.C(C)(O)=O"
+    },
+    {
+      "id": "r271",
+      "dg_edge_id": 271,
+      "reactants": {
+        "p_{0,46}": 1
+      },
+      "products": {
+        "p_{0,2}": 1,
+        "p_{0,17}": 1
+      },
+      "rules": [
+        "4.2.1.a R03032"
+      ],
+      "rule_ids": [
+        13
+      ],
+      "reaction_smiles": "C(CCOC(C)=O)=O>>C=CC=O.C(C)(O)=O",
+      "mod_reaction_smiles": "C(CCOC(C)=O)=O>>C=CC=O.C(C)(O)=O"
+    },
+    {
+      "id": "r272",
+      "dg_edge_id": 272,
+      "reactants": {
+        "p_{0,47}": 1
+      },
+      "products": {
+        "p_{0,25}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)NCC)(O)=O>>C(CCNCC)(O)=O",
+      "mod_reaction_smiles": "C(C(C)NCC)(O)=O>>C(CCNCC)(O)=O"
+    },
+    {
+      "id": "r273",
+      "dg_edge_id": 273,
+      "reactants": {
+        "p_{0,48}": 1
+      },
+      "products": {
+        "p_{0,26}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)NCC)(S[2*])=O>>C(CCNCC)(S[2*])=O",
+      "mod_reaction_smiles": "C(C(C)NCC)(S[CoA])=O>>C(CCNCC)(S[CoA])=O"
+    },
+    {
+      "id": "r275",
+      "dg_edge_id": 275,
+      "reactants": {
+        "p_{0,41}": 1
+      },
+      "products": {
+        "p_{0,54}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCOCC)(O)=O>>C(C(C)OCC)(O)=O",
+      "mod_reaction_smiles": "C(CCOCC)(O)=O>>C(C(C)OCC)(O)=O"
+    },
+    {
+      "id": "r277",
+      "dg_edge_id": 277,
+      "reactants": {
+        "p_{0,42}": 1
+      },
+      "products": {
+        "p_{0,55}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCOCC)(S[2*])=O>>C(C(C)OCC)(S[2*])=O",
+      "mod_reaction_smiles": "C(CCOCC)(S[CoA])=O>>C(C(C)OCC)(S[CoA])=O"
+    },
+    {
+      "id": "r279",
+      "dg_edge_id": 279,
+      "reactants": {
+        "p_{0,44}": 1
+      },
+      "products": {
+        "p_{0,56}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(C)(OCCC(O)=O)=O>>C(C(C)OC(C)=O)(O)=O",
+      "mod_reaction_smiles": "C(C)(OCCC(O)=O)=O>>C(C(C)OC(C)=O)(O)=O"
+    },
+    {
+      "id": "r281",
+      "dg_edge_id": 281,
+      "reactants": {
+        "p_{0,45}": 1
+      },
+      "products": {
+        "p_{0,57}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        23
+      ],
+      "reaction_smiles": "C(CCOC(C)=O)(S[2*])=O>>C(C(C)OC(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "C(CCOC(C)=O)(S[CoA])=O>>C(C(C)OC(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r282",
+      "dg_edge_id": 282,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,39}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,23}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(CC(O)=O)(O)=O>>[1*]O.O=P(O)(O)O.C(CC(O)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(CC(O)=O)(O)=O>>[ADP]O.O=P(O)(O)O.C(CC(O)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r283",
+      "dg_edge_id": 283,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,41}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,42}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(CCOCC)(O)=O>>[1*]O.O=P(O)(O)O.C(CCOCC)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(CCOCC)(O)=O>>[ADP]O.O=P(O)(O)O.C(CCOCC)(S[CoA])=O"
+    },
+    {
+      "id": "r284",
+      "dg_edge_id": 284,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,44}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,45}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C)(OCCC(O)=O)=O>>[1*]O.O=P(O)(O)O.C(CCOC(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C)(OCCC(O)=O)=O>>[ADP]O.O=P(O)(O)O.C(CCOC(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r285",
+      "dg_edge_id": 285,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,47}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,48}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C(C)NCC)(O)=O>>[1*]O.O=P(O)(O)O.C(C(C)NCC)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C(C)NCC)(O)=O>>[ADP]O.O=P(O)(O)O.C(C(C)NCC)(S[CoA])=O"
+    },
+    {
+      "id": "r286",
+      "dg_edge_id": 286,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,49}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,43}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C)OCCCO>>[H][4*].[H+].C(CCOCC)=O",
+      "mod_reaction_smiles": "[NAD+].C(C)OCCCO>>[H][NAD].[H+].C(CCOCC)=O"
+    },
+    {
+      "id": "r287",
+      "dg_edge_id": 287,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,50}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,46}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C)(OCCCO)=O>>[H][4*].[H+].C(CCOC(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(C)(OCCCO)=O>>[H][NAD].[H+].C(CCOC(C)=O)=O"
+    },
+    {
+      "id": "r289",
+      "dg_edge_id": 289,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,53}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,58}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)NCC)=O>>[5*].CCNC(C)CO",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)NCC)=O>>[NAD+].CCNC(C)CO"
+    },
+    {
+      "id": "r290",
+      "dg_edge_id": 290,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,51}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,43}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.CCOCCCN>>[H][4*].N.[H+].C(CCOCC)=O",
+      "mod_reaction_smiles": "[NAD+].O.CCOCCCN>>[H][NAD].N.[H+].C(CCOCC)=O"
+    },
+    {
+      "id": "r291",
+      "dg_edge_id": 291,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,52}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,46}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C)(OCCCN)=O>>[H][4*].N.[H+].C(CCOC(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C)(OCCCN)=O>>[H][NAD].N.[H+].C(CCOC(C)=O)=O"
+    },
+    {
+      "id": "r293",
+      "dg_edge_id": 293,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,53}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,59}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)NCC)=O>>[5*].O.C(C)NC(C)CN",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)NCC)=O>>[NAD+].O.C(C)NC(C)CN"
+    },
+    {
+      "id": "r294",
+      "dg_edge_id": 294,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,53}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,59}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)NCC)=O>>[3*]=O.C(C)NC(C)CN",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)NCC)=O>>[Glu]=O.C(C)NC(C)CN"
+    },
+    {
+      "id": "r295",
+      "dg_edge_id": 295,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,51}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,43}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.CCOCCCN>>[3*]([H])N.C(CCOCC)=O",
+      "mod_reaction_smiles": "[Glu]=O.CCOCCCN>>[Glu]([H])N.C(CCOCC)=O"
+    },
+    {
+      "id": "r296",
+      "dg_edge_id": 296,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,52}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,46}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C)(OCCCN)=O>>[3*]([H])N.C(CCOC(C)=O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C)(OCCCN)=O>>[Glu]([H])N.C(CCOC(C)=O)=O"
+    },
+    {
+      "id": "r297",
+      "dg_edge_id": 297,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,55}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,54}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(C(C)OCC)(S[2*])=O>>[2*]S.C(C(C)OCC)(O)=O",
+      "mod_reaction_smiles": "O.C(C(C)OCC)(S[CoA])=O>>[CoA]S.C(C(C)OCC)(O)=O"
+    },
+    {
+      "id": "r298",
+      "dg_edge_id": 298,
+      "reactants": {
+        "H2O": 1,
+        "p_{0,57}": 1
+      },
+      "products": {
+        "CoA": 1,
+        "p_{0,56}": 1
+      },
+      "rules": [
+        "3.1.2.a R03157"
+      ],
+      "rule_ids": [
+        6
+      ],
+      "reaction_smiles": "O.C(C(C)OC(C)=O)(S[2*])=O>>[2*]S.C(C(C)OC(C)=O)(O)=O",
+      "mod_reaction_smiles": "O.C(C(C)OC(C)=O)(S[CoA])=O>>[CoA]S.C(C(C)OC(C)=O)(O)=O"
+    },
+    {
+      "id": "r300",
+      "dg_edge_id": 300,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,55}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,60}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)OCC)(S[2*])=O>>[5*].[2*]S.C(C(C)OCC)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)OCC)(S[CoA])=O>>[NAD+].[CoA]S.C(C(C)OCC)=O"
+    },
+    {
+      "id": "r302",
+      "dg_edge_id": 302,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,57}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,61}": 1
+      },
+      "rules": [
+        "3.1.2.b R04747"
+      ],
+      "rule_ids": [
+        7
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)OC(C)=O)(S[2*])=O>>[5*].[2*]S.C(C(C)OC(C)=O)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)OC(C)=O)(S[CoA])=O>>[NAD+].[CoA]S.C(C(C)OC(C)=O)=O"
+    },
+    {
+      "id": "r303",
+      "dg_edge_id": 303,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,53}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,48}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C(C)NCC)=O>>[H][4*].[H+].C(C(C)NCC)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C(C)NCC)=O>>[H][NAD].[H+].C(C(C)NCC)(S[CoA])=O"
+    },
+    {
+      "id": "r304",
+      "dg_edge_id": 304,
+      "reactants": {
+        "p_{0,54}": 1
+      },
+      "products": {
+        "p_{0,41}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)OCC)(O)=O>>C(CCOCC)(O)=O",
+      "mod_reaction_smiles": "C(C(C)OCC)(O)=O>>C(CCOCC)(O)=O"
+    },
+    {
+      "id": "r305",
+      "dg_edge_id": 305,
+      "reactants": {
+        "p_{0,55}": 1
+      },
+      "products": {
+        "p_{0,42}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)OCC)(S[2*])=O>>C(CCOCC)(S[2*])=O",
+      "mod_reaction_smiles": "C(C(C)OCC)(S[CoA])=O>>C(CCOCC)(S[CoA])=O"
+    },
+    {
+      "id": "r306",
+      "dg_edge_id": 306,
+      "reactants": {
+        "p_{0,56}": 1
+      },
+      "products": {
+        "p_{0,44}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)OC(C)=O)(O)=O>>C(C)(OCCC(O)=O)=O",
+      "mod_reaction_smiles": "C(C(C)OC(C)=O)(O)=O>>C(C)(OCCC(O)=O)=O"
+    },
+    {
+      "id": "r307",
+      "dg_edge_id": 307,
+      "reactants": {
+        "p_{0,57}": 1
+      },
+      "products": {
+        "p_{0,45}": 1
+      },
+      "rules": [
+        "5.4.99.a R01181"
+      ],
+      "rule_ids": [
+        20
+      ],
+      "reaction_smiles": "C(C(C)OC(C)=O)(S[2*])=O>>C(CCOC(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "C(C(C)OC(C)=O)(S[CoA])=O>>C(CCOC(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r308",
+      "dg_edge_id": 308,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,54}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,55}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C(C)OCC)(O)=O>>[1*]O.O=P(O)(O)O.C(C(C)OCC)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C(C)OCC)(O)=O>>[ADP]O.O=P(O)(O)O.C(C(C)OCC)(S[CoA])=O"
+    },
+    {
+      "id": "r309",
+      "dg_edge_id": 309,
+      "reactants": {
+        "CoA": 1,
+        "ATP": 1,
+        "p_{0,56}": 1
+      },
+      "products": {
+        "ADP": 1,
+        "Pi": 1,
+        "p_{0,57}": 1
+      },
+      "rules": [
+        "6.2.1.a R03932"
+      ],
+      "rule_ids": [
+        24
+      ],
+      "reaction_smiles": "[2*]S.[1*]OP(O)(O)=O.C(C(C)OC(C)=O)(O)=O>>[1*]O.O=P(O)(O)O.C(C(C)OC(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[CoA]S.[ADP]OP(O)(O)=O.C(C(C)OC(C)=O)(O)=O>>[ADP]O.O=P(O)(O)O.C(C(C)OC(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r310",
+      "dg_edge_id": 310,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,58}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,53}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].CCNC(C)CO>>[H][4*].[H+].C(C(C)NCC)=O",
+      "mod_reaction_smiles": "[NAD+].CCNC(C)CO>>[H][NAD].[H+].C(C(C)NCC)=O"
+    },
+    {
+      "id": "r312",
+      "dg_edge_id": 312,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,60}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,62}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)OCC)=O>>[5*].C(C)OC(C)CO",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)OCC)=O>>[NAD+].C(C)OC(C)CO"
+    },
+    {
+      "id": "r314",
+      "dg_edge_id": 314,
+      "reactants": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,61}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "p_{0,63}": 1
+      },
+      "rules": [
+        "1.1.1.a_rev R02528"
+      ],
+      "rule_ids": [
+        1
+      ],
+      "reaction_smiles": "[H][4*].[H+].C(C(C)OC(C)=O)=O>>[5*].C(C)(OC(C)CO)=O",
+      "mod_reaction_smiles": "[H][NAD].[H+].C(C(C)OC(C)=O)=O>>[NAD+].C(C)(OC(C)CO)=O"
+    },
+    {
+      "id": "r315",
+      "dg_edge_id": 315,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,59}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,53}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C)NC(C)CN>>[H][4*].N.[H+].C(C(C)NCC)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C)NC(C)CN>>[H][NAD].N.[H+].C(C(C)NCC)=O"
+    },
+    {
+      "id": "r317",
+      "dg_edge_id": 317,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,60}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,64}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)OCC)=O>>[5*].O.CCOC(C)CN",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)OCC)=O>>[NAD+].O.CCOC(C)CN"
+    },
+    {
+      "id": "r319",
+      "dg_edge_id": 319,
+      "reactants": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,61}": 1
+      },
+      "products": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,65}": 1
+      },
+      "rules": [
+        "1.4.1.a_rev R05329"
+      ],
+      "rule_ids": [
+        3
+      ],
+      "reaction_smiles": "[H][4*].N.[H+].C(C(C)OC(C)=O)=O>>[5*].O.C(C)(OC(C)CN)=O",
+      "mod_reaction_smiles": "[H][NAD].N.[H+].C(C(C)OC(C)=O)=O>>[NAD+].O.C(C)(OC(C)CN)=O"
+    },
+    {
+      "id": "r320",
+      "dg_edge_id": 320,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,60}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,64}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)OCC)=O>>[3*]=O.CCOC(C)CN",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)OCC)=O>>[Glu]=O.CCOC(C)CN"
+    },
+    {
+      "id": "r321",
+      "dg_edge_id": 321,
+      "reactants": {
+        "Glu": 1,
+        "p_{0,61}": 1
+      },
+      "products": {
+        "2OG": 1,
+        "p_{0,65}": 1
+      },
+      "rules": [
+        "2.6.1.a R00355"
+      ],
+      "rule_ids": [
+        4
+      ],
+      "reaction_smiles": "[3*]([H])N.C(C(C)OC(C)=O)=O>>[3*]=O.C(C)(OC(C)CN)=O",
+      "mod_reaction_smiles": "[Glu]([H])N.C(C(C)OC(C)=O)=O>>[Glu]=O.C(C)(OC(C)CN)=O"
+    },
+    {
+      "id": "r322",
+      "dg_edge_id": 322,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,59}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,53}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C)NC(C)CN>>[3*]([H])N.C(C(C)NCC)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C)NC(C)CN>>[Glu]([H])N.C(C(C)NCC)=O"
+    },
+    {
+      "id": "r323",
+      "dg_edge_id": 323,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,60}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,55}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C(C)OCC)=O>>[H][4*].[H+].C(C(C)OCC)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C(C)OCC)=O>>[H][NAD].[H+].C(C(C)OCC)(S[CoA])=O"
+    },
+    {
+      "id": "r324",
+      "dg_edge_id": 324,
+      "reactants": {
+        "NAD+": 1,
+        "CoA": 1,
+        "p_{0,61}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,57}": 1
+      },
+      "rules": [
+        "3.1.2.b_rev R01172"
+      ],
+      "rule_ids": [
+        8
+      ],
+      "reaction_smiles": "[5*].[2*]S.C(C(C)OC(C)=O)=O>>[H][4*].[H+].C(C(C)OC(C)=O)(S[2*])=O",
+      "mod_reaction_smiles": "[NAD+].[CoA]S.C(C(C)OC(C)=O)=O>>[H][NAD].[H+].C(C(C)OC(C)=O)(S[CoA])=O"
+    },
+    {
+      "id": "r325",
+      "dg_edge_id": 325,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,62}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,60}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C)OC(C)CO>>[H][4*].[H+].C(C(C)OCC)=O",
+      "mod_reaction_smiles": "[NAD+].C(C)OC(C)CO>>[H][NAD].[H+].C(C(C)OCC)=O"
+    },
+    {
+      "id": "r326",
+      "dg_edge_id": 326,
+      "reactants": {
+        "NAD+": 1,
+        "p_{0,63}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "H+": 1,
+        "p_{0,61}": 1
+      },
+      "rules": [
+        "1.1.1.a R03113"
+      ],
+      "rule_ids": [
+        0
+      ],
+      "reaction_smiles": "[5*].C(C)(OC(C)CO)=O>>[H][4*].[H+].C(C(C)OC(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].C(C)(OC(C)CO)=O>>[H][NAD].[H+].C(C(C)OC(C)=O)=O"
+    },
+    {
+      "id": "r327",
+      "dg_edge_id": 327,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,64}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,60}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.CCOC(C)CN>>[H][4*].N.[H+].C(C(C)OCC)=O",
+      "mod_reaction_smiles": "[NAD+].O.CCOC(C)CN>>[H][NAD].N.[H+].C(C(C)OCC)=O"
+    },
+    {
+      "id": "r328",
+      "dg_edge_id": 328,
+      "reactants": {
+        "NAD+": 1,
+        "H2O": 1,
+        "p_{0,65}": 1
+      },
+      "products": {
+        "NADH": 1,
+        "NH3": 1,
+        "H+": 1,
+        "p_{0,61}": 1
+      },
+      "rules": [
+        "1.4.1.a R03408"
+      ],
+      "rule_ids": [
+        2
+      ],
+      "reaction_smiles": "[5*].O.C(C)(OC(C)CN)=O>>[H][4*].N.[H+].C(C(C)OC(C)=O)=O",
+      "mod_reaction_smiles": "[NAD+].O.C(C)(OC(C)CN)=O>>[H][NAD].N.[H+].C(C(C)OC(C)=O)=O"
+    },
+    {
+      "id": "r329",
+      "dg_edge_id": 329,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,64}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,60}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.CCOC(C)CN>>[3*]([H])N.C(C(C)OCC)=O",
+      "mod_reaction_smiles": "[Glu]=O.CCOC(C)CN>>[Glu]([H])N.C(C(C)OCC)=O"
+    },
+    {
+      "id": "r330",
+      "dg_edge_id": 330,
+      "reactants": {
+        "2OG": 1,
+        "p_{0,65}": 1
+      },
+      "products": {
+        "Glu": 1,
+        "p_{0,61}": 1
+      },
+      "rules": [
+        "2.6.1.a_rev R00355"
+      ],
+      "rule_ids": [
+        5
+      ],
+      "reaction_smiles": "[3*]=O.C(C)(OC(C)CN)=O>>[3*]([H])N.C(C(C)OC(C)=O)=O",
+      "mod_reaction_smiles": "[Glu]=O.C(C)(OC(C)CN)=O>>[Glu]([H])N.C(C(C)OC(C)=O)=O"
+    }
+  ],
+  "provenance": {
+    "mod_version": "1.0.1.100",
+    "expansion_rounds": 7,
+    "carbon_groups": {
+      "ADP": {
+        "carbon": 10
+      },
+      "CoA": {
+        "carbon": 21
+      },
+      "Glu": {
+        "carbon": 5
+      },
+      "NAD": {
+        "carbon": 21
+      },
+      "NAD+": {
+        "carbon": 21
+      }
+    },
+    "source_files": {
+      "3HP-Rules/1_1_1_a.gml": "be8e6fc3ef29e857e98e90481cdd8a45918789233e8865e80db2dd0dc5b198e6",
+      "3HP-Rules/1_1_1_a_rev.gml": "854e1cec96939296f850cbca0d2fca4918badaae10b2222be2b1491562b6f5bf",
+      "3HP-Rules/1_4_1_a.gml": "19f4006e4edde1775ffdf2363186df915f2cc0c37e20c37f2db19f2500923634",
+      "3HP-Rules/1_4_1_a_rev.gml": "16d4e17a3c3095f1d34989ff52c406e25cf8868091300e74f9d00af52edb1e8d",
+      "3HP-Rules/2_6_1_a.gml": "5f2db53307377bcf4f41cb5167b9033747cd366fe518f123b8a3b0a881e68296",
+      "3HP-Rules/2_6_1_a_rev.gml": "4e2ca6c585949afaee3540c20269462009155318b949e2730f14a779fee5a7dd",
+      "3HP-Rules/3_1_2_a.gml": "3c4fe64d3dab2d1cc1ec4afb2f6e497a2ac59fc4c322a455c6811f450166aac7",
+      "3HP-Rules/3_1_2_b.gml": "005761672740308154181ebcc6f7615c4d7df9c43e0c3e5f702142dd0f769055",
+      "3HP-Rules/3_1_2_b_rev.gml": "38117b68513f54f273cf613fb6e5fd828c70b187572ef37bc405c59fa9439323",
+      "3HP-Rules/4_1_1_a.gml": "dd6c49b1e39499e2bb43ed747bbdcb40cbd7acd13755a566960108366cf7a544",
+      "3HP-Rules/4_1_1_c.gml": "f67776394a5ae31a1c4e48de79d06bce787123479eff2b745440358fe80ec225",
+      "3HP-Rules/4_1_1_e.gml": "735758f3e9246ca68c6201064cdc26069bf71470831afeca3973a72d62b4c160",
+      "3HP-Rules/4_1_1_i.gml": "45e9759957135801e29d557e79cae86aef051a07b0048d0b6605656f0037c6a9",
+      "3HP-Rules/4_2_1_a.gml": "7ce00d9ca73fdc46c3312c2220e423cabce5c07139f34e835edec9d7b995f2f9",
+      "3HP-Rules/4_2_1_a_rev.gml": "22c7d8ee07f0713ba7b0a7ddbb6a94c15f63c73ef46d2ac23c11460f0cf7577b",
+      "3HP-Rules/4_2_1_b.gml": "3a37d81f6545e329813800be66ed99f59b38a7e38d954ff558deb26b9ef7c579",
+      "3HP-Rules/4_2_1_b_rev.gml": "731756487e8ce9795ac190a7324e4669379bed612ea69557efb7691166fad079",
+      "3HP-Rules/4_3_1_a.gml": "8d6720f2fde8175d5a13b173dc01a262411e41286447e0d2fb071cacdd19113a",
+      "3HP-Rules/4_3_1_a_rev.gml": "d13679e88191870600f3454e25b07a156016e7d35132a75798cb53a9a7c18bc8",
+      "3HP-Rules/5_4_3_a.gml": "d81fda07cf717ab97cc7408272f5799cea5dc369e25f3c7d98ffa6f2f1f12133",
+      "3HP-Rules/5_4_99_a.gml": "12882a15d3972b2083c32747e473481f98d6a42411d7bfd9cbeec16ea94d31d7",
+      "3HP-Rules/5_4_99_a1.gml": "53e67971a4429a531167c9cb69b0c71567387eb886ec9647205cac8e0c9c8b9e",
+      "3HP-Rules/5_4_99_a1_rev.gml": "fb6ac17a99af9f45b992cd04a2a3496805b9510d092ea765a7154f81d879bd3c",
+      "3HP-Rules/5_4_99_a_rev.gml": "44fef0595278be231d92943355242a068fa7cb82919a789f4a9ff9320e06a0d7",
+      "3HP-Rules/6_2_1_a.gml": "02e9fdf0c8df8f268a5ba8bf7c78776842618d79077d127a91291445b33f3d9f",
+      "3HP-Rules/6_4_1_a.gml": "f2626794c659018a271abe748283a6b8d18a4ef92b27ac66a9eedb58f63f1493",
+      "3HP-Rules/prules.py": "e2f876e049d789930243bbb5679c32b1edb5a620d2bd745716ac8d8d2e32ec7f",
+      "3HP-Rules/rules.pdf": "29208e0dbf7bc394b18764a10ed3c781cad0a5b09e50adc141dec2e25b7836c1",
+      "3HP-dg.py": "75cfa6e57953df6ab527a696d7d89f9bab7a7214e31037547443ca7907d8e0f5",
+      "3HP-grammar.py": "60e94bc5638a9d64265c272abf3cd0ddfb57030f1da989c561f77f0b887c6ac0"
+    },
+    "native_dg_sha256": "ae69452f68e34525667c4e0883beb6e1d966061976e1d2e83a3c4fe2fa8a0ede"
+  }
+}

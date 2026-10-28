@@ -1,0 +1,7 @@
+{
+  "Ad": {"carbon": 10, "meaning": "adenosyl group in ATP/ADP/AMP", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16335"},
+  "NAD": {"carbon": 21, "meaning": "NAD(H) backbone", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16908"},
+  "NAD+": {"carbon": 21, "meaning": "oxidized NAD backbone", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16908"},
+  "CoA": {"carbon": 21, "meaning": "CoA carrier; explicit acetyl carbon is counted separately", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:15346"},
+  "SA": {"carbon": 14, "meaning": "S-adenosylhomocysteine backbone; the SAM methyl carbon is explicit", "reference": "https://www.ebi.ac.uk/chebi/CHEBI:16680"}
+}

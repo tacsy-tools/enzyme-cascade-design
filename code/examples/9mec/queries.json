@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Apap",
+    "sources": {
+      "E4p": 1,
+      "Pep": 2
+    },
+    "targets": {
+      "Apap": 1
+    },
+    "allowed_inputs": [
+      "Atp",
+      "Nadh",
+      "Sam",
+      "AcCoA",
+      "Gln",
+      "HTD",
+      "H2O",
+      "H_plus",
+      "O2"
+    ]
+  },
+  {
+    "name": "Sal",
+    "sources": {
+      "E4p": 1,
+      "Pep": 2
+    },
+    "targets": {
+      "Sal": 1
+    },
+    "allowed_inputs": [
+      "Atp",
+      "Nadh",
+      "Sam",
+      "AcCoA",
+      "Gln",
+      "HTD",
+      "H2O",
+      "H_plus",
+      "O2"
+    ]
+  },
+  {
+    "name": "Va",
+    "sources": {
+      "E4p": 1,
+      "Pep": 1
+    },
+    "targets": {
+      "Va": 1
+    },
+    "allowed_inputs": [
+      "Atp",
+      "Nadh",
+      "Sam",
+      "AcCoA",
+      "Gln",
+      "HTD",
+      "H2O",
+      "H_plus",
+      "O2"
+    ]
+  },
+  {
+    "name": "Tyr",
+    "sources": {
+      "E4p": 1,
+      "Pep": 2
+    },
+    "targets": {
+      "Tyr": 1
+    },
+    "allowed_inputs": [
+      "Atp",
+      "Nadh",
+      "Sam",
+      "AcCoA",
+      "Gln",
+      "HTD",
+      "H2O",
+      "H_plus",
+      "O2"
+    ]
+  },
+  {
+    "name": "all-four",
+    "sources": {
+      "E4p": 4,
+      "Pep": 7
+    },
+    "targets": {
+      "Apap": 1,
+      "Sal": 1,
+      "Va": 1,
+      "Tyr": 1
+    },
+    "allowed_inputs": [
+      "Atp",
+      "Nadh",
+      "Sam",
+      "AcCoA",
+      "Gln",
+      "HTD",
+      "H2O",
+      "H_plus",
+      "O2"
+    ]
+  }
+]

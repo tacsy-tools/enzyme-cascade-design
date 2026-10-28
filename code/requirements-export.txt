@@ -1,0 +1,2 @@
+# Rebuilding networks also requires a separately installed MØD Python module.
+python-libsbml>=5.20,<6

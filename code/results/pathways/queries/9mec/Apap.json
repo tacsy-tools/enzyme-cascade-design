@@ -1,0 +1,266 @@
+{
+  "backend": "gurobi",
+  "query_sources": {
+    "E4p": 1,
+    "Pep": 2
+  },
+  "query_targets": {
+    "Apap": 1
+  },
+  "solutions": [
+    {
+      "id": 0,
+      "source_inflows": {
+        "Nadh": 2,
+        "H_plus": 2,
+        "Atp": 1,
+        "Pep": 2,
+        "E4p": 1,
+        "O2": 1,
+        "AcCoA": 1,
+        "Gln": 1
+      },
+      "sink_outflows": {
+        "Nad_plus": 2,
+        "Adp": 1,
+        "Pi": 4,
+        "CO2": 1,
+        "H2O": 1,
+        "CoA": 1,
+        "Pyr": 1,
+        "Glu": 1,
+        "Apap": 1
+      },
+      "reactions": [
+        {
+          "edge_id": 0,
+          "reaction_id": "r39",
+          "flow": 1,
+          "sources": [
+            "Dhq"
+          ],
+          "targets": [
+            "Dhs",
+            "H2O"
+          ]
+        },
+        {
+          "edge_id": 1,
+          "reaction_id": "r40",
+          "flow": 1,
+          "sources": [
+            "Dhs",
+            "Nadh",
+            "H_plus"
+          ],
+          "targets": [
+            "Skm",
+            "Nad_plus"
+          ]
+        },
+        {
+          "edge_id": 2,
+          "reaction_id": "r41",
+          "flow": 1,
+          "sources": [
+            "Skm",
+            "Atp"
+          ],
+          "targets": [
+            "S3p",
+            "Adp"
+          ]
+        },
+        {
+          "edge_id": 3,
+          "reaction_id": "r42",
+          "flow": 1,
+          "sources": [
+            "S3p",
+            "Pep"
+          ],
+          "targets": [
+            "Epsp",
+            "Pi"
+          ]
+        },
+        {
+          "edge_id": 4,
+          "reaction_id": "r43",
+          "flow": 1,
+          "sources": [
+            "Epsp"
+          ],
+          "targets": [
+            "Pi",
+            "Cha"
+          ]
+        },
+        {
+          "edge_id": 5,
+          "reaction_id": "r44",
+          "flow": 1,
+          "sources": [
+            "Cha",
+            "Gln"
+          ],
+          "targets": [
+            "Glu",
+            "Adc"
+          ]
+        },
+        {
+          "edge_id": 6,
+          "reaction_id": "r45",
+          "flow": 1,
+          "sources": [
+            "Adc"
+          ],
+          "targets": [
+            "Pyr",
+            "AmBez"
+          ]
+        },
+        {
+          "edge_id": 7,
+          "reaction_id": "r46",
+          "flow": 1,
+          "sources": [
+            "Nadh",
+            "H_plus",
+            "O2",
+            "AmBez"
+          ],
+          "targets": [
+            "Nad_plus",
+            "CO2",
+            "H2O",
+            "AmPhOH"
+          ]
+        },
+        {
+          "edge_id": 8,
+          "reaction_id": "r47",
+          "flow": 1,
+          "sources": [
+            "AcCoA",
+            "AmPhOH"
+          ],
+          "targets": [
+            "CoA",
+            "Apap"
+          ]
+        },
+        {
+          "edge_id": 17,
+          "reaction_id": "r56",
+          "flow": 1,
+          "sources": [
+            "Deoxy"
+          ],
+          "targets": [
+            "Dhq",
+            "Pi"
+          ]
+        },
+        {
+          "edge_id": 18,
+          "reaction_id": "r57",
+          "flow": 1,
+          "sources": [
+            "Pep",
+            "E4p",
+            "H2O"
+          ],
+          "targets": [
+            "Deoxy",
+            "Pi"
+          ]
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "auxiliary_carbon_in": 80,
+    "requested_retention_lower_bound": 0.0,
+    "total_efficiency": 8.88888888888889,
+    "reaction_count": 11,
+    "total_reaction_flux": 11
+  },
+  "carbon_map": {
+    "Dhq": 7,
+    "Dhs": 7,
+    "Nadh": 21,
+    "H_plus": 0,
+    "Skm": 7,
+    "Nad_plus": 21,
+    "Atp": 10,
+    "S3p": 7,
+    "Adp": 10,
+    "Amp": 10,
+    "Pep": 3,
+    "E4p": 4,
+    "Epsp": 10,
+    "Deoxy": 7,
+    "Pi": 0,
+    "Cha": 10,
+    "CO2": 1,
+    "H2O": 0,
+    "O2": 0,
+    "Sam": 15,
+    "Sah": 14,
+    "Va": 8,
+    "CoA": 21,
+    "AcCoA": 23,
+    "Iso": 10,
+    "Pyr": 3,
+    "Ppa": 10,
+    "Sal": 7,
+    "Gln": 5,
+    "Glu": 5,
+    "Adc": 10,
+    "AmBez": 7,
+    "AmPhOH": 6,
+    "Apap": 8,
+    "Hpp": 9,
+    "HTD": 6,
+    "Imz": 6,
+    "Tyr": 9,
+    "Pca": 7
+  },
+  "boundary_policy": {
+    "allowed_inputs": [
+      "AcCoA",
+      "Atp",
+      "E4p",
+      "Gln",
+      "H2O",
+      "HTD",
+      "H_plus",
+      "Nadh",
+      "O2",
+      "Pep",
+      "Sam"
+    ],
+    "outputs": "all except requested sources",
+    "exact_sources": {
+      "E4p": 1,
+      "Pep": 2
+    },
+    "exact_targets": {
+      "Apap": 1
+    }
+  },
+  "optimization": {
+    "order": [
+      "auxiliary_carbon_inflow",
+      "edge_use",
+      "noncarbon_inflow"
+    ],
+    "flow_upper_bound": 200,
+    "scope": "Optimal within stated integer bounds; alternate optima may exist"
+  },
+  "provenance": {
+    "network_sha256": "23e51b47e5d5f95d650c5e553f8b0b760890c6fcd7fd3ebd6049d488dd934266"
+  }
+}

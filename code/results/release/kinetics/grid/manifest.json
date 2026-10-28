@@ -1,0 +1,75 @@
+{
+  "model_sha256": "45cbc06eada9a7dd81fb7b8e56abcdfab3fb32bd3752666c990318b27c3d6382",
+  "products": [
+    "Apap",
+    "Sal",
+    "Va",
+    "Tyr"
+  ],
+  "cases": [
+    {
+      "case": "baseline",
+      "factors": {}
+    },
+    {
+      "case": "ODO_1x__SDH_5x",
+      "factors": {
+        "ODO": 1,
+        "SDH": 5
+      }
+    },
+    {
+      "case": "ODO_0.5x__SDH_1x",
+      "factors": {
+        "ODO": 0.5,
+        "SDH": 1
+      }
+    },
+    {
+      "case": "ODO_0.5x__SDH_5x",
+      "factors": {
+        "ODO": 0.5,
+        "SDH": 5
+      }
+    },
+    {
+      "case": "ODO_0.2x__SDH_1x",
+      "factors": {
+        "ODO": 0.2,
+        "SDH": 1
+      }
+    },
+    {
+      "case": "ODO_0.2x__SDH_5x",
+      "factors": {
+        "ODO": 0.2,
+        "SDH": 5
+      }
+    }
+  ],
+  "conserved_pools": [
+    [
+      "Atp",
+      "Adp",
+      "Amp"
+    ],
+    [
+      "Nadh",
+      "Nad_plus"
+    ],
+    [
+      "Sam",
+      "Sah"
+    ]
+  ],
+  "time": {
+    "span": [
+      0.0,
+      1000.0
+    ],
+    "save_points": 201
+  },
+  "fixed": "Initial pools, unselected enzyme amounts, rate laws and all other constants",
+  "units": "UNCONFIRMED: specify concentration and time units before biological interpretation",
+  "interpretation": "Finite perturbations; not global optimality or calibrated experimental predictions"
+}

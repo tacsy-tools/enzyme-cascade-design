@@ -1,0 +1,2 @@
+case,status,maximum_relative_endpoint_difference,minimum_sampled_concentration,reltol,abstol
+baseline,Success,2.9064877962775976e-8,0.0,1.0e-11,1.0e-16

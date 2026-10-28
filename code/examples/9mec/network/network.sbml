@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="tacsy_9mec" name="TACsy reaction network" substanceUnits="mole" timeUnits="second" extentUnits="mole">
+    <annotation>
+      <ns0:network xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+        <ns0:kind>stoichiometric network; no kinetic laws or flux constraints</ns0:kind>
+        <ns0:expansion_rounds>null</ns0:expansion_rounds>
+        <ns0:mod_version>1.0.1.100</ns0:mod_version>
+        <ns0:abstract_atom_legend>{&quot;Ad&quot;: &quot;[1*]&quot;, &quot;CoA&quot;: &quot;[2*]&quot;, &quot;NAD&quot;: &quot;[3*]&quot;, &quot;NAD+&quot;: &quot;[4*]&quot;, &quot;SA&quot;: &quot;[5*]&quot;}</ns0:abstract_atom_legend>
+      </ns0:network>
+    </annotation>
+    <listOfCompartments>
+      <compartment id="compartment" spatialDimensions="3" size="1" units="litre" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="s0" name="Dhq" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>0</ns0:dg_vertex_id>
+            <ns0:smiles>C(C1(CC(C(C(C1)=O)O)O)O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C1(CC(C(C(C1)=O)O)O)O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1([C]([C](=[O])[O][H])([C]([C](=[O])[C]([C](1)([O][H])[H])([O][H])[H])([H])[H])[O][H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s1" name="Dhs" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>1</ns0:dg_vertex_id>
+            <ns0:smiles>C(C1CC(C(C(C=1)=O)O)O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C1CC(C(C(C=1)=O)O)O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1([C](=[C]([C](=[O])[C]([C](1)([O][H])[H])([O][H])[H])[H])[C](=[O])[O][H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s2" name="Nadh" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>2</ns0:dg_vertex_id>
+            <ns0:smiles>[H][3*]</ns0:smiles>
+            <ns0:mod_smiles>[H][NAD]</ns0:mod_smiles>
+            <ns0:graph_dfs>[NAD][H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;NAD&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s3" name="H_plus" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>3</ns0:dg_vertex_id>
+            <ns0:smiles>[H+]</ns0:smiles>
+            <ns0:mod_smiles>[H+]</ns0:mod_smiles>
+            <ns0:graph_dfs>[H+]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s4" name="Skm" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>4</ns0:dg_vertex_id>
+            <ns0:smiles>C1C(C(C(CC=1C(O)=O)O)O)O</ns0:smiles>
+            <ns0:mod_smiles>C1C(C(C(CC=1C(O)=O)O)O)O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1([C](=[C]([C]([C]([C](1)([O][H])[H])([O][H])[H])([O][H])[H])[H])[C](=[O])[O][H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s5" name="Nad_plus" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>5</ns0:dg_vertex_id>
+            <ns0:smiles>[4*]</ns0:smiles>
+            <ns0:mod_smiles>[NAD+]</ns0:mod_smiles>
+            <ns0:graph_dfs>[NAD+]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;NAD+&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s6" name="Atp" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>6</ns0:dg_vertex_id>
+            <ns0:smiles>[1*]OP(OP(OP(O)(O)=O)(O)=O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>[Ad]OP(OP(OP(O)(O)=O)(O)=O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[Ad][O][P](=[O])([O][H])[O][P](=[O])([O][H])[O][P](=[O])([O][H])[O][H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;Ad&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s7" name="S3p" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>7</ns0:dg_vertex_id>
+            <ns0:smiles>C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1([C](=[C]([C]([C]([C](1)([O][H])[H])([O][H])[H])([O][P](=[O])([O][H])[O][H])[H])[H])[C](=[O])[O][H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s8" name="Adp" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>8</ns0:dg_vertex_id>
+            <ns0:smiles>[1*]OP(OP(O)(O)=O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>[Ad]OP(OP(O)(O)=O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[Ad][O][P](=[O])([O][H])[O][P](=[O])([O][H])[O][H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;Ad&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s9" name="Amp" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>9</ns0:dg_vertex_id>
+            <ns0:smiles>[1*]OP(O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>[Ad]OP(O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[Ad][O][P](=[O])([O][H])[O][H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;Ad&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s10" name="Pep" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>10</ns0:dg_vertex_id>
+            <ns0:smiles>C=C(C(O)=O)OP(O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C=C(C(O)=O)OP(O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C](=[C]([C](=[O])[O][H])[O][P]([O][H])(=[O])[O][H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>3</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s11" name="E4p" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>11</ns0:dg_vertex_id>
+            <ns0:smiles>C(C(C(COP(O)(O)=O)O)O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C(C(COP(O)(O)=O)O)O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]([C]([C]([C](=[O])[H])([O][H])[H])([O][H])[H])([O][P]([O][H])(=[O])[O][H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>4</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s12" name="Epsp" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>12</ns0:dg_vertex_id>
+            <ns0:smiles>C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O</ns0:smiles>
+            <ns0:mod_smiles>C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C](=[C]([C](=[O])[O][H])[O][C]1([C]([C](=[C]([C]([C](1)([O][H])[H])([O][P](=[O])([O][H])[O][H])[H])[H])[C](=[O])[O][H])([H])[H])[H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>10</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s13" name="Deoxy" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>13</ns0:dg_vertex_id>
+            <ns0:smiles>C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]([C]([C]([C]([C]([O][P]([O][H])(=[O])[O][H])([H])[H])([O][H])[H])([O][H])[H])([O][H])[H])([C](=[O])[C](=[O])[O][H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s14" name="Pi" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>14</ns0:dg_vertex_id>
+            <ns0:smiles>O=P(O)(O)O</ns0:smiles>
+            <ns0:mod_smiles>O=P(O)(O)O</ns0:mod_smiles>
+            <ns0:graph_dfs>[O]([P]([O][H])(=[O])[O][H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s15" name="Cha" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>15</ns0:dg_vertex_id>
+            <ns0:smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O</ns0:smiles>
+            <ns0:mod_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C](=[C]([C](=[O])[O][H])[O][C]1([C](=[C]([C](=[C]([C](1)([O][H])[H])[H])[H])[C](=[O])[O][H])[H])[H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>10</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s16" name="CO2" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>16</ns0:dg_vertex_id>
+            <ns0:smiles>C(=O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(=O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[O]=[C]=[O]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>1</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s17" name="H2O" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>17</ns0:dg_vertex_id>
+            <ns0:smiles>O</ns0:smiles>
+            <ns0:mod_smiles>O</ns0:mod_smiles>
+            <ns0:graph_dfs>[O]([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s18" name="O2" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>18</ns0:dg_vertex_id>
+            <ns0:smiles>O=O</ns0:smiles>
+            <ns0:mod_smiles>O=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[O]=[O]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s19" name="Sam" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>19</ns0:dg_vertex_id>
+            <ns0:smiles>C[5*]</ns0:smiles>
+            <ns0:mod_smiles>C[SA]</ns0:mod_smiles>
+            <ns0:graph_dfs>[SA][C]([H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>1</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;SA&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s20" name="Sah" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>20</ns0:dg_vertex_id>
+            <ns0:smiles>[H][5*]</ns0:smiles>
+            <ns0:mod_smiles>[H][SA]</ns0:mod_smiles>
+            <ns0:graph_dfs>[SA][H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;SA&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s21" name="Va" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>21</ns0:dg_vertex_id>
+            <ns0:smiles>C1(:C:C(:C:C:C:1O)C(O)=O)OC</ns0:smiles>
+            <ns0:mod_smiles>C1(:C:C(:C:C:C:1O)C(O)=O)OC</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]([O][C]1:[C](:[C](:[C](:[C](:[C](:1)[O][H])[H])[H])[C](=[O])[O][H])[H])([H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>8</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s22" name="CoA" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>22</ns0:dg_vertex_id>
+            <ns0:smiles>[2*]S</ns0:smiles>
+            <ns0:mod_smiles>[CoA]S</ns0:mod_smiles>
+            <ns0:graph_dfs>[CoA][S][H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>0</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;CoA&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s23" name="AcCoA" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>23</ns0:dg_vertex_id>
+            <ns0:smiles>C(C)(S[2*])=O</ns0:smiles>
+            <ns0:mod_smiles>C(C)(S[CoA])=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[CoA][S][C](=[O])[C]([H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>2</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[&quot;CoA&quot;]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s24" name="Iso" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>24</ns0:dg_vertex_id>
+            <ns0:smiles>C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O</ns0:smiles>
+            <ns0:mod_smiles>C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C](=[C]([C](=[O])[O][H])[O][C]1([C](=[C]([C](=[C]([C](1)([O][H])[H])[C](=[O])[O][H])[H])[H])[H])[H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>10</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s25" name="Pyr" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>25</ns0:dg_vertex_id>
+            <ns0:smiles>C(C(C)=O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C(C)=O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]([C](=[O])[C](=[O])[O][H])([H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>3</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s26" name="Ppa" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>26</ns0:dg_vertex_id>
+            <ns0:smiles>C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1(=[C]([C]([C](=[C]([C](1)([O][H])[H])[H])[H])([C]([C](=[O])[C](=[O])[O][H])([H])[H])[C](=[O])[O][H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>10</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s27" name="Sal" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>27</ns0:dg_vertex_id>
+            <ns0:smiles>C1:C:C:C(:C(:C:1)O)C(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C1:C:C:C(:C(:C:1)O)C(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[O]=[C]([O][H])[C]1:[C](:[C](:[C](:[C](:[C](:1)[O][H])[H])[H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s28" name="Gln" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>28</ns0:dg_vertex_id>
+            <ns0:smiles>C(CCC(C(O)=O)N)(N)=O</ns0:smiles>
+            <ns0:mod_smiles>C(CCC(C(O)=O)N)(N)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]([C]([C](=[O])[N]([H])[H])([H])[H])([C]([C](=[O])[O][H])([N]([H])[H])[H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>5</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s29" name="Glu" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>29</ns0:dg_vertex_id>
+            <ns0:smiles>C(CCC(C(O)=O)N)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(CCC(C(O)=O)N)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]([C]([C](=[O])[O][H])([H])[H])([C]([C](=[O])[O][H])([N]([H])[H])[H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>5</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s30" name="Adc" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>30</ns0:dg_vertex_id>
+            <ns0:smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N</ns0:smiles>
+            <ns0:mod_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N</ns0:mod_smiles>
+            <ns0:graph_dfs>[C](=[C]([C](=[O])[O][H])[O][C]1([C](=[C]([C](=[C]([C](1)([N]([H])[H])[H])[H])[H])[C](=[O])[O][H])[H])[H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>10</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s31" name="AmBez" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>31</ns0:dg_vertex_id>
+            <ns0:smiles>C1:C:C(:C:C:C:1N)C(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C1:C:C(:C:C:C:1N)C(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[O]=[C]([O][H])[C]1:[C](:[C](:[C]([N]([H])[H]):[C](:[C](:1)[H])[H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s32" name="AmPhOH" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>32</ns0:dg_vertex_id>
+            <ns0:smiles>C1:C:C(:C:C:C:1O)N</ns0:smiles>
+            <ns0:mod_smiles>C1:C:C(:C:C:C:1O)N</ns0:mod_smiles>
+            <ns0:graph_dfs>[O]([C]1:[C](:[C](:[C]([N]([H])[H]):[C](:[C](:1)[H])[H])[H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>6</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s33" name="Apap" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>33</ns0:dg_vertex_id>
+            <ns0:smiles>C(C)(NC1:C:C:C(:C:C:1)O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C)(NC1:C:C:C(:C:C:1)O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]([C](=[O])[N]([C]1:[C](:[C](:[C]([O][H]):[C](:[C](:1)[H])[H])[H])[H])[H])([H])([H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>8</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s34" name="Hpp" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>34</ns0:dg_vertex_id>
+            <ns0:smiles>C1:C:C(:C:C:C:1O)CC(C(O)=O)=O</ns0:smiles>
+            <ns0:mod_smiles>C1:C:C(:C:C:C:1O)CC(C(O)=O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1(:[C](:[C](:[C](:[C](:[C](:1)[C]([C](=[O])[C](=[O])[O][H])([H])[H])[H])[H])[O][H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>9</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s35" name="HTD" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>35</ns0:dg_vertex_id>
+            <ns0:smiles>C1NC(CC(COP(O)(O)=O)N)=CN=1</ns0:smiles>
+            <ns0:mod_smiles>C1NC(CC(COP(O)(O)=O)N)=CN=1</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1([N]=[C]([N]([C](=1)[C]([C]([C]([O][P](=[O])([O][H])[O][H])([H])[H])([N]([H])[H])[H])([H])[H])[H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>6</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s36" name="Imz" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>36</ns0:dg_vertex_id>
+            <ns0:smiles>C1NC(CC(COP(O)(O)=O)=O)=CN=1</ns0:smiles>
+            <ns0:mod_smiles>C1NC(CC(COP(O)(O)=O)=O)=CN=1</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1([N]=[C]([N]([C](=1)[C]([C](=[O])[C]([O][P](=[O])([O][H])[O][H])([H])[H])([H])[H])[H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>6</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s37" name="Tyr" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>37</ns0:dg_vertex_id>
+            <ns0:smiles>C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1(:[C](:[C](:[C](:[C](:[C](:1)[C]([C]([C](=[O])[O][H])([N]([H])[H])[H])([H])[H])[H])[H])[O][H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>9</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+      <species id="s38" name="Pca" compartment="compartment" substanceUnits="mole" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <ns0:species xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:dg_vertex_id>38</ns0:dg_vertex_id>
+            <ns0:smiles>C1:C:C(:C:C(:C:1O)O)C(O)=O</ns0:smiles>
+            <ns0:mod_smiles>C1:C:C(:C:C(:C:1O)O)C(O)=O</ns0:mod_smiles>
+            <ns0:graph_dfs>[C]1(:[C](:[C](:[C](:[C](:[C](:1)[C](=[O])[O][H])[H])[O][H])[O][H])[H])[H]</ns0:graph_dfs>
+            <ns0:explicit_carbon_atoms>7</ns0:explicit_carbon_atoms>
+            <ns0:abstract_labels>[]</ns0:abstract_labels>
+          </ns0:species>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r39" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r39</ns0:id>
+            <ns0:dg_edge_id>39</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s0&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s1&quot;: 1, &quot;s17&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;3-dehydroquinate = 3-dehydroshikimate + H2O, EC 4.2.1.10&quot;]</ns0:rules>
+            <ns0:rule_ids>[0]</ns0:rule_ids>
+            <ns0:reaction_smiles>C(C1(CC(C(C(C1)=O)O)O)O)(O)=O&gt;&gt;C(C1CC(C(C(C=1)=O)O)O)(O)=O.O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C(C1(CC(C(C(C1)=O)O)O)O)(O)=O&gt;&gt;C(C1CC(C(C(C=1)=O)O)O)(O)=O.O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s0" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s1" stoichiometry="1" constant="true"/>
+          <speciesReference species="s17" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r40" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r40</ns0:id>
+            <ns0:dg_edge_id>40</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s1&quot;: 1, &quot;s2&quot;: 1, &quot;s3&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s4&quot;: 1, &quot;s5&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;3-dehydroshikimate + NADPH + H+ = shikimate + NADP+, EC 1.1.1.25&quot;]</ns0:rules>
+            <ns0:rule_ids>[1]</ns0:rule_ids>
+            <ns0:reaction_smiles>C(C1CC(C(C(C=1)=O)O)O)(O)=O.[H][3*].[H+]&gt;&gt;C1C(C(C(CC=1C(O)=O)O)O)O.[4*]</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C(C1CC(C(C(C=1)=O)O)O)(O)=O.[H][NAD].[H+]&gt;&gt;C1C(C(C(CC=1C(O)=O)O)O)O.[NAD+]</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s1" stoichiometry="1" constant="true"/>
+          <speciesReference species="s2" stoichiometry="1" constant="true"/>
+          <speciesReference species="s3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s4" stoichiometry="1" constant="true"/>
+          <speciesReference species="s5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r41" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r41</ns0:id>
+            <ns0:dg_edge_id>41</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s4&quot;: 1, &quot;s6&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s7&quot;: 1, &quot;s8&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot; shikimate + ATP = shikimate 3-phosphate + ADP, EC 2.7.1.71&quot;]</ns0:rules>
+            <ns0:rule_ids>[2]</ns0:rule_ids>
+            <ns0:reaction_smiles>C1C(C(C(CC=1C(O)=O)O)O)O.[1*]OP(OP(OP(O)(O)=O)(O)=O)(O)=O&gt;&gt;C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.[1*]OP(OP(O)(O)=O)(O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C1C(C(C(CC=1C(O)=O)O)O)O.[Ad]OP(OP(OP(O)(O)=O)(O)=O)(O)=O&gt;&gt;C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.[Ad]OP(OP(O)(O)=O)(O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s4" stoichiometry="1" constant="true"/>
+          <speciesReference species="s6" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s7" stoichiometry="1" constant="true"/>
+          <speciesReference species="s8" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r42" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r42</ns0:id>
+            <ns0:dg_edge_id>42</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s10&quot;: 1, &quot;s7&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s12&quot;: 1, &quot;s14&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;phosphoenolpyruvate + 3-phosphoshikimate = phosphate + 5-3-phosphoshikimate, EC 2.5.1.19&quot;]</ns0:rules>
+            <ns0:rule_ids>[3]</ns0:rule_ids>
+            <ns0:reaction_smiles>C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.C=C(C(O)=O)OP(O)(O)=O&gt;&gt;C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O.O=P(O)(O)O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C1C(C(C(CC=1C(O)=O)O)O)OP(O)(O)=O.C=C(C(O)=O)OP(O)(O)=O&gt;&gt;C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O.O=P(O)(O)O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s7" stoichiometry="1" constant="true"/>
+          <speciesReference species="s10" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s12" stoichiometry="1" constant="true"/>
+          <speciesReference species="s14" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r43" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r43</ns0:id>
+            <ns0:dg_edge_id>43</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s12&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s14&quot;: 1, &quot;s15&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;5-enolpyruvylshikimate 3-phosphate = chorismate + phosphate, EC 4.2.3.5&quot;]</ns0:rules>
+            <ns0:rule_ids>[4]</ns0:rule_ids>
+            <ns0:reaction_smiles>C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O&gt;&gt;O=P(O)(O)O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C=C(C(O)=O)OC1C(C(C=C(C(O)=O)C1)OP(O)(O)=O)O&gt;&gt;O=P(O)(O)O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s12" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s14" stoichiometry="1" constant="true"/>
+          <speciesReference species="s15" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r44" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r44</ns0:id>
+            <ns0:dg_edge_id>44</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s15&quot;: 1, &quot;s28&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s29&quot;: 1, &quot;s30&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;chorismate + L-glutamine = 4-amino-4-deoxychorismate + L-glutamate, EC 4.1.3.38&quot;]</ns0:rules>
+            <ns0:rule_ids>[5]</ns0:rule_ids>
+            <ns0:reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O.C(CCC(C(O)=O)N)(N)=O&gt;&gt;C(CCC(C(O)=O)N)(O)=O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O.C(CCC(C(O)=O)N)(N)=O&gt;&gt;C(CCC(C(O)=O)N)(O)=O.C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s15" stoichiometry="1" constant="true"/>
+          <speciesReference species="s28" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s29" stoichiometry="1" constant="true"/>
+          <speciesReference species="s30" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r45" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r45</ns0:id>
+            <ns0:dg_edge_id>45</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s30&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s25&quot;: 1, &quot;s31&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;4-amino-4-deoxychorismate = 4-aminobenzoate + Pyruvate, EC 4.1.3.38&quot;]</ns0:rules>
+            <ns0:rule_ids>[6]</ns0:rule_ids>
+            <ns0:reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N&gt;&gt;C(C(C)=O)(O)=O.C1:C:C(:C:C:C:1N)C(O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1N&gt;&gt;C(C(C)=O)(O)=O.C1:C:C(:C:C:C:1N)C(O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s30" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s25" stoichiometry="1" constant="true"/>
+          <speciesReference species="s31" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r46" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r46</ns0:id>
+            <ns0:dg_edge_id>46</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s18&quot;: 1, &quot;s2&quot;: 1, &quot;s3&quot;: 1, &quot;s31&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s16&quot;: 1, &quot;s17&quot;: 1, &quot;s32&quot;: 1, &quot;s5&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;4-aminobenzoate + NAD(P)H + H+ + O2 = 4-aminophenol + NAD(P)+ + H2O + CO2, EC 1.14.13.27&quot;]</ns0:rules>
+            <ns0:rule_ids>[7]</ns0:rule_ids>
+            <ns0:reaction_smiles>[H][3*].[H+].O=O.C1:C:C(:C:C:C:1N)C(O)=O&gt;&gt;[4*].C(=O)=O.O.C1:C:C(:C:C:C:1O)N</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>[H][NAD].[H+].O=O.C1:C:C(:C:C:C:1N)C(O)=O&gt;&gt;[NAD+].C(=O)=O.O.C1:C:C(:C:C:C:1O)N</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s2" stoichiometry="1" constant="true"/>
+          <speciesReference species="s3" stoichiometry="1" constant="true"/>
+          <speciesReference species="s18" stoichiometry="1" constant="true"/>
+          <speciesReference species="s31" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s5" stoichiometry="1" constant="true"/>
+          <speciesReference species="s16" stoichiometry="1" constant="true"/>
+          <speciesReference species="s17" stoichiometry="1" constant="true"/>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r47" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r47</ns0:id>
+            <ns0:dg_edge_id>47</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s23&quot;: 1, &quot;s32&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s22&quot;: 1, &quot;s33&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;acetyl-CoA + 4-amimophenol = CoA + paracetamol, EC 2.3.1.5&quot;]</ns0:rules>
+            <ns0:rule_ids>[8]</ns0:rule_ids>
+            <ns0:reaction_smiles>C(C)(S[2*])=O.C1:C:C(:C:C:C:1O)N&gt;&gt;[2*]S.C(C)(NC1:C:C:C(:C:C:1)O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C(C)(S[CoA])=O.C1:C:C(:C:C:C:1O)N&gt;&gt;[CoA]S.C(C)(NC1:C:C:C(:C:C:1)O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s23" stoichiometry="1" constant="true"/>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s22" stoichiometry="1" constant="true"/>
+          <speciesReference species="s33" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r48" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r48</ns0:id>
+            <ns0:dg_edge_id>48</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s15&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s24&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;Chorismate = Isochorismate, EC 5.4.4.2&quot;]</ns0:rules>
+            <ns0:rule_ids>[9]</ns0:rule_ids>
+            <ns0:reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O&gt;&gt;C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O&gt;&gt;C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s15" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s24" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r49" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r49</ns0:id>
+            <ns0:dg_edge_id>49</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s24&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s25&quot;: 1, &quot;s27&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;isochorismate = salicylate + pyruvate, EC 4.2.99.21&quot;]</ns0:rules>
+            <ns0:rule_ids>[10]</ns0:rule_ids>
+            <ns0:reaction_smiles>C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O&gt;&gt;C(C(C)=O)(O)=O.C1:C:C:C(:C(:C:1)O)C(O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C=C(C(O)=O)OC1C=CC=C(C(O)=O)C1O&gt;&gt;C(C(C)=O)(O)=O.C1:C:C:C(:C(:C:1)O)C(O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s24" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s25" stoichiometry="1" constant="true"/>
+          <speciesReference species="s27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r50" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r50</ns0:id>
+            <ns0:dg_edge_id>50</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s15&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s26&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;Chorismate = Prephenic acid, EC.5.4.99.5&quot;]</ns0:rules>
+            <ns0:rule_ids>[11]</ns0:rule_ids>
+            <ns0:reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O&gt;&gt;C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C=C(C(O)=O)OC1C=C(C(O)=O)C=CC1O&gt;&gt;C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s15" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s26" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r51" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r51</ns0:id>
+            <ns0:dg_edge_id>51</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s26&quot;: 1, &quot;s5&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s16&quot;: 1, &quot;s2&quot;: 1, &quot;s3&quot;: 1, &quot;s34&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;prephenate + NAD+ = 4-hydroxyphenylpyruvate + CO2 + NADH, EC 1.3.1.12&quot;]</ns0:rules>
+            <ns0:rule_ids>[12]</ns0:rule_ids>
+            <ns0:reaction_smiles>[4*].C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O&gt;&gt;[H][3*].[H+].C(=O)=O.C1:C:C(:C:C:C:1O)CC(C(O)=O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>[NAD+].C(C1(C=CC(C=C1)O)CC(C(O)=O)=O)(O)=O&gt;&gt;[H][NAD].[H+].C(=O)=O.C1:C:C(:C:C:C:1O)CC(C(O)=O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s5" stoichiometry="1" constant="true"/>
+          <speciesReference species="s26" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s2" stoichiometry="1" constant="true"/>
+          <speciesReference species="s3" stoichiometry="1" constant="true"/>
+          <speciesReference species="s16" stoichiometry="1" constant="true"/>
+          <speciesReference species="s34" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r52" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r52</ns0:id>
+            <ns0:dg_edge_id>52</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s34&quot;: 1, &quot;s35&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s36&quot;: 1, &quot;s37&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;L-histidinol phosphate + 4-hydroxyphenylpyruvate = 3-(imidazol-4-yl)-2-oxopropyl phosphate + L-tyrosine, EC 2.6.1.9&quot;]</ns0:rules>
+            <ns0:rule_ids>[13]</ns0:rule_ids>
+            <ns0:reaction_smiles>C1:C:C(:C:C:C:1O)CC(C(O)=O)=O.C1NC(CC(COP(O)(O)=O)N)=CN=1&gt;&gt;C1NC(CC(COP(O)(O)=O)=O)=CN=1.C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C1:C:C(:C:C:C:1O)CC(C(O)=O)=O.C1NC(CC(COP(O)(O)=O)N)=CN=1&gt;&gt;C1NC(CC(COP(O)(O)=O)=O)=CN=1.C(C(CC1:C:C:C(:C:C:1)O)N)(O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s34" stoichiometry="1" constant="true"/>
+          <speciesReference species="s35" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s36" stoichiometry="1" constant="true"/>
+          <speciesReference species="s37" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r53" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r53</ns0:id>
+            <ns0:dg_edge_id>53</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s1&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s17&quot;: 1, &quot;s38&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;3-dehydroshikimate = Protocatechuate + H2O, EC 4.2.1.118&quot;]</ns0:rules>
+            <ns0:rule_ids>[14]</ns0:rule_ids>
+            <ns0:reaction_smiles>C(C1CC(C(C(C=1)=O)O)O)(O)=O&gt;&gt;O.C1:C:C(:C:C(:C:1O)O)C(O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C(C1CC(C(C(C=1)=O)O)O)(O)=O&gt;&gt;O.C1:C:C(:C:C(:C:1O)O)C(O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s17" stoichiometry="1" constant="true"/>
+          <speciesReference species="s38" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r54" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r54</ns0:id>
+            <ns0:dg_edge_id>54</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s19&quot;: 1, &quot;s38&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s20&quot;: 1, &quot;s21&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;Protocatechuate + SAM = Vanillate +SAH, EC 2.1.1.6&quot;]</ns0:rules>
+            <ns0:rule_ids>[15]</ns0:rule_ids>
+            <ns0:reaction_smiles>C[5*].C1:C:C(:C:C(:C:1O)O)C(O)=O&gt;&gt;[H][5*].C1(:C:C(:C:C:C:1O)C(O)=O)OC</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C[SA].C1:C:C(:C:C(:C:1O)O)C(O)=O&gt;&gt;[H][SA].C1(:C:C(:C:C:C:1O)C(O)=O)OC</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s19" stoichiometry="1" constant="true"/>
+          <speciesReference species="s38" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s20" stoichiometry="1" constant="true"/>
+          <speciesReference species="s21" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r55" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r55</ns0:id>
+            <ns0:dg_edge_id>55</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s8&quot;: 2}</ns0:reactants>
+            <ns0:products>{&quot;s6&quot;: 1, &quot;s9&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;AdK-catalysed ATP Regeneration&quot;]</ns0:rules>
+            <ns0:rule_ids>[16]</ns0:rule_ids>
+            <ns0:reaction_smiles>[1*]OP(OP(O)(O)=O)(O)=O.[1*]OP(OP(O)(O)=O)(O)=O&gt;&gt;[1*]OP(OP(OP(O)(O)=O)(O)=O)(O)=O.[1*]OP(O)(O)=O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>[Ad]OP(OP(O)(O)=O)(O)=O.[Ad]OP(OP(O)(O)=O)(O)=O&gt;&gt;[Ad]OP(OP(OP(O)(O)=O)(O)=O)(O)=O.[Ad]OP(O)(O)=O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s8" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s6" stoichiometry="1" constant="true"/>
+          <speciesReference species="s9" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r56" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r56</ns0:id>
+            <ns0:dg_edge_id>56</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s13&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s0&quot;: 1, &quot;s14&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;3-deoxy-D-arabino-hept-2-ulosonate 7-phosphate = 3-dehydroquinate + phosphate, EC 4.2.3.4&quot;]</ns0:rules>
+            <ns0:rule_ids>[17]</ns0:rule_ids>
+            <ns0:reaction_smiles>C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O&gt;&gt;C(C1(CC(C(C(C1)=O)O)O)O)(O)=O.O=P(O)(O)O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O&gt;&gt;C(C1(CC(C(C(C1)=O)O)O)O)(O)=O.O=P(O)(O)O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s13" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s0" stoichiometry="1" constant="true"/>
+          <speciesReference species="s14" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="r57" reversible="false">
+        <annotation>
+          <ns0:derivation xmlns:ns0="https://tacsy.eu/ns/network-export/v1">
+            <ns0:id>r57</ns0:id>
+            <ns0:dg_edge_id>57</ns0:dg_edge_id>
+            <ns0:reactants>{&quot;s10&quot;: 1, &quot;s11&quot;: 1, &quot;s17&quot;: 1}</ns0:reactants>
+            <ns0:products>{&quot;s13&quot;: 1, &quot;s14&quot;: 1}</ns0:products>
+            <ns0:rules>[&quot;phosphoenolpyruvate + D-erythrose 4-phosphate + H2O = 3-deoxy-D-arabino-hept-2-ulosonate 7-phosphate + phosphate, EC 2.5.1.54&quot;]</ns0:rules>
+            <ns0:rule_ids>[18]</ns0:rule_ids>
+            <ns0:reaction_smiles>C=C(C(O)=O)OP(O)(O)=O.C(C(C(COP(O)(O)=O)O)O)=O.O&gt;&gt;C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O.O=P(O)(O)O</ns0:reaction_smiles>
+            <ns0:mod_reaction_smiles>C=C(C(O)=O)OP(O)(O)=O.C(C(C(COP(O)(O)=O)O)O)=O.O&gt;&gt;C(C(CC(C(C(COP(O)(O)=O)O)O)O)=O)(O)=O.O=P(O)(O)O</ns0:mod_reaction_smiles>
+          </ns0:derivation>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="s10" stoichiometry="1" constant="true"/>
+          <speciesReference species="s11" stoichiometry="1" constant="true"/>
+          <speciesReference species="s17" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s13" stoichiometry="1" constant="true"/>
+          <speciesReference species="s14" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

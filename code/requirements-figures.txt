@@ -1,0 +1,2 @@
+# Optional trajectory plotting.
+matplotlib>=3.9,<4

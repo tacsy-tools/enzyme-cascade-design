@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0-rc2",
+  "model_set": "Example inputs distributed with Enzyme Cascade Design 0.1.0-rc2",
+  "files": {
+    "3hp/network.json": "51c64e0e3db71a537af2d8e0beeac387b72b04ad769f15bc4091bcfeaadc5196",
+    "3hp/network.sbml": "aca7436fac22c3c147bfeda21b12449f6b27c60111c6d0a3b1c378185aeb7bed",
+    "9mec/network/network.json": "23e51b47e5d5f95d650c5e553f8b0b760890c6fcd7fd3ebd6049d488dd934266",
+    "9mec/network/network.sbml": "2b4f8e9c691a568183ef1772d5d029dad624492d138daebee7711da8cae417d9",
+    "9mec/kinetic-reference.json": "be8f9ff64891f8be07abd3809a5b02a7bbcc046174eedf0fe7a2f9bdf5f90b74",
+    "9mec/model.json": "45cbc06eada9a7dd81fb7b8e56abcdfab3fb32bd3752666c990318b27c3d6382"
+  }
+}

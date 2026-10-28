@@ -1,0 +1,53 @@
+{
+  "name": "Single full-rate MM reaction",
+  "time": {
+    "span": [
+      0.0,
+      2.0
+    ],
+    "save_points": 21
+  },
+  "species": {
+    "S": {
+      "initial": 2.0
+    },
+    "P": {
+      "initial": 0.0
+    }
+  },
+  "rate_laws": {
+    "MM17": {
+      "arguments": [
+        "E",
+        "kcat",
+        "km",
+        "S"
+      ],
+      "expression": "(kcat * E * S) / (km + S)"
+    }
+  },
+  "reactions": [
+    {
+      "id": "r01",
+      "reactants": {
+        "S": 1
+      },
+      "products": {
+        "P": 1
+      },
+      "kinetics": {
+        "type": "MM17",
+        "mode": "full_rate",
+        "species": {
+          "S": "S"
+        },
+        "constants": {
+          "E": 1.0,
+          "kcat": 3.0,
+          "km": 1.0
+        }
+      },
+      "enzyme": "MM"
+    }
+  ]
+}
