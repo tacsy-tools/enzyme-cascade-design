@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "date": "2026-10-28",
-  "unit_tests": 8,
+  "unit_tests": 10,
   "nine_mec_cases_recomputed": 50,
   "maximum_absolute_product_difference": 0.0,
   "maximum_relative_product_difference": 0.0,
@@ -23,5 +23,13 @@
   "python_311_syntax_checked": true,
   "pathway_records_viewed": 14,
   "fresh_clone_design_cases": 2,
-  "fresh_clone_product_difference": 0.0
+  "fresh_clone_product_difference": 0.0,
+  "runtime_check": {
+    "date": "2026-10-29",
+    "julia": "1.11.5",
+    "unsupported_runtime_rejected_before_outputs": true,
+    "package_versions_unchanged": true,
+    "design_cases": 2,
+    "maximum_product_difference": 0.0
+  }
 }

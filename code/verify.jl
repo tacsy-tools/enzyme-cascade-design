@@ -1,3 +1,4 @@
+include("julia_runtime.jl")
 using Catalyst, DifferentialEquations, DelimitedFiles
 
 out = abspath(ARGS[1])

@@ -7,7 +7,7 @@ import subprocess
 from itertools import product
 from pathlib import Path
 
-from common import HERE, digest, load, save
+from common import HERE, digest, load, require_julia, save
 from generate_julia import generate, validate
 
 
@@ -143,6 +143,8 @@ def main():
     )
     args = p.parse_args()
     try:
+        if args.run:
+            require_julia()
         vary = {}
         for spec in args.vary or []:
             enzyme, values = spec.split("=", 1)
@@ -170,7 +172,13 @@ def main():
                 ],
                 check=True,
             )
-    except (ValueError, KeyError, OSError) as exc:
+    except (
+        ValueError,
+        KeyError,
+        OSError,
+        RuntimeError,
+        subprocess.CalledProcessError,
+    ) as exc:
         p.exit(1, f"Cannot prepare scan: {exc}\n")
 
 

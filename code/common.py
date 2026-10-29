@@ -3,9 +3,37 @@
 import hashlib
 import json
 import math
+import subprocess
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+
+
+def require_julia():
+    """Check the runtime before creating output or loading Julia packages."""
+    try:
+        result = subprocess.run(
+            [
+                "julia",
+                "--startup-file=no",
+                "-e",
+                "print(VERSION.major, '.', VERSION.minor)",
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+    except (OSError, subprocess.CalledProcessError) as exc:
+        raise RuntimeError(
+            "Cannot start Julia. Install Julia 1.11.x and check `julia --version`."
+        ) from exc
+    version = result.stdout.strip()
+    if version != "1.11":
+        raise RuntimeError(
+            f"This environment requires Julia 1.11.x; found {version}. "
+            "With juliaup, run `juliaup add 1.11.5` and "
+            "`juliaup override set 1.11.5` in code/, then check `julia --version`."
+        )
 
 
 def digest(path):

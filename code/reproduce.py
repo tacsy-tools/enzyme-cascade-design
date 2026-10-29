@@ -4,7 +4,7 @@ import argparse
 import subprocess
 from pathlib import Path
 
-from common import HERE, load
+from common import HERE, load, require_julia
 
 
 def kinetics(output):
@@ -74,6 +74,10 @@ def main():
     args = p.parse_args()
     if not args.kinetics:
         p.error("Select --kinetics")
+    try:
+        require_julia()
+    except RuntimeError as exc:
+        p.exit(1, f"{exc}\n")
     if args.output.exists() and any(args.output.iterdir()):
         p.error("Use a new empty output directory")
     if args.kinetics:

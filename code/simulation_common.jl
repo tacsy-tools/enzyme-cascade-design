@@ -1,4 +1,5 @@
 # Shared integration and checks for generated and native Catalyst models.
+include("julia_runtime.jl")
 using Catalyst, DifferentialEquations, DelimitedFiles, TOML, SHA
 
 species_names(rn) = replace.(string.(species(rn)), "(t)" => "")

@@ -7,7 +7,7 @@ import random
 import subprocess
 from pathlib import Path
 
-from common import HERE, load
+from common import HERE, load, require_julia
 from generate_julia import generate
 
 
@@ -38,6 +38,10 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--output", type=Path, required=True)
     args = p.parse_args()
+    try:
+        require_julia()
+    except RuntimeError as exc:
+        p.exit(1, f"{exc}\n")
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
     model = load(HERE / "examples/9mec/model.json")

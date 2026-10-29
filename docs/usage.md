@@ -3,6 +3,24 @@
 Commands run from `code/`. Put new calculations in `results/local/`; this
 directory is excluded from Git. Each calculation needs a fresh output directory.
 
+## Julia runtime
+
+Simulations require Julia 1.11.x, tested with 1.11.5. A pinned `Manifest.toml`
+fixes package versions but does not select the Julia executable. With Juliaup,
+run the following inside `code/`:
+
+```sh
+juliaup add 1.11.5
+juliaup override set 1.11.5
+julia --version
+julia --project=. -e 'using Pkg; Pkg.instantiate()'
+```
+
+Julia 1.12/1.13 can fail while loading these package versions, before the model
+is integrated. The simulation commands now reject unsupported runtimes early.
+If an earlier attempt already prepared a run directory, choose a fresh directory
+when retrying, for example `results/local/design-111`.
+
 ## Inspect pathways and yields
 
 ```sh

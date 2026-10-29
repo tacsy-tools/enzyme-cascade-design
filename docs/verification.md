@@ -7,7 +7,7 @@ They do not represent an independent installation on another machine.
 
 | Check | Result |
 | --- | --- |
-| Python interface tests | All 8 passed |
+| Python interface tests | All 10 passed, including runtime checks |
 | 9MEC kinetic batch | All 50 cases recomputed; product endpoints match the supplied results exactly |
 | Saved pathway results | All 14 records can be displayed with Python alone |
 | Fresh clone | Reference and four-branchpoint comparison run without private code; product endpoints match exactly |
@@ -30,3 +30,15 @@ interface, checked against the integrated Michaelis–Menten equation.
 [`verification.json`](verification.json) records numerical checks.
 [`models.json`](models.json) identifies the principal inputs by SHA256.
 Full trajectories and numerical check files are generated when examples are rerun.
+
+## Runtime checks
+
+Rechecked on **29 October 2026** with Julia **1.11.5**. The Python entry points
+reject unsupported Julia versions before preparing outputs, and Julia entry
+points check the runtime before loading packages. Input preparation without
+integration continues to work with Python alone.
+
+The two-case enzyme comparison retains exactly the supplied product endpoints.
+The 49 independent derivative probes and reference-model comparison also pass.
+The compatibility range is restricted to Julia 1.11.x; pinned package versions
+and scientific model inputs are unchanged.

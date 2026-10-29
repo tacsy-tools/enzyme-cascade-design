@@ -48,11 +48,21 @@ ODO 0.001×, GBH 2.5×, LCH 100× and PABB 100×; all other inputs stay fixed.
 
 ## Run a design comparison
 
-Install the pinned **Julia 1.11** environment once, from the `code/` directory:
+Use **Julia 1.11.x**; the pinned environment was tested with **1.11.5**.
+With [Juliaup](https://github.com/JuliaLang/juliaup), select that version for the
+`code/` directory, then install the dependencies:
 
 ```sh
+juliaup add 1.11.5
+juliaup override set 1.11.5
+julia --version
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
 ```
+
+The directory override also applies to Julia started by the Python scripts.
+If Julia is installed manually, ensure `julia` on your `PATH` is version 1.11.x.
+The pinned package versions are not supported on Julia 1.12 or 1.13; the scripts
+check the runtime before loading packages or creating run outputs.
 
 For optional Python plotting packages, first create an environment:
 

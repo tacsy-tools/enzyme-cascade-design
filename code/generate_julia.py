@@ -97,6 +97,8 @@ def generate(model, full_rates=False):
     validate(model)
     lines = [
         "# Generated from the JSON input; edit the input, then regenerate.",
+        *Path(__file__).with_name("julia_runtime.jl").read_text().splitlines(),
+        "",
         "using Catalyst",
         "using DifferentialEquations",
         "using DelimitedFiles",
