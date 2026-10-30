@@ -6,6 +6,8 @@ kinetic inputs, Julia simulations and comparisons of proposed enzyme changes.
 
 **reaction network → kinetic assignments → simulation → design comparisons**
 
+Version **0.1.0**. Distributed under the MIT licence.
+
 - Assign a rate law and constants to each reaction while keeping the network
   stoichiometry in one place.
 - Compare individual enzyme changes, named mixtures or combinations of factors.
@@ -20,7 +22,7 @@ and small Michaelis–Menten models for learning the input formats.
 Only **Python 3.11 or later** is needed to inspect the supplied results:
 
 ```sh
-git clone https://gitea.algochem.techfak.de/merkle/D4.4-release-candidate.git enzyme-cascade-design
+git clone --branch v0.1.0 https://github.com/tacsy-tools/enzyme-cascade-design.git
 cd enzyme-cascade-design/code
 
 # A 3 × 3 table: exact pyruvate inputs / exact 3HP outputs.

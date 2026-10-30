@@ -42,3 +42,10 @@ The two-case enzyme comparison retains exactly the supplied product endpoints.
 The 49 independent derivative probes and reference-model comparison also pass.
 The compatibility range is restricted to Julia 1.11.x; pinned package versions
 and scientific model inputs are unchanged.
+
+## Version 0.1.0
+
+Final checks on **30 October 2026**: all 10 Python tests pass. The full kinetic
+batch, including the native tutorial, completes on Julia 1.11.5. All 50 9MEC
+product endpoints match the saved results exactly. The independent derivative
+and reference-trajectory comparisons retain the error bounds reported above.

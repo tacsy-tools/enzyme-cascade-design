@@ -31,5 +31,16 @@
     "package_versions_unchanged": true,
     "design_cases": 2,
     "maximum_product_difference": 0.0
+  },
+  "release_check": {
+    "version": "0.1.0",
+    "date": "2026-10-30",
+    "julia": "1.11.5",
+    "python_tests_passed": 10,
+    "nine_mec_cases_recomputed": 50,
+    "maximum_absolute_product_difference": 0.0,
+    "generated_and_native_tutorials_passed": true,
+    "source_model_checks_passed": true,
+    "native_MM_maximum_equation_residual": 9.39350819351148e-11
   }
 }

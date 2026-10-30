@@ -4,7 +4,8 @@ title: "Enzyme Cascade Design"
 type: software
 authors:
   - name: "TACsy contributors"
-version: 0.1.0-rc2
-date-released: 2026-10-28
+version: 0.1.0
+date-released: 2026-10-30
 license: MIT
-repository-code: "https://gitea.algochem.techfak.de/merkle/D4.4-release-candidate"
+repository-code: "https://github.com/tacsy-tools/enzyme-cascade-design"
+url: "https://github.com/tacsy-tools/enzyme-cascade-design/releases/tag/v0.1.0"

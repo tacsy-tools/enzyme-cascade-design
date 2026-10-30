@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0-rc2",
-  "model_set": "Example inputs distributed with Enzyme Cascade Design 0.1.0-rc2",
+  "version": "0.1.0",
+  "model_set": "Example inputs distributed with Enzyme Cascade Design 0.1.0",
   "files": {
     "3hp/network.json": "51c64e0e3db71a537af2d8e0beeac387b72b04ad769f15bc4091bcfeaadc5196",
     "3hp/network.sbml": "aca7436fac22c3c147bfeda21b12449f6b27c60111c6d0a3b1c378185aeb7bed",
